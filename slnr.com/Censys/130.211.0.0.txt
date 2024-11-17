@@ -1,0 +1,68 @@
+{
+  "ip": "130.211.0.0",
+  "services": [],
+  "location": {
+    "continent": "Europe",
+    "country": "Russia",
+    "country_code": "RU",
+    "city": "Saint Petersburg",
+    "postal_code": "195213",
+    "timezone": "Europe/Moscow",
+    "province": "St.-Petersburg",
+    "coordinates": {
+      "latitude": 59.93863,
+      "longitude": 30.31413
+    }
+  },
+  "location_updated_at": "2024-11-15T04:10:33.814765960Z",
+  "autonomous_system": {
+    "asn": 396982,
+    "description": "GOOGLE-CLOUD-PLATFORM",
+    "bgp_prefix": "1.179.112.0/20",
+    "name": "GOOGLE-CLOUD-PLATFORM",
+    "country_code": "US"
+  },
+  "autonomous_system_updated_at": "2024-11-15T04:10:33.814765960Z",
+  "whois": {
+    "network": {
+      "handle": "GOOGLE-CLOUD",
+      "name": "Google LLC",
+      "cidrs": [
+        "130.211.0.0/16"
+      ],
+      "created": "2014-05-12T00:00:00Z",
+      "updated": "2015-09-21T00:00:00Z",
+      "allocation_type": "ALLOCATION"
+    },
+    "organization": {
+      "handle": "GOOGL-2",
+      "name": "Google LLC",
+      "street": "1600 Amphitheatre Parkway",
+      "city": "Mountain View",
+      "state": "CA",
+      "postal_code": "94043",
+      "country": "US",
+      "abuse_contacts": [
+        {
+          "handle": "GCABU-ARIN",
+          "name": "GC Abuse",
+          "email": "google-cloud-compliance@google.com"
+        }
+      ],
+      "admin_contacts": [
+        {
+          "handle": "ZG39-ARIN",
+          "name": "Google LLC",
+          "email": "arin-contact@google.com"
+        }
+      ],
+      "tech_contacts": [
+        {
+          "handle": "ZG39-ARIN",
+          "name": "Google LLC",
+          "email": "arin-contact@google.com"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,656 @@
+{
+  "ip": "143.244.220.150",
+  "services": [
+    {
+      "_decoded": "http",
+      "_encoding": {
+        "banner": "DISPLAY_UTF8",
+        "banner_hex": "DISPLAY_HEX"
+      },
+      "banner": "HTTP/1.1 200 OK\r\nx-correlation-id: aaaaaaaa\r\ndate:  <REDACTED>\r\ncontent-length: 375\r\ncontent-type: text/html; charset=utf-8\r\n",
+      "banner_hashes": [
+        "sha256:604571a721c2cf235d7f369bc3f46af343f38ac522c3bfe8debad116b092b866"
+      ],
+      "banner_hex": "485454502f312e3120323030204f4b0d0a782d636f7272656c6174696f6e2d69643a2061616161616161610d0a646174653a20203c52454441435445443e0d0a636f6e74656e742d6c656e6774683a203337350d0a636f6e74656e742d747970653a20746578742f68746d6c3b20636861727365743d7574662d380d0a",
+      "discovery_method": "IPV4_WALK_FULL_PRIORITY_1",
+      "extended_service_name": "HTTP",
+      "http": {
+        "request": {
+          "method": "GET",
+          "uri": "http://143.244.220.150/",
+          "headers": {
+            "User_Agent": [
+              "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+            ],
+            "_encoding": {
+              "User_Agent": "DISPLAY_UTF8",
+              "Accept": "DISPLAY_UTF8"
+            },
+            "Accept": [
+              "*/*"
+            ]
+          }
+        },
+        "response": {
+          "protocol": "HTTP/1.1",
+          "status_code": 200,
+          "status_reason": "OK",
+          "headers": {
+            "content_type": [
+              "text/html; charset=utf-8"
+            ],
+            "_encoding": {
+              "content_type": "DISPLAY_UTF8",
+              "date": "DISPLAY_UTF8",
+              "x_correlation_id": "DISPLAY_UTF8",
+              "content_length": "DISPLAY_UTF8"
+            },
+            "date": [
+              "<REDACTED>"
+            ],
+            "x_correlation_id": [
+              "aaaaaaaa"
+            ],
+            "content_length": [
+              "375"
+            ]
+          },
+          "_encoding": {
+            "html_tags": "DISPLAY_UTF8",
+            "body": "DISPLAY_UTF8",
+            "body_hash": "DISPLAY_UTF8"
+          },
+          "html_tags": [
+            "<meta http-equiv=\"refresh\" content=\"0;url=http://dnserrorassist.att.net/search/?q=http://143.244.220.150%2F%26srchgdeCid%3Daaaaaaaa%26t%3D0%26bc%3D\"/>"
+          ],
+          "body_size": 375,
+          "body": "<html><head><meta http-equiv=\"refresh\" content=\"0;url=http://dnserrorassist.att.net/search/?q=http://143.244.220.150%2F%26srchgdeCid%3Daaaaaaaa%26t%3D0%26bc%3D\"/></head><body><script type=\"text/javascript\">window.location=\"http://dnserrorassist.att.net/search/?q=\"+escape(window.location)+\"&r=\"+escape(document.referrer)+\"&t=0&srchgdeCid=aaaaaaaa&bc=\";</script></body></html>",
+          "body_hashes": [
+            "sha256:e6ae2a59e8b0952357a4b069b8cf2c40c23b8f177d683e3a8c53da0d928d7bf2",
+            "sha1:171ee50ce19138a896c8acf992c143dc43504054"
+          ],
+          "body_hash": "sha1:171ee50ce19138a896c8acf992c143dc43504054"
+        },
+        "supports_http2": false
+      },
+      "observed_at": "2024-11-15T03:20:29.454806825Z",
+      "perspective_id": "PERSPECTIVE_TATA",
+      "port": 80,
+      "service_name": "HTTP",
+      "source_ip": "167.94.138.126",
+      "transport_protocol": "TCP",
+      "truncated": false
+    }
+  ],
+  "location": {
+    "continent": "North America",
+    "country": "United States",
+    "country_code": "US",
+    "city": "Clifton",
+    "postal_code": "07014",
+    "timezone": "America/New_York",
+    "province": "New Jersey",
+    "coordinates": {
+      "latitude": 40.8344,
+      "longitude": -74.1377
+    }
+  },
+  "location_updated_at": "2024-11-14T02:03:47.823999357Z",
+  "autonomous_system": {
+    "asn": 14061,
+    "description": "DIGITALOCEAN-ASN",
+    "bgp_prefix": "5.101.96.0/21",
+    "name": "DIGITALOCEAN-ASN",
+    "country_code": "US"
+  },
+  "autonomous_system_updated_at": "2024-11-14T02:03:47.824076949Z",
+  "whois": {
+    "network": {
+      "handle": "DIGITALOCEAN-143-244-128-0",
+      "name": "DigitalOcean, LLC",
+      "cidrs": [
+        "143.244.128.0/17"
+      ],
+      "created": "2020-01-09T00:00:00Z",
+      "updated": "2020-04-03T00:00:00Z",
+      "allocation_type": "ALLOCATION"
+    },
+    "organization": {
+      "handle": "DO-13",
+      "name": "DigitalOcean, LLC",
+      "street": "101 Ave of the Americas\\nFL2",
+      "city": "New York",
+      "state": "NY",
+      "postal_code": "10013",
+      "country": "US",
+      "abuse_contacts": [
+        {
+          "handle": "ABUSE5232-ARIN",
+          "name": "DigitalOcean Abuse",
+          "email": "abuse@digitalocean.com"
+        }
+      ],
+      "admin_contacts": [
+        {
+          "handle": "NOC32014-ARIN",
+          "name": "Network Operations Center",
+          "email": "noc@digitalocean.com"
+        }
+      ],
+      "tech_contacts": [
+        {
+          "handle": "NOC32014-ARIN",
+          "name": "Network Operations Center",
+          "email": "noc@digitalocean.com"
+        }
+      ]
+    }
+  },
+  "dns": {
+    "names": [
+      "2c8b3f19-0325-4acc-a3dd-31a918e4dbf5.random.subaruofpembrokepines.com",
+      "user81.johnharveytoyota.com",
+      "webmail.host.speedgrip.com",
+      "sv1.georgeweberchevy.com",
+      "ebooks.johnharveytoyota.com",
+      "ghmf.us",
+      "saltlake.georgeweberchevy.com",
+      "cust114.johnharveytoyota.com",
+      "www.en.georgeweberchevy.com",
+      "estore.georgeweberchevy.com",
+      "user82.johnharveytoyota.com",
+      "cpcalendars.host.speedgrip.com",
+      "user90.johnharveytoyota.com",
+      "xml.georgeweberchevy.com",
+      "gettheapp.georgeweberchevy.com",
+      "lima.georgeweberchevy.com",
+      "7164www.triconcapital.com",
+      "user86.johnharveytoyota.com",
+      "control.johnharveytoyota.com",
+      "demos.johnharveytoyota.com",
+      "bf.georgeweberchevy.com",
+      "py.georgeweberchevy.com",
+      "7266308edf6a4dc2be5ca126a42d4fa3.georgeweberchevy.com",
+      "user88.johnharveytoyota.com",
+      "www.host.speedgrip.com",
+      "host.speedgrip.com",
+      "cust16.georgeweberchevy.com",
+      "mail.host.speedgrip.com",
+      "ruifanwang.com",
+      "autoparts-cdn.johnharveytoyota.com",
+      "cpcalendars.speedgrip.com",
+      "riviera.georgeweberchevy.com",
+      "user87.johnharveytoyota.com",
+      "webmail.speedgrip.com",
+      "thesalkinsquad.com",
+      "valt.uta.edu",
+      "qa1.static.georgeweberchevy.com",
+      "magnoliathenatureclub.com",
+      "cust117.georgeweberchevy.com",
+      "www.expe.triconcapital.com",
+      "d122a80bb8654863bb976898379bdb5f.georgeweberchevy.com",
+      "www-stg.georgeweberchevy.com",
+      "disney-destinationer.georgeweberchevy.com",
+      "a.auth-ns.johnharveytoyota.com",
+      "sv1.johnharveytoyota.com",
+      "remote.ideaautogroup.com",
+      "dc.georgeweberchevy.com",
+      "desktop.georgeweberchevy.com",
+      "mirror.johnharveytoyota.com",
+      "2c8b3f19-0325-4acc-a3dd-31a918e4dbf5.random.brandontomesvw.com",
+      "2c8b3f19-0325-4acc-a3dd-31a918e4dbf5.random.johnharveytoyota.com",
+      "user85.johnharveytoyota.com",
+      "sidedoormammoth.com",
+      "oddmanoutstudio.com",
+      "electric.georgeweberchevy.com",
+      "empresas.georgeweberchevy.com",
+      "test2k.georgeweberchevy.com",
+      "www.ww.georgeweberchevy.com",
+      "eco.johnharveytoyota.com",
+      "qa-apreports24x7-cn.mycardbenefits.com",
+      "cpanel.speedgrip.com",
+      "user94.johnharveytoyota.com",
+      "user93.johnharveytoyota.com",
+      "stg.oh.georgeweberchevy.com",
+      "whm.host.speedgrip.com",
+      "kr.georgeweberchevy.com",
+      "resource.georgeweberchevy.com",
+      "tom.georgeweberchevy.com",
+      "pay.jessautocdjr.com",
+      "cpcalendars.chevyofcarlyle.kandjchevrolet.com",
+      "assets.v2.georgeweberchevy.com",
+      "user92.johnharveytoyota.com",
+      "sales.fieldplanner.encirca.georgeweberchevy.com",
+      "collab-edge.triconcapital.com",
+      "cpanel.host.speedgrip.com",
+      "apac.psb.georgeweberchevy.com",
+      "32f16b7df65f4b51bba90ac31388e4ed.georgeweberchevy.com",
+      "ets.georgeweberchevy.com",
+      "user84.johnharveytoyota.com",
+      "user83.johnharveytoyota.com",
+      "cpcontacts.speedgrip.com",
+      "user91.johnharveytoyota.com",
+      "cancerresearchuk-mkt-stage1-res.campaign.georgeweberchevy.com",
+      "user89.johnharveytoyota.com",
+      "search.ebscohost.com.ezproxy.georgeweberchevy.com",
+      "webdisk.speedgrip.com",
+      "localhost.johnharveytoyota.com",
+      "chevyofcarlyle.kandjchevrolet.com",
+      "partner.georgeweberchevy.com",
+      "lyncdiscoverinternal.johnharveytoyota.com",
+      "mail.secure.georgeweberchevy.com",
+      "cynhvsmtp.yjj.johnharveytoyota.com",
+      "derbycityhospitality.com",
+      "cpanel.derbycityhospitality.com",
+      "480e36a7793e4cd58ac0992b8d3fd892.georgeweberchevy.com",
+      "cpcontacts.host.speedgrip.com",
+      "www.pay.jessautocdjr.com",
+      "smtp.kandjchevrolet.com",
+      "carbravo.georgeweberchevy.com",
+      "cust86.johnharveytoyota.com"
+    ],
+    "records": {
+      "ghmf.us": {
+        "record_type": "A",
+        "resolved_at": "2024-11-15T03:40:35.995806610Z"
+      },
+      "oddmanoutstudio.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-10T17:56:19.383838435Z"
+      },
+      "carbravo.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-02T16:53:42.603478478Z"
+      },
+      "xml.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-10-30T16:20:57.885101119Z"
+      },
+      "autoparts-cdn.johnharveytoyota.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-06T17:01:37.424700193Z"
+      },
+      "mirror.johnharveytoyota.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-09T17:28:16.146542426Z"
+      },
+      "user93.johnharveytoyota.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-14T17:51:20.099185178Z"
+      },
+      "remote.ideaautogroup.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-11T17:35:58.260389941Z"
+      },
+      "bf.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-02T16:53:42.203889451Z"
+      },
+      "d122a80bb8654863bb976898379bdb5f.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-10-29T16:18:58.303784923Z"
+      },
+      "webmail.speedgrip.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-12T18:12:49.531955197Z"
+      },
+      "user92.johnharveytoyota.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-12T16:42:24.477868084Z"
+      },
+      "user82.johnharveytoyota.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-05T19:37:48.752204255Z"
+      },
+      "cpanel.speedgrip.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-12T18:12:48.186530756Z"
+      },
+      "control.johnharveytoyota.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-14T17:51:18.736555120Z"
+      },
+      "riviera.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-10-27T16:33:40.234081280Z"
+      },
+      "magnoliathenatureclub.com": {
+        "record_type": "A",
+        "resolved_at": "2024-10-13T17:34:47.247552760Z"
+      },
+      "eco.johnharveytoyota.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-08T16:42:17.074853550Z"
+      },
+      "cynhvsmtp.yjj.johnharveytoyota.com": {
+        "record_type": "A",
+        "resolved_at": "2024-10-22T16:43:36.805000877Z"
+      },
+      "user89.johnharveytoyota.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-07T17:10:42.048772018Z"
+      },
+      "32f16b7df65f4b51bba90ac31388e4ed.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-14T17:15:04.726691665Z"
+      },
+      "dc.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-01T16:10:08.429713987Z"
+      },
+      "chevyofcarlyle.kandjchevrolet.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-09T17:34:48.993812735Z"
+      },
+      "sidedoormammoth.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-05T21:16:10.025200785Z"
+      },
+      "www.host.speedgrip.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-11T19:38:28.346714766Z"
+      },
+      "a.auth-ns.johnharveytoyota.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-08T16:42:16.983343426Z"
+      },
+      "cust16.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-10T16:40:02.809899516Z"
+      },
+      "cust86.johnharveytoyota.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-02T17:34:16.478249529Z"
+      },
+      "user85.johnharveytoyota.com": {
+        "record_type": "A",
+        "resolved_at": "2024-10-16T16:07:03.795993173Z"
+      },
+      "lima.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-10-29T16:19:03.670015286Z"
+      },
+      "480e36a7793e4cd58ac0992b8d3fd892.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-09T16:49:28.423434386Z"
+      },
+      "cpcalendars.speedgrip.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-03T18:45:34.283616232Z"
+      },
+      "partner.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-06T16:27:01.609437385Z"
+      },
+      "user94.johnharveytoyota.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-09T17:28:18.938175570Z"
+      },
+      "whm.host.speedgrip.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-08T18:12:47.237423568Z"
+      },
+      "ruifanwang.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-12T17:46:57.750604293Z"
+      },
+      "ebooks.johnharveytoyota.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-12T16:43:38.424480541Z"
+      },
+      "disney-destinationer.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-10-28T17:18:38.975178609Z"
+      },
+      "lyncdiscoverinternal.johnharveytoyota.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-09T17:28:13.643151654Z"
+      },
+      "cancerresearchuk-mkt-stage1-res.campaign.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-04T16:42:03.982751042Z"
+      },
+      "user87.johnharveytoyota.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-12T16:42:23.540936503Z"
+      },
+      "desktop.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-14T17:15:05.090592308Z"
+      },
+      "assets.v2.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-06T16:27:01.920856626Z"
+      },
+      "user84.johnharveytoyota.com": {
+        "record_type": "A",
+        "resolved_at": "2024-10-30T17:02:25.848907380Z"
+      },
+      "2c8b3f19-0325-4acc-a3dd-31a918e4dbf5.random.johnharveytoyota.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-03T16:48:09.610063232Z"
+      },
+      "www.pay.jessautocdjr.com": {
+        "record_type": "A",
+        "resolved_at": "2024-10-20T17:07:55.220850481Z"
+      },
+      "sv1.johnharveytoyota.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-01T16:40:00.637121190Z"
+      },
+      "test2k.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-10-18T15:20:30.649976261Z"
+      },
+      "webmail.host.speedgrip.com": {
+        "record_type": "A",
+        "resolved_at": "2024-10-30T19:14:09.246886826Z"
+      },
+      "7164www.triconcapital.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-06T19:02:02.663762971Z"
+      },
+      "qa-apreports24x7-cn.mycardbenefits.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-12T17:10:33.423436586Z"
+      },
+      "cpanel.derbycityhospitality.com": {
+        "record_type": "CNAME",
+        "resolved_at": "2024-11-14T16:30:33.463567568Z"
+      },
+      "user86.johnharveytoyota.com": {
+        "record_type": "A",
+        "resolved_at": "2024-10-28T18:06:07.627128566Z"
+      },
+      "localhost.johnharveytoyota.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-05T19:37:48.136273359Z"
+      },
+      "kr.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-13T15:52:29.035376969Z"
+      },
+      "mail.secure.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-11T16:59:43.167873685Z"
+      },
+      "empresas.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-13T15:52:26.850867221Z"
+      },
+      "user90.johnharveytoyota.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-14T17:51:19.749435031Z"
+      },
+      "ets.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-08T16:09:41.190213629Z"
+      },
+      "host.speedgrip.com": {
+        "record_type": "A",
+        "resolved_at": "2024-10-25T18:51:22.168250166Z"
+      },
+      "cpcalendars.host.speedgrip.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-12T18:12:48.822792223Z"
+      },
+      "gettheapp.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-10-20T16:38:53.580878382Z"
+      },
+      "www.ww.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-08T16:09:43.911810579Z"
+      },
+      "qa1.static.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-08T16:09:43.279963682Z"
+      },
+      "py.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-10-31T17:14:17.797195357Z"
+      },
+      "sv1.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-14T17:15:05.485084415Z"
+      },
+      "electric.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-07T16:40:25.240075087Z"
+      },
+      "smtp.kandjchevrolet.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-11T17:49:45.406921294Z"
+      },
+      "search.ebscohost.com.ezproxy.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-12T16:14:50.886842974Z"
+      },
+      "www.expe.triconcapital.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-08T18:28:07.557503109Z"
+      },
+      "apac.psb.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-07T16:40:25.879918727Z"
+      },
+      "tom.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-10-17T16:06:36.412259910Z"
+      },
+      "webdisk.speedgrip.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-06T18:47:04.086246312Z"
+      },
+      "cpcalendars.chevyofcarlyle.kandjchevrolet.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-08T16:50:05.802758745Z"
+      },
+      "cust117.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-08T16:09:40.526224288Z"
+      },
+      "2c8b3f19-0325-4acc-a3dd-31a918e4dbf5.random.subaruofpembrokepines.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-02T19:42:20.145825207Z"
+      },
+      "derbycityhospitality.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-07T16:01:44.293497746Z"
+      },
+      "cpanel.host.speedgrip.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-06T18:47:03.538588661Z"
+      },
+      "user81.johnharveytoyota.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-09T17:28:16.767892810Z"
+      },
+      "user91.johnharveytoyota.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-07T17:10:42.549801528Z"
+      },
+      "stg.oh.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-10T16:40:04.220507678Z"
+      },
+      "demos.johnharveytoyota.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-10T17:16:16.451753072Z"
+      },
+      "saltlake.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-10-28T17:18:40.661155207Z"
+      },
+      "user88.johnharveytoyota.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-02T17:34:17.674545001Z"
+      },
+      "pay.jessautocdjr.com": {
+        "record_type": "A",
+        "resolved_at": "2024-10-30T17:01:44.874542357Z"
+      },
+      "cust114.johnharveytoyota.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-10T17:16:15.323233059Z"
+      },
+      "thesalkinsquad.com": {
+        "record_type": "A",
+        "resolved_at": "2024-10-07T16:49:56.507699248Z"
+      },
+      "user83.johnharveytoyota.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-09T17:28:17.842977031Z"
+      },
+      "7266308edf6a4dc2be5ca126a42d4fa3.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-10-30T16:20:52.900753743Z"
+      },
+      "cpcontacts.host.speedgrip.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-11T19:38:28.063874802Z"
+      },
+      "www-stg.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-01T16:10:20.983093729Z"
+      },
+      "mail.host.speedgrip.com": {
+        "record_type": "A",
+        "resolved_at": "2024-10-27T19:08:49.092153457Z"
+      },
+      "sales.fieldplanner.encirca.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-13T15:52:27.158916278Z"
+      },
+      "2c8b3f19-0325-4acc-a3dd-31a918e4dbf5.random.brandontomesvw.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-12T15:13:15.487726758Z"
+      },
+      "valt.uta.edu": {
+        "record_type": "A",
+        "resolved_at": "2024-11-07T20:17:32.825650309Z"
+      },
+      "collab-edge.triconcapital.com": {
+        "record_type": "A",
+        "resolved_at": "2024-10-30T19:34:48.029278239Z"
+      },
+      "resource.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-05T18:44:48.938871119Z"
+      },
+      "www.en.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-10-16T15:35:36.873711553Z"
+      },
+      "estore.georgeweberchevy.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-09T16:49:29.017066406Z"
+      },
+      "cpcontacts.speedgrip.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-09T19:15:41.749919632Z"
+      }
+    }
+  },
+  "last_updated_at": "2024-11-15T03:40:36.350Z"
+}

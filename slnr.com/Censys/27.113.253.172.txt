@@ -1,0 +1,1437 @@
+{
+  "ip": "27.113.253.172",
+  "services": [
+    {
+      "_decoded": "http",
+      "_encoding": {
+        "banner": "DISPLAY_UTF8",
+        "banner_hex": "DISPLAY_HEX"
+      },
+      "banner": "HTTP/1.0 302 Found\r\nServer: SonicWALL\r\nContent-type: text/html;charset=UTF-8\r\nX-Frame-Options: SAMEORIGIN\r\nLocation: https://27.113.253.172/sonicui/7/login/\r\n",
+      "banner_hashes": [
+        "sha256:4eb34dd43c69c1e06acb1e9ed21c2d0589c15e356cd6fcfea842971e5a79248c"
+      ],
+      "banner_hex": "485454502f312e302033303220466f756e640d0a5365727665723a20536f6e696357414c4c0d0a436f6e74656e742d747970653a20746578742f68746d6c3b636861727365743d5554462d380d0a582d4672616d652d4f7074696f6e733a2053414d454f524947494e0d0a4c6f636174696f6e3a2068747470733a2f2f32372e3131332e3235332e3137322f736f6e696375692f372f6c6f67696e2f0d0a",
+      "extended_service_name": "HTTP",
+      "http": {
+        "request": {
+          "method": "GET",
+          "uri": "http://27.113.253.172/",
+          "headers": {
+            "User_Agent": [
+              "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+            ],
+            "_encoding": {
+              "User_Agent": "DISPLAY_UTF8",
+              "Accept": "DISPLAY_UTF8"
+            },
+            "Accept": [
+              "*/*"
+            ]
+          }
+        },
+        "response": {
+          "protocol": "HTTP/1.0",
+          "status_code": 302,
+          "status_reason": "Found",
+          "headers": {
+            "Content_type": [
+              "text/html;charset=UTF-8"
+            ],
+            "_encoding": {
+              "Content_type": "DISPLAY_UTF8",
+              "X_Frame_Options": "DISPLAY_UTF8",
+              "Server": "DISPLAY_UTF8",
+              "Location": "DISPLAY_UTF8"
+            },
+            "X_Frame_Options": [
+              "SAMEORIGIN"
+            ],
+            "Server": [
+              "SonicWALL"
+            ],
+            "Location": [
+              "https://27.113.253.172/sonicui/7/login/"
+            ]
+          },
+          "_encoding": {
+            "html_tags": "DISPLAY_UTF8",
+            "body": "DISPLAY_UTF8",
+            "body_hash": "DISPLAY_UTF8",
+            "html_title": "DISPLAY_UTF8"
+          },
+          "html_tags": [
+            "<TITLE>Page Redirecting</TITLE>",
+            "<META HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">",
+            "<META HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">"
+          ],
+          "body_size": 322,
+          "body": "<HTML>\n<HEAD><TITLE>Page Redirecting</TITLE>\n<META HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">\n<META HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">\n</HEAD>\n<BODY onLoad=\"location.href = 'https://27.113.253.172/sonicui/7/login/';\">\nThis page is redirecting! Click <A HREF=\"https://27.113.253.172/sonicui/7/login/\">here</A>\n</BODY>\n</HTML>\n",
+          "body_hashes": [
+            "sha256:28fde2881ed2f503050c6c4853a24698d5b1a662f4dbd2abb49e39326717cf53",
+            "sha1:fa485fb8b67a383be71085f26d2876fdc29c57e8"
+          ],
+          "body_hash": "sha1:fa485fb8b67a383be71085f26d2876fdc29c57e8",
+          "html_title": "Page Redirecting"
+        },
+        "supports_http2": false
+      },
+      "labels": [
+        "network.device"
+      ],
+      "observed_at": "2024-11-14T06:22:05.289444298Z",
+      "perspective_id": "PERSPECTIVE_ORANGE",
+      "port": 80,
+      "service_name": "HTTP",
+      "software": [
+        {
+          "uniform_resource_identifier": "cpe:2.3:a:sonicwall:http:*:*:*:*:*:*:*:*",
+          "part": "a",
+          "vendor": "SonicWall",
+          "product": "HTTP",
+          "source": "OSI_APPLICATION_LAYER"
+        },
+        {
+          "part": "h",
+          "vendor": "SonicWall",
+          "other": {
+            "device": "VPN"
+          },
+          "source": "OSI_APPLICATION_LAYER"
+        },
+        {
+          "uniform_resource_identifier": "cpe:2.3:o:sonicwall:sonicos:*:*:*:*:*:*:*:*",
+          "part": "o",
+          "vendor": "SonicWall",
+          "product": "SonicOS",
+          "other": {
+            "family": "SSL-VPN",
+            "device": "VPN"
+          },
+          "source": "OSI_APPLICATION_LAYER"
+        }
+      ],
+      "source_ip": "167.94.145.103",
+      "transport_protocol": "TCP",
+      "truncated": false
+    },
+    {
+      "_decoded": "http",
+      "_encoding": {
+        "banner": "DISPLAY_UTF8",
+        "banner_hex": "DISPLAY_HEX"
+      },
+      "banner": "HTTP/1.1 200 OK\r\nCache-Control: private\r\nContent-Type: text/html; charset=utf-8\r\nContent-Encoding: gzip\r\nVary: Accept-Encoding\r\nServer: Microsoft-IIS/10.0\r\nX-AspNetMvc-Version: 5.2\r\nX-AspNet-Version: 4.0.30319\r\nX-Powered-By: ASP.NET\r\nDate:  <REDACTED>\r\nContent-Length: 1423\r\n",
+      "banner_hashes": [
+        "sha256:fca0491861da34e748bafef8bd6dafeeeeb71cc8154a9e2b7d1f3e1da399413c"
+      ],
+      "banner_hex": "485454502f312e3120323030204f4b0d0a43616368652d436f6e74726f6c3a20707269766174650d0a436f6e74656e742d547970653a20746578742f68746d6c3b20636861727365743d7574662d380d0a436f6e74656e742d456e636f64696e673a20677a69700d0a566172793a204163636570742d456e636f64696e670d0a5365727665723a204d6963726f736f66742d4949532f31302e300d0a582d4173704e65744d76632d56657273696f6e3a20352e320d0a582d4173704e65742d56657273696f6e3a20342e302e33303331390d0a582d506f77657265642d42793a204153502e4e45540d0a446174653a20203c52454441435445443e0d0a436f6e74656e742d4c656e6774683a20313432330d0a",
+      "discovery_method": "PREDICTIVE_METHOD_18",
+      "extended_service_name": "HTTP",
+      "http": {
+        "request": {
+          "method": "GET",
+          "uri": "http://27.113.253.172:81/",
+          "headers": {
+            "User_Agent": [
+              "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+            ],
+            "_encoding": {
+              "User_Agent": "DISPLAY_UTF8",
+              "Accept": "DISPLAY_UTF8"
+            },
+            "Accept": [
+              "*/*"
+            ]
+          }
+        },
+        "response": {
+          "protocol": "HTTP/1.1",
+          "status_code": 200,
+          "status_reason": "OK",
+          "headers": {
+            "Vary": [
+              "Accept-Encoding"
+            ],
+            "_encoding": {
+              "Vary": "DISPLAY_UTF8",
+              "Cache_Control": "DISPLAY_UTF8",
+              "Server": "DISPLAY_UTF8",
+              "Content_Length": "DISPLAY_UTF8",
+              "Content_Type": "DISPLAY_UTF8",
+              "Date": "DISPLAY_UTF8",
+              "Content_Encoding": "DISPLAY_UTF8",
+              "X_AspNet_Version": "DISPLAY_UTF8",
+              "X_AspNetMvc_Version": "DISPLAY_UTF8",
+              "X_Powered_By": "DISPLAY_UTF8"
+            },
+            "Cache_Control": [
+              "private"
+            ],
+            "Server": [
+              "Microsoft-IIS/10.0"
+            ],
+            "Content_Length": [
+              "1423"
+            ],
+            "Content_Type": [
+              "text/html; charset=utf-8"
+            ],
+            "Date": [
+              "<REDACTED>"
+            ],
+            "Content_Encoding": [
+              "gzip"
+            ],
+            "X_AspNet_Version": [
+              "4.0.30319"
+            ],
+            "X_AspNetMvc_Version": [
+              "5.2"
+            ],
+            "X_Powered_By": [
+              "ASP.NET"
+            ]
+          },
+          "_encoding": {
+            "html_tags": "DISPLAY_UTF8",
+            "body": "DISPLAY_UTF8",
+            "body_hash": "DISPLAY_UTF8",
+            "html_title": "DISPLAY_UTF8"
+          },
+          "html_tags": [
+            "<title>Home Page</title>",
+            "<meta charset=\"utf-8\" />",
+            "<meta name=\"viewport\" content=\"width=device-width\" />"
+          ],
+          "body_size": 3006,
+          "body": "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>Home Page</title>\r\n    <link href=\"/Content/css?v=fd5y8-7ZPYUJ8STqdssF29NWglxw9qUJxJR2urhcAhk1\" rel=\"stylesheet\"/>\r\n\r\n    <script src=\"/bundles/modernizr?v=inCVuEFe6J4Q07A0AcRsbJic_UE5MwpRMNGcOtk94TE1\"></script>\r\n\r\n</head>\r\n<body>\r\n    <div class=\"navbar navbar-inverse navbar-fixed-top\">\r\n        <div class=\"container\">\r\n            <div class=\"navbar-header\">\r\n                <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-collapse\">\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                </button>\r\n                <a class=\"navbar-brand\" href=\"/\">Application name</a>\r\n            </div>\r\n            <div class=\"navbar-collapse collapse\">\r\n                <ul class=\"nav navbar-nav\">\r\n                    <li><a href=\"/\">Home</a></li>\r\n                    <li><a href=\"/Help\">API</a></li>\r\n                </ul>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"container body-content\">\r\n        \r\n<div class=\"jumbotron\">\r\n    <h1>ASP.NET</h1>\r\n    <p class=\"lead\">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>\r\n    <p><a href=\"https://asp.net\" class=\"btn btn-primary btn-lg\">Learn more &raquo;</a></p>\r\n</div>\r\n<div class=\"row\">\r\n    <div class=\"col-md-4\">\r\n        <h2>Getting started</h2>\r\n        <p>ASP.NET Web API is a framework that makes it easy to build HTTP services that reach\r\n        a broad range of clients, including browsers and mobile devices. ASP.NET Web API\r\n        is an ideal platform for building RESTful applications on the .NET Framework.</p>\r\n        <p><a class=\"btn btn-default\" href=\"https://go.microsoft.com/fwlink/?LinkId=301870\">Learn more &raquo;</a></p>\r\n    </div>\r\n    <div class=\"col-md-4\">\r\n        <h2>Get more libraries</h2>\r\n        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>\r\n        <p><a class=\"btn btn-default\" href=\"https://go.microsoft.com/fwlink/?LinkId=301871\">Learn more &raquo;</a></p>\r\n    </div>\r\n    <div class=\"col-md-4\">\r\n        <h2>Web Hosting</h2>\r\n        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>\r\n        <p><a class=\"btn btn-default\" href=\"https://go.microsoft.com/fwlink/?LinkId=301872\">Learn more &raquo;</a></p>\r\n    </div>\r\n</div>\r\n\r\n        <hr />\r\n        <footer>\r\n            <p>&copy; 2024 - My ASP.NET Application</p>\r\n        </footer>\r\n    </div>\r\n   \r\n    <script src=\"/bundles/jquery?v=2u0aRenDpYxArEyILB59ETSCA2cfQkSMlxb6jbMBqf81\"></script>\r\n\r\n    <script src=\"/bundles/bootstrap?v=M4Nk6kIOwMFflsEKET0iPL9i5YBqbzMzvUOrd8gyCnw1\"></script>\r\n\r\n    \r\n</body>\r\n</html>\r\n",
+          "favicons": [
+            {
+              "size": 32038,
+              "name": "http://27.113.253.172:81/favicon.ico",
+              "md5_hash": "4859e39ae6c0f1f428f2126a6bb32bd9",
+              "hashes": [
+                "md5:4859e39ae6c0f1f428f2126a6bb32bd9",
+                "sha256:a94f8a8553caea8430dd4ca3cc01d4e318d19828f74cb65453ffb7f5d9e2f44d"
+              ],
+              "shodan_hash": 1772087922
+            }
+          ],
+          "body_hashes": [
+            "sha256:8182ad93d9b785ccad9a6353a103eac37d3521f58a0360191b6d7908dc9acb6e",
+            "sha1:116f8e1f8ae9104f446f18b8e76c9407f5fab4cf"
+          ],
+          "body_hash": "sha1:116f8e1f8ae9104f446f18b8e76c9407f5fab4cf",
+          "html_title": "Home Page"
+        },
+        "supports_http2": false
+      },
+      "labels": [
+        "jquery"
+      ],
+      "observed_at": "2024-11-15T01:44:27.302254740Z",
+      "perspective_id": "PERSPECTIVE_ORANGE",
+      "port": 81,
+      "service_name": "HTTP",
+      "software": [
+        {
+          "part": "o",
+          "vendor": "Microsoft",
+          "other": {
+            "family": "Windows"
+          },
+          "source": "OSI_APPLICATION_LAYER"
+        },
+        {
+          "uniform_resource_identifier": "cpe:2.3:a:microsoft:internet_information_services:10.0:*:*:*:*:*:*:*",
+          "part": "a",
+          "vendor": "Microsoft",
+          "product": "IIS",
+          "version": "10.0",
+          "other": {
+            "family": "IIS"
+          },
+          "source": "OSI_APPLICATION_LAYER"
+        },
+        {
+          "uniform_resource_identifier": "cpe:2.3:a:microsoft:asp.net:*:*:*:*:*:*:*:*",
+          "part": "a",
+          "vendor": "Microsoft",
+          "product": "ASP.NET",
+          "source": "OSI_APPLICATION_LAYER"
+        }
+      ],
+      "source_ip": "167.94.145.98",
+      "transport_protocol": "TCP",
+      "truncated": false
+    },
+    {
+      "_decoded": "http",
+      "_encoding": {
+        "banner": "DISPLAY_UTF8",
+        "banner_hex": "DISPLAY_HEX"
+      },
+      "banner": "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\nContent-Encoding: gzip\r\nLast-Modified: Tue, 02 Oct 2018 08:24:13 GMT\r\nAccept-Ranges:  none\r\nETag: \"da21344d295ad41:0\"\r\nVary: Accept-Encoding\r\nServer: Microsoft-IIS/10.0\r\nX-Powered-By: ASP.NET\r\nDate:  <REDACTED>\r\nContent-Length: 594\r\n",
+      "banner_hashes": [
+        "sha256:2cceb2fa4edfbd0732fac771cbfe2c835d55f91e79278a88c654c82750c56682"
+      ],
+      "banner_hex": "485454502f312e3120323030204f4b0d0a436f6e74656e742d547970653a20746578742f68746d6c0d0a436f6e74656e742d456e636f64696e673a20677a69700d0a4c6173742d4d6f6469666965643a205475652c203032204f637420323031382030383a32343a313320474d540d0a4163636570742d52616e6765733a20206e6f6e650d0a455461673a20226461323133343464323935616434313a30220d0a566172793a204163636570742d456e636f64696e670d0a5365727665723a204d6963726f736f66742d4949532f31302e300d0a582d506f77657265642d42793a204153502e4e45540d0a446174653a20203c52454441435445443e0d0a436f6e74656e742d4c656e6774683a203539340d0a",
+      "discovery_method": "PREDICTIVE_METHOD_14",
+      "extended_service_name": "HTTP",
+      "http": {
+        "request": {
+          "method": "GET",
+          "uri": "http://27.113.253.172:82/",
+          "headers": {
+            "User_Agent": [
+              "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+            ],
+            "_encoding": {
+              "User_Agent": "DISPLAY_UTF8",
+              "Accept": "DISPLAY_UTF8"
+            },
+            "Accept": [
+              "*/*"
+            ]
+          }
+        },
+        "response": {
+          "protocol": "HTTP/1.1",
+          "status_code": 200,
+          "status_reason": "OK",
+          "headers": {
+            "Vary": [
+              "Accept-Encoding"
+            ],
+            "_encoding": {
+              "Vary": "DISPLAY_UTF8",
+              "Server": "DISPLAY_UTF8",
+              "Content_Length": "DISPLAY_UTF8",
+              "Content_Type": "DISPLAY_UTF8",
+              "Accept_Ranges": "DISPLAY_UTF8",
+              "Date": "DISPLAY_UTF8",
+              "Content_Encoding": "DISPLAY_UTF8",
+              "ETag": "DISPLAY_UTF8",
+              "X_Powered_By": "DISPLAY_UTF8",
+              "Last_Modified": "DISPLAY_UTF8"
+            },
+            "Server": [
+              "Microsoft-IIS/10.0"
+            ],
+            "Content_Length": [
+              "594"
+            ],
+            "Content_Type": [
+              "text/html"
+            ],
+            "Accept_Ranges": [
+              "none"
+            ],
+            "Date": [
+              "<REDACTED>"
+            ],
+            "Content_Encoding": [
+              "gzip"
+            ],
+            "ETag": [
+              "\"da21344d295ad41:0\""
+            ],
+            "X_Powered_By": [
+              "ASP.NET"
+            ],
+            "Last_Modified": [
+              "Tue, 02 Oct 2018 08:24:13 GMT"
+            ]
+          },
+          "_encoding": {
+            "html_tags": "DISPLAY_UTF8",
+            "body": "DISPLAY_UTF8",
+            "body_hash": "DISPLAY_UTF8",
+            "html_title": "DISPLAY_UTF8"
+          },
+          "html_tags": [
+            "<title>IIS7</title>",
+            "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\" />"
+          ],
+          "body_size": 689,
+          "body": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\" />\r\n<title>IIS7</title>\r\n<style type=\"text/css\">\r\n<!--\r\nbody {\r\n\tcolor:#000000;\r\n\tbackground-color:#B3B3B3;\r\n\tmargin:0;\r\n}\r\n\r\n#container {\r\n\tmargin-left:auto;\r\n\tmargin-right:auto;\r\n\ttext-align:center;\r\n\t}\r\n\r\na img {\r\n\tborder:none;\r\n}\r\n\r\n-->\r\n</style>\r\n</head>\r\n<body>\r\n<div id=\"container\">\r\n<a href=\"http://go.microsoft.com/fwlink/?linkid=66138&amp;clcid=0x409\"><img src=\"welcome.png\" alt=\"IIS7\" width=\"571\" height=\"411\" /></a>\r\n</div>\r\n</body>\r\n</html>",
+          "body_hashes": [
+            "sha256:370be45f65276b3b8de42a29adfb1220fc44a5e018c37e3e9b62fa7d5b523fd0",
+            "sha1:bc517bf173440dad15b99a051389fadc366d5df2"
+          ],
+          "body_hash": "sha1:bc517bf173440dad15b99a051389fadc366d5df2",
+          "html_title": "IIS7"
+        },
+        "supports_http2": false
+      },
+      "labels": [
+        "default-landing-page"
+      ],
+      "observed_at": "2024-11-14T05:18:41.137523939Z",
+      "perspective_id": "PERSPECTIVE_HE",
+      "port": 82,
+      "service_name": "HTTP",
+      "software": [
+        {
+          "part": "o",
+          "vendor": "Microsoft",
+          "other": {
+            "family": "Windows"
+          },
+          "source": "OSI_APPLICATION_LAYER"
+        },
+        {
+          "uniform_resource_identifier": "cpe:2.3:a:microsoft:internet_information_services:10.0:*:*:*:*:*:*:*",
+          "part": "a",
+          "vendor": "Microsoft",
+          "product": "IIS",
+          "version": "10.0",
+          "other": {
+            "family": "IIS"
+          },
+          "source": "OSI_APPLICATION_LAYER"
+        },
+        {
+          "uniform_resource_identifier": "cpe:2.3:o:microsoft:windows:*:*:*:*:*:*:*:*",
+          "part": "o",
+          "vendor": "Microsoft",
+          "product": "Windows",
+          "other": {
+            "family": "Windows"
+          },
+          "source": "OSI_APPLICATION_LAYER"
+        },
+        {
+          "uniform_resource_identifier": "cpe:2.3:a:microsoft:asp.net:*:*:*:*:*:*:*:*",
+          "part": "a",
+          "vendor": "Microsoft",
+          "product": "ASP.NET",
+          "source": "OSI_APPLICATION_LAYER"
+        }
+      ],
+      "source_ip": "162.142.125.36",
+      "transport_protocol": "TCP",
+      "truncated": false
+    },
+    {
+      "_decoded": "http",
+      "_encoding": {
+        "banner": "DISPLAY_UTF8",
+        "certificate": "DISPLAY_HEX",
+        "banner_hex": "DISPLAY_HEX"
+      },
+      "banner": "HTTP/1.1 200 OK\r\nContent-Type: text/html; charset=UTF-8\r\nContent-Encoding: gzip\r\nVary: Accept-Encoding\r\nServer: Microsoft-IIS/10.0\r\nX-Powered-By: ASP.NET\r\nDate:  <REDACTED>\r\nContent-Length: 530\r\n",
+      "banner_hashes": [
+        "sha256:7f8df710f7c6faaf609c1e009e83176c840345e9d2d26f2bc6db2b1b9b10f296"
+      ],
+      "banner_hex": "485454502f312e3120323030204f4b0d0a436f6e74656e742d547970653a20746578742f68746d6c3b20636861727365743d5554462d380d0a436f6e74656e742d456e636f64696e673a20677a69700d0a566172793a204163636570742d456e636f64696e670d0a5365727665723a204d6963726f736f66742d4949532f31302e300d0a582d506f77657265642d42793a204153502e4e45540d0a446174653a20203c52454441435445443e0d0a436f6e74656e742d4c656e6774683a203533300d0a",
+      "certificate": "4af524f347ea1abe542bf123bc7c66be91bff20f6845f40ca59000b036bc06f9",
+      "discovery_method": "PREDICTIVE_METHOD_14",
+      "extended_service_name": "HTTPS",
+      "http": {
+        "request": {
+          "method": "GET",
+          "uri": "https://27.113.253.172:83/",
+          "headers": {
+            "User_Agent": [
+              "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+            ],
+            "_encoding": {
+              "User_Agent": "DISPLAY_UTF8",
+              "Accept": "DISPLAY_UTF8"
+            },
+            "Accept": [
+              "*/*"
+            ]
+          }
+        },
+        "response": {
+          "protocol": "HTTP/1.1",
+          "status_code": 200,
+          "status_reason": "OK",
+          "headers": {
+            "Vary": [
+              "Accept-Encoding"
+            ],
+            "_encoding": {
+              "Vary": "DISPLAY_UTF8",
+              "Server": "DISPLAY_UTF8",
+              "Content_Length": "DISPLAY_UTF8",
+              "Content_Type": "DISPLAY_UTF8",
+              "Date": "DISPLAY_UTF8",
+              "Content_Encoding": "DISPLAY_UTF8",
+              "X_Powered_By": "DISPLAY_UTF8"
+            },
+            "Server": [
+              "Microsoft-IIS/10.0"
+            ],
+            "Content_Length": [
+              "530"
+            ],
+            "Content_Type": [
+              "text/html; charset=UTF-8"
+            ],
+            "Date": [
+              "<REDACTED>"
+            ],
+            "Content_Encoding": [
+              "gzip"
+            ],
+            "X_Powered_By": [
+              "ASP.NET"
+            ]
+          },
+          "_encoding": {
+            "html_tags": "DISPLAY_UTF8",
+            "body": "DISPLAY_UTF8",
+            "body_hash": "DISPLAY_UTF8",
+            "html_title": "DISPLAY_UTF8"
+          },
+          "html_tags": [
+            "<title>27.113.253.172 - /</title>"
+          ],
+          "body_size": 990,
+          "body": "<html><head><title>27.113.253.172 - /</title></head><body><H1>27.113.253.172 - /</H1><hr>\r\n\r\n<pre> 8/28/2023  4:45 PM         7010 <A HREF=\"/01Web.config\">01Web.config</A><br> 2/13/2024  2:08 PM        &lt;dir&gt; <A HREF=\"/ASP_Form/\">ASP_Form</A><br> 2/13/2024  2:08 PM        &lt;dir&gt; <A HREF=\"/aspnet_client/\">aspnet_client</A><br> 2/13/2024  2:11 PM        &lt;dir&gt; <A HREF=\"/bin/\">bin</A><br> 4/18/2019  6:41 PM          131 <A HREF=\"/CMOnlineAppSrvc.svc\">CMOnlineAppSrvc.svc</A><br>10/30/2024 10:06 AM        &lt;dir&gt; <A HREF=\"/Errorlog/\">Errorlog</A><br> 4/18/2019  6:41 PM          102 <A HREF=\"/Global.asax\">Global.asax</A><br>  5/1/2024 11:46 AM         6579 <A HREF=\"/OldWeb.config\">OldWeb.config</A><br> 7/30/2024  9:04 PM           49 <A HREF=\"/PrecompiledApp.config\">PrecompiledApp.config</A><br> 2/13/2024  2:08 PM        &lt;dir&gt; <A HREF=\"/Uploads/\">Uploads</A><br> 2/14/2024 10:03 AM         7053 <A HREF=\"/Web.config\">Web.config</A><br></pre><hr></body></html>",
+          "body_hashes": [
+            "sha256:2fe12e58560abedbdfc9d04f8242c3d0d715153737a3ea3f50498306407fb787",
+            "sha1:f3f683282f3c47e1aee2e60147e2ca34d5f74352"
+          ],
+          "body_hash": "sha1:f3f683282f3c47e1aee2e60147e2ca34d5f74352",
+          "html_title": "27.113.253.172 - /"
+        },
+        "supports_http2": true
+      },
+      "labels": [
+        "open-dir"
+      ],
+      "observed_at": "2024-11-13T04:17:14.537971581Z",
+      "perspective_id": "PERSPECTIVE_TELIA",
+      "port": 83,
+      "service_name": "HTTP",
+      "software": [
+        {
+          "part": "o",
+          "vendor": "Microsoft",
+          "other": {
+            "family": "Windows"
+          },
+          "source": "OSI_APPLICATION_LAYER"
+        },
+        {
+          "uniform_resource_identifier": "cpe:2.3:a:microsoft:internet_information_services:10.0:*:*:*:*:*:*:*",
+          "part": "a",
+          "vendor": "Microsoft",
+          "product": "IIS",
+          "version": "10.0",
+          "other": {
+            "family": "IIS"
+          },
+          "source": "OSI_APPLICATION_LAYER"
+        },
+        {
+          "uniform_resource_identifier": "cpe:2.3:a:microsoft:asp.net:*:*:*:*:*:*:*:*",
+          "part": "a",
+          "vendor": "Microsoft",
+          "product": "ASP.NET",
+          "source": "OSI_APPLICATION_LAYER"
+        }
+      ],
+      "source_ip": "167.94.146.55",
+      "tls": {
+        "version_selected": "TLSv1_2",
+        "cipher_selected": "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+        "certificates": {
+          "_encoding": {
+            "leaf_fp_sha_256": "DISPLAY_HEX"
+          },
+          "leaf_fp_sha_256": "4af524f347ea1abe542bf123bc7c66be91bff20f6845f40ca59000b036bc06f9",
+          "leaf_data": {
+            "names": [
+              "192.168.1.5"
+            ],
+            "subject_dn": "CN=192.168.1.5",
+            "issuer_dn": "CN=192.168.1.5",
+            "pubkey_bit_size": 2048,
+            "pubkey_algorithm": "RSA",
+            "tbs_fingerprint": "0001f8c02b8d287db65db0d8798f1c6ea65faf897fc0e32a7e01fc1440474c3b",
+            "fingerprint": "4af524f347ea1abe542bf123bc7c66be91bff20f6845f40ca59000b036bc06f9",
+            "issuer": {
+              "common_name": [
+                "192.168.1.5"
+              ]
+            },
+            "subject": {
+              "common_name": [
+                "192.168.1.5"
+              ]
+            },
+            "public_key": {
+              "key_algorithm": "RSA",
+              "rsa": {
+                "_encoding": {
+                  "modulus": "DISPLAY_BASE64",
+                  "exponent": "DISPLAY_BASE64"
+                },
+                "modulus": "7KfU2qjToPEclQ/Ece1SdfF0uUxrpSOFmS1pUSewVdJQaihTUw0TzebEmr1mf8df7LEmpVl4pUVLyxZ6rgA5uH4a69yZY6eVeCYCGxJg7Nf/+tKYdDErNvvhqnzIykHuioDqZBCEJpeaVL0bDJQBrQzM4ro7bBwd9g7cC4jl1Ui1X8LfeLceuc7VfR3FcESM3u4lQhbW/MAmMAawwMadQUMIzPUj7rkciGFY7RZmUFGTq9YavWFESmHFnMYn55XpUff6i+AFn9+lbzVeUbmcltwhOWvXiR7g8kxBoB6fe/Vdo4wLCIPs4eu7eA5Z8pvY/I+o5DtMqkh0ET2tM57JnQ==",
+                "exponent": "AAEAAQ==",
+                "length": 256
+              },
+              "fingerprint": "485b678ab7d4b54f0aace530a7ecb0fcc083e8080b247269b8d8336f2fd88a6e"
+            },
+            "signature": {
+              "self_signed": true,
+              "signature_algorithm": "SHA1-RSA"
+            }
+          }
+        },
+        "server_key_exchange": {
+          "ec_params": {
+            "named_curve": 24
+          }
+        },
+        "_encoding": {
+          "ja3s": "DISPLAY_HEX"
+        },
+        "ja3s": "364ff14b04ef93c3b4cfa429d729c0d9",
+        "ja4s": "t120100_c030_bc98f8e001b5",
+        "versions": [
+          {
+            "tls_version": "TLSv1_2",
+            "_encoding": {
+              "ja3s": "DISPLAY_HEX"
+            },
+            "ja3s": "364ff14b04ef93c3b4cfa429d729c0d9",
+            "ja4s": "t120100_c030_bc98f8e001b5"
+          },
+          {
+            "tls_version": "TLSv1_1",
+            "_encoding": {
+              "ja3s": "DISPLAY_HEX"
+            },
+            "ja3s": "1308be477c8afb355e2860ab89378ae5",
+            "ja4s": "t110100_c014_bc98f8e001b5"
+          },
+          {
+            "tls_version": "TLSv1_0",
+            "_encoding": {
+              "ja3s": "DISPLAY_HEX"
+            },
+            "ja3s": "bcf3a836c82d12ee988005fb0c011445",
+            "ja4s": "t100100_c014_bc98f8e001b5"
+          }
+        ]
+      },
+      "transport_protocol": "TCP",
+      "truncated": false
+    },
+    {
+      "_decoded": "http",
+      "_encoding": {
+        "banner": "DISPLAY_UTF8",
+        "certificate": "DISPLAY_HEX",
+        "banner_hex": "DISPLAY_HEX"
+      },
+      "banner": "HTTP/1.1 200 OK\r\nServer: SonicWALL\r\nCache-Control: no-store, max-age=0\r\nContent-type: text/html; charset=UTF-8;\r\nX-Content-Type-Options: nosniff\r\nX-XSS-Protection: 1; mode=block\r\nX-Frame-Options: SAMEORIGIN\r\nContent-Security-Policy: default-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: ws: wss: sonicwall.com *.sonicwall.com;\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nPermissions-Policy: microphone=()\r\nContent-Encoding: gzip\r\n",
+      "banner_hashes": [
+        "sha256:1afa17caf4609410716ab77c2b57313ef6ef2ec9fd1b80cd734b54fd6fab6369"
+      ],
+      "banner_hex": "485454502f312e3120323030204f4b0d0a5365727665723a20536f6e696357414c4c0d0a43616368652d436f6e74726f6c3a206e6f2d73746f72652c206d61782d6167653d300d0a436f6e74656e742d747970653a20746578742f68746d6c3b20636861727365743d5554462d383b0d0a582d436f6e74656e742d547970652d4f7074696f6e733a206e6f736e6966660d0a582d5853532d50726f74656374696f6e3a20313b206d6f64653d626c6f636b0d0a582d4672616d652d4f7074696f6e733a2053414d454f524947494e0d0a436f6e74656e742d53656375726974792d506f6c6963793a2064656661756c742d737263202773656c66272027756e736166652d696e6c696e65272027756e736166652d6576616c2720626c6f623a20646174613a2077733a207773733a20736f6e696377616c6c2e636f6d202a2e736f6e696377616c6c2e636f6d3b0d0a5374726963742d5472616e73706f72742d53656375726974793a206d61782d6167653d33313533363030303b20696e636c756465537562446f6d61696e730d0a52656665727265722d506f6c6963793a207374726963742d6f726967696e2d7768656e2d63726f73732d6f726967696e0d0a5065726d697373696f6e732d506f6c6963793a206d6963726f70686f6e653d28290d0a436f6e74656e742d456e636f64696e673a20677a69700d0a",
+      "certificate": "82223639ed75ee06d4d58f436d97b33f11511d2deec865abf2b6ac41603ff2ea",
+      "extended_service_name": "HTTPS",
+      "http": {
+        "request": {
+          "method": "GET",
+          "uri": "https://27.113.253.172/sonicui/7/login/",
+          "headers": {
+            "User_Agent": [
+              "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+            ],
+            "_encoding": {
+              "User_Agent": "DISPLAY_UTF8",
+              "Accept": "DISPLAY_UTF8"
+            },
+            "Accept": [
+              "*/*"
+            ]
+          }
+        },
+        "response": {
+          "protocol": "HTTP/1.1",
+          "status_code": 200,
+          "status_reason": "OK",
+          "headers": {
+            "Content_type": [
+              "text/html; charset=UTF-8;"
+            ],
+            "_encoding": {
+              "Content_type": "DISPLAY_UTF8",
+              "X_Frame_Options": "DISPLAY_UTF8",
+              "Server": "DISPLAY_UTF8",
+              "X_XSS_Protection": "DISPLAY_UTF8",
+              "Cache_Control": "DISPLAY_UTF8",
+              "Content_Security_Policy": "DISPLAY_UTF8",
+              "Strict_Transport_Security": "DISPLAY_UTF8",
+              "X_Content_Type_Options": "DISPLAY_UTF8",
+              "Content_Encoding": "DISPLAY_UTF8",
+              "Referrer_Policy": "DISPLAY_UTF8",
+              "Permissions_Policy": "DISPLAY_UTF8"
+            },
+            "X_Frame_Options": [
+              "SAMEORIGIN"
+            ],
+            "Server": [
+              "SonicWALL"
+            ],
+            "X_XSS_Protection": [
+              "1; mode=block"
+            ],
+            "Cache_Control": [
+              "no-store, max-age=0"
+            ],
+            "Content_Security_Policy": [
+              "default-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: ws: wss: sonicwall.com *.sonicwall.com;"
+            ],
+            "Strict_Transport_Security": [
+              "max-age=31536000; includeSubDomains"
+            ],
+            "X_Content_Type_Options": [
+              "nosniff"
+            ],
+            "Content_Encoding": [
+              "gzip"
+            ],
+            "Referrer_Policy": [
+              "strict-origin-when-cross-origin"
+            ],
+            "Permissions_Policy": [
+              "microphone=()"
+            ]
+          },
+          "_encoding": {
+            "html_tags": "DISPLAY_UTF8",
+            "body": "DISPLAY_UTF8",
+            "body_hash": "DISPLAY_UTF8",
+            "html_title": "DISPLAY_UTF8"
+          },
+          "html_tags": [
+            "<title>SonicWall Network Security Login</title>",
+            "<meta charset=utf-8>",
+            "<meta name=viewport content=\"width=device-width,initial-scale=1\">",
+            "<meta name=referrer content=origin>"
+          ],
+          "body_size": 2428,
+          "body": "<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><meta name=referrer content=origin><title>SonicWall Network Security Login</title><style type=text/css>html, body { margin: 0; }\n      .path-svg { display: block; }\n      .index-loading-cont {\n        width: 100vw;\n        height: 100vh;\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        justify-content: center;\n      }\n      .index-loading-logo {\n        flex: none;\n        width: 66px;\n        height: 42px;\n        background-color: #ff791a;\n        clip-path: url(#logoPath);\n        animation: 3s linear 1s infinite normal logo-color;\n      }\n      .index-loading-text {\n        flex: none;\n        margin-top: 10px;\n        color: #68696b;\n        font-size: 18px;\n        font-weight: 600;\n        font-family: Arial, Helvetica, sans-serif;\n      }\n\n      @keyframes logo-color {\n        0% { background-color: #ff791a; }\n        33% { background-color: #99cc00; }\n        66% { background-color: #47afe8; }\n        100% { background-color: #ff791a; }\n      }</style><link href=/sonicui/7/login/static/css/vendors~login.1f80bc7adfbb5a9b1dfa.css rel=stylesheet><link href=/sonicui/7/login/static/css/vendors~login-login~otp~tfa~eea27cf0.225b2a2ba68e12120e28.css rel=prefetch><link href=/sonicui/7/login/static/css/vendors~login-login~tfa.60a84d9bf98d9a19837a.css rel=prefetch><link href=/sonicui/7/login/static/css/login-login.e824e4892d4a5b06e8c8.css rel=prefetch><link href=/sonicui/7/login/static/css/confirm.c6e0e7d59ccdc1d01f9b.css rel=prefetch><link href=/sonicui/7/login/static/css/logout.90343d72ad8a0c0aee34.css rel=prefetch></head><body><div id=app><svg class=path-svg width=0 height=0><defs><clipPath id=logoPath transform=\"scale(0.9,0.9) translate(-328,-34)\"><path d=\"M361.127,80.32 C361.127,80.32 335.036,70.926 329.282,55.294 C322.841,37.794 346.724,33.8 371.153,34.495 C384.318,34.87 400.408,36.873 400.408,36.873 C400.408,36.873 362.396,41.713 348.659,52.797 C335.246,63.621 361.127,80.32 361.127,80.32\"></path></clipPath></defs></svg><div class=index-loading-cont><div class=index-loading-logo></div><span class=index-loading-text>Loading Login App ...</span></div></div><script src=/sonicui/7/login/static/js/vendors~login.4d92b1e1c4c9725e7443.js></script><script src=/sonicui/7/login/static/js/login.21d872f3d9f92387e758.js></script></body></html>",
+          "body_hashes": [
+            "sha256:82422a14fb868ae1e1fb93430b9fb340e4580c335219a5f23c30830747a766c9",
+            "sha1:178cdb846791185a61b6d0865c77d8338dfa1b0a"
+          ],
+          "body_hash": "sha1:178cdb846791185a61b6d0865c77d8338dfa1b0a",
+          "html_title": "SonicWall Network Security Login"
+        },
+        "supports_http2": false
+      },
+      "jarm": {
+        "_encoding": {
+          "fingerprint": "DISPLAY_HEX",
+          "cipher_and_version_fingerprint": "DISPLAY_HEX",
+          "tls_extensions_sha256": "DISPLAY_HEX"
+        },
+        "fingerprint": "2ad2ad0002ad2ad00042d42d000000ad9bf51cc3f5a1e29eecb81d0c7b06eb",
+        "cipher_and_version_fingerprint": "2ad2ad0002ad2ad00042d42d000000",
+        "tls_extensions_sha256": "ad9bf51cc3f5a1e29eecb81d0c7b06eb",
+        "observed_at": "2024-11-11T04:47:14.439704653Z"
+      },
+      "labels": [
+        "login-page",
+        "network.device"
+      ],
+      "observed_at": "2024-11-14T04:13:15.391098360Z",
+      "perspective_id": "PERSPECTIVE_HE",
+      "port": 443,
+      "service_name": "HTTP",
+      "software": [
+        {
+          "uniform_resource_identifier": "cpe:2.3:o:*:linux:*:*:*:*:*:*:*:*",
+          "part": "o",
+          "product": "linux",
+          "source": "OSI_TRANSPORT_LAYER"
+        },
+        {
+          "uniform_resource_identifier": "cpe:2.3:a:sonicwall:http:*:*:*:*:*:*:*:*",
+          "part": "a",
+          "vendor": "SonicWall",
+          "product": "HTTP",
+          "source": "OSI_APPLICATION_LAYER"
+        },
+        {
+          "part": "h",
+          "vendor": "SonicWall",
+          "other": {
+            "device": "VPN"
+          },
+          "source": "OSI_APPLICATION_LAYER"
+        },
+        {
+          "uniform_resource_identifier": "cpe:2.3:o:sonicwall:sonicos:*:*:*:*:*:*:*:*",
+          "part": "o",
+          "vendor": "SonicWall",
+          "product": "SonicOS",
+          "other": {
+            "family": "SSL-VPN",
+            "device": "VPN"
+          },
+          "source": "OSI_APPLICATION_LAYER"
+        }
+      ],
+      "source_ip": "162.142.125.39",
+      "tls": {
+        "version_selected": "TLSv1_3",
+        "cipher_selected": "TLS_AES_256_GCM_SHA384",
+        "certificates": {
+          "_encoding": {
+            "leaf_fp_sha_256": "DISPLAY_HEX"
+          },
+          "leaf_fp_sha_256": "82223639ed75ee06d4d58f436d97b33f11511d2deec865abf2b6ac41603ff2ea",
+          "leaf_data": {
+            "names": [
+              "192.168.168.168"
+            ],
+            "subject_dn": "C=US, ST=California, L=Sunnyvale, O=HTTPS Management Certificate for SonicWALL (self-signed), OU=HTTPS Management Certificate for SonicWALL (self-signed), CN=192.168.168.168",
+            "issuer_dn": "C=US, ST=California, L=Sunnyvale, O=HTTPS Management Certificate for SonicWALL (self-signed), OU=HTTPS Management Certificate for SonicWALL (self-signed), CN=192.168.168.168",
+            "pubkey_bit_size": 2048,
+            "pubkey_algorithm": "RSA",
+            "tbs_fingerprint": "554d2f5846cab88b26177e4d9dd7244ad55a4e35a299c36a323e5b096599a462",
+            "fingerprint": "82223639ed75ee06d4d58f436d97b33f11511d2deec865abf2b6ac41603ff2ea",
+            "issuer": {
+              "common_name": [
+                "192.168.168.168"
+              ],
+              "locality": [
+                "Sunnyvale"
+              ],
+              "organization": [
+                "HTTPS Management Certificate for SonicWALL (self-signed)"
+              ],
+              "organizational_unit": [
+                "HTTPS Management Certificate for SonicWALL (self-signed)"
+              ],
+              "province": [
+                "California"
+              ],
+              "country": [
+                "US"
+              ]
+            },
+            "subject": {
+              "common_name": [
+                "192.168.168.168"
+              ],
+              "locality": [
+                "Sunnyvale"
+              ],
+              "organization": [
+                "HTTPS Management Certificate for SonicWALL (self-signed)"
+              ],
+              "organizational_unit": [
+                "HTTPS Management Certificate for SonicWALL (self-signed)"
+              ],
+              "province": [
+                "California"
+              ],
+              "country": [
+                "US"
+              ]
+            },
+            "public_key": {
+              "key_algorithm": "RSA",
+              "rsa": {
+                "_encoding": {
+                  "modulus": "DISPLAY_BASE64",
+                  "exponent": "DISPLAY_BASE64"
+                },
+                "modulus": "1RSJtaphhHGmPSZ6aYcJEa5GCHZJtYD936EMA7T3NtHlpBKx5QBWWK7nuJiQaM91Tgl9li4c4vrlXxAQKwULJ5N0G3Ge5XEatkX6UwhL4fNCo3YoBIS+VzcQbOwMlQLFA7IicTzngdC+9XRY6negxQpfrWQ9uaDmHLiTLrO/nuaumcvagN7BumdANLMnQy0IedVVXHlJi82ke23Q7ritqmQqrKYihZA1NBzLTjMII3u9R8ayDHgu0d5ttUwXQF8vdGZhT30npwppvIWkO2TIGDmqcUOlfc3/ONlIHQt3VgYcBwIdm0UXVh5IapPfK3vQ60WUAzX4WN92ixeksUD2Cw==",
+                "exponent": "AAEAAQ==",
+                "length": 256
+              },
+              "fingerprint": "dc923be5de359e63a08ebd8b8dc4057b4bb98f86de4b83d1dc7b922b8e11026c"
+            },
+            "signature": {
+              "self_signed": true,
+              "signature_algorithm": "SHA256-RSA"
+            }
+          }
+        },
+        "_encoding": {
+          "ja3s": "DISPLAY_HEX"
+        },
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4s": "t130200_1302_a56c5b993250",
+        "versions": [
+          {
+            "tls_version": "TLSv1_3",
+            "_encoding": {
+              "ja3s": "DISPLAY_HEX"
+            },
+            "ja3s": "15af977ce25de452b96affa2addb1036",
+            "ja4s": "t130200_1302_a56c5b993250"
+          },
+          {
+            "tls_version": "TLSv1_2",
+            "_encoding": {
+              "ja3s": "DISPLAY_HEX"
+            },
+            "ja3s": "0debd3853f330c574b05e0b6d882dc27",
+            "ja4s": "t120200_c030_344b4dce5a52"
+          }
+        ]
+      },
+      "transport_fingerprint": {
+        "id": 72,
+        "os": "Ubuntu / Debian / CentOS",
+        "raw": "28960,64,true,MSTNW,1460,false,false"
+      },
+      "transport_protocol": "TCP",
+      "truncated": false
+    },
+    {
+      "_decoded": "ike",
+      "extended_service_name": "IKE",
+      "ike": {
+        "v1": {
+          "supported": true,
+          "accepted_proposal": true,
+          "_encoding": {
+            "vendor_ids": "DISPLAY_BASE64"
+          },
+          "vendor_ids": [
+            "WzYryCD2AAc="
+          ],
+          "notify_message_types": []
+        },
+        "v2": {
+          "supported": true,
+          "notify_message_types": [
+            7
+          ],
+          "accepted_proposal": false
+        }
+      },
+      "observed_at": "2024-11-14T02:01:57.961260133Z",
+      "perspective_id": "PERSPECTIVE_TATA",
+      "port": 500,
+      "service_name": "IKE",
+      "source_ip": "167.94.138.51",
+      "transport_protocol": "UDP",
+      "truncated": false
+    },
+    {
+      "_decoded": "http",
+      "_encoding": {
+        "banner": "DISPLAY_UTF8",
+        "certificate": "DISPLAY_HEX",
+        "banner_hex": "DISPLAY_HEX"
+      },
+      "banner": "HTTP/1.1 200 OK\r\nServer: Web Server\r\nCache-Control: no-store, max-age=0\r\nContent-type: text/html; charset=UTF-8;\r\nX-Content-Type-Options: nosniff\r\nX-XSS-Protection: 1; mode=block\r\nX-Frame-Options: SAMEORIGIN\r\nContent-Security-Policy: default-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: ws: wss:;\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nPermissions-Policy: microphone=()\r\nContent-Encoding: gzip\r\n",
+      "banner_hashes": [
+        "sha256:dd532d429b8c1b8a0efbdeca8bb199f4dc5fbb9020e6db66f15a879fef25f885"
+      ],
+      "banner_hex": "485454502f312e3120323030204f4b0d0a5365727665723a20576562205365727665720d0a43616368652d436f6e74726f6c3a206e6f2d73746f72652c206d61782d6167653d300d0a436f6e74656e742d747970653a20746578742f68746d6c3b20636861727365743d5554462d383b0d0a582d436f6e74656e742d547970652d4f7074696f6e733a206e6f736e6966660d0a582d5853532d50726f74656374696f6e3a20313b206d6f64653d626c6f636b0d0a582d4672616d652d4f7074696f6e733a2053414d454f524947494e0d0a436f6e74656e742d53656375726974792d506f6c6963793a2064656661756c742d737263202773656c66272027756e736166652d696e6c696e65272027756e736166652d6576616c2720626c6f623a20646174613a2077733a207773733a3b0d0a5374726963742d5472616e73706f72742d53656375726974793a206d61782d6167653d33313533363030303b20696e636c756465537562446f6d61696e730d0a52656665727265722d506f6c6963793a207374726963742d6f726967696e2d7768656e2d63726f73732d6f726967696e0d0a5065726d697373696f6e732d506f6c6963793a206d6963726f70686f6e653d28290d0a436f6e74656e742d456e636f64696e673a20677a69700d0a",
+      "certificate": "82223639ed75ee06d4d58f436d97b33f11511d2deec865abf2b6ac41603ff2ea",
+      "extended_service_name": "HTTPS",
+      "http": {
+        "request": {
+          "method": "GET",
+          "uri": "https://27.113.253.172:4433/",
+          "headers": {
+            "User_Agent": [
+              "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+            ],
+            "_encoding": {
+              "User_Agent": "DISPLAY_UTF8",
+              "Accept": "DISPLAY_UTF8"
+            },
+            "Accept": [
+              "*/*"
+            ]
+          }
+        },
+        "response": {
+          "protocol": "HTTP/1.1",
+          "status_code": 200,
+          "status_reason": "OK",
+          "headers": {
+            "Content_type": [
+              "text/html; charset=UTF-8;"
+            ],
+            "_encoding": {
+              "Content_type": "DISPLAY_UTF8",
+              "X_Frame_Options": "DISPLAY_UTF8",
+              "Server": "DISPLAY_UTF8",
+              "X_XSS_Protection": "DISPLAY_UTF8",
+              "Cache_Control": "DISPLAY_UTF8",
+              "Content_Security_Policy": "DISPLAY_UTF8",
+              "Strict_Transport_Security": "DISPLAY_UTF8",
+              "X_Content_Type_Options": "DISPLAY_UTF8",
+              "Content_Encoding": "DISPLAY_UTF8",
+              "Referrer_Policy": "DISPLAY_UTF8",
+              "Permissions_Policy": "DISPLAY_UTF8"
+            },
+            "X_Frame_Options": [
+              "SAMEORIGIN"
+            ],
+            "Server": [
+              "Web Server"
+            ],
+            "X_XSS_Protection": [
+              "1; mode=block"
+            ],
+            "Cache_Control": [
+              "no-store, max-age=0"
+            ],
+            "Content_Security_Policy": [
+              "default-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: ws: wss:;"
+            ],
+            "Strict_Transport_Security": [
+              "max-age=31536000; includeSubDomains"
+            ],
+            "X_Content_Type_Options": [
+              "nosniff"
+            ],
+            "Content_Encoding": [
+              "gzip"
+            ],
+            "Referrer_Policy": [
+              "strict-origin-when-cross-origin"
+            ],
+            "Permissions_Policy": [
+              "microphone=()"
+            ]
+          },
+          "_encoding": {
+            "html_tags": "DISPLAY_UTF8",
+            "body": "DISPLAY_UTF8",
+            "body_hash": "DISPLAY_UTF8",
+            "html_title": "DISPLAY_UTF8"
+          },
+          "html_tags": [
+            "<title></title>",
+            "<meta charset=utf-8>",
+            "<meta name=viewport content=\"width=device-width,initial-scale=1\">"
+          ],
+          "body_size": 947,
+          "body": "<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title></title><link href=/sonicui/7/sslvpn-portal/static/css/vendors~sslvpnPortal.a635d7b07f48d8c32133.css rel=stylesheet><link href=/sonicui/7/sslvpn-portal/static/css/login-login.2d724d32497fb24d56fa.css rel=prefetch><link href=/sonicui/7/sslvpn-portal/static/css/logout.90343d72ad8a0c0aee34.css rel=prefetch><link href=/sonicui/7/sslvpn-portal/static/css/otp.a652b42ebd954af362fb.css rel=prefetch><link href=/sonicui/7/sslvpn-portal/static/css/totp.b9cafa616890f50ea2dd.css rel=prefetch><link href=/sonicui/7/sslvpn-portal/static/css/update-pw.eee24c5e086d134c663a.css rel=prefetch></head><body><div id=sslvpn-portal></div><script src=/sonicui/7/sslvpn-portal/static/js/vendors~sslvpnPortal.bb12d4668428dc1bd573.js></script><script src=/sonicui/7/sslvpn-portal/static/js/sslvpnPortal.15f7c6590baeb7eb9317.js></script></body></html>",
+          "body_hashes": [
+            "sha256:6afd1fc2018af99189c1ec83e25851da92826e6752acfebe422f6af3848a2d23",
+            "sha1:d36a59a326f59569f6eccaa40bcda963f0739b5b"
+          ],
+          "body_hash": "sha1:d36a59a326f59569f6eccaa40bcda963f0739b5b",
+          "html_title": ""
+        },
+        "supports_http2": false
+      },
+      "observed_at": "2024-11-14T04:09:29.826739428Z",
+      "perspective_id": "PERSPECTIVE_HE",
+      "port": 4433,
+      "service_name": "HTTP",
+      "source_ip": "162.142.125.213",
+      "tls": {
+        "version_selected": "TLSv1_3",
+        "cipher_selected": "TLS_AES_256_GCM_SHA384",
+        "certificates": {
+          "_encoding": {
+            "leaf_fp_sha_256": "DISPLAY_HEX"
+          },
+          "leaf_fp_sha_256": "82223639ed75ee06d4d58f436d97b33f11511d2deec865abf2b6ac41603ff2ea",
+          "leaf_data": {
+            "names": [
+              "192.168.168.168"
+            ],
+            "subject_dn": "C=US, ST=California, L=Sunnyvale, O=HTTPS Management Certificate for SonicWALL (self-signed), OU=HTTPS Management Certificate for SonicWALL (self-signed), CN=192.168.168.168",
+            "issuer_dn": "C=US, ST=California, L=Sunnyvale, O=HTTPS Management Certificate for SonicWALL (self-signed), OU=HTTPS Management Certificate for SonicWALL (self-signed), CN=192.168.168.168",
+            "pubkey_bit_size": 2048,
+            "pubkey_algorithm": "RSA",
+            "tbs_fingerprint": "554d2f5846cab88b26177e4d9dd7244ad55a4e35a299c36a323e5b096599a462",
+            "fingerprint": "82223639ed75ee06d4d58f436d97b33f11511d2deec865abf2b6ac41603ff2ea",
+            "issuer": {
+              "common_name": [
+                "192.168.168.168"
+              ],
+              "locality": [
+                "Sunnyvale"
+              ],
+              "organization": [
+                "HTTPS Management Certificate for SonicWALL (self-signed)"
+              ],
+              "organizational_unit": [
+                "HTTPS Management Certificate for SonicWALL (self-signed)"
+              ],
+              "province": [
+                "California"
+              ],
+              "country": [
+                "US"
+              ]
+            },
+            "subject": {
+              "common_name": [
+                "192.168.168.168"
+              ],
+              "locality": [
+                "Sunnyvale"
+              ],
+              "organization": [
+                "HTTPS Management Certificate for SonicWALL (self-signed)"
+              ],
+              "organizational_unit": [
+                "HTTPS Management Certificate for SonicWALL (self-signed)"
+              ],
+              "province": [
+                "California"
+              ],
+              "country": [
+                "US"
+              ]
+            },
+            "public_key": {
+              "key_algorithm": "RSA",
+              "rsa": {
+                "_encoding": {
+                  "modulus": "DISPLAY_BASE64",
+                  "exponent": "DISPLAY_BASE64"
+                },
+                "modulus": "1RSJtaphhHGmPSZ6aYcJEa5GCHZJtYD936EMA7T3NtHlpBKx5QBWWK7nuJiQaM91Tgl9li4c4vrlXxAQKwULJ5N0G3Ge5XEatkX6UwhL4fNCo3YoBIS+VzcQbOwMlQLFA7IicTzngdC+9XRY6negxQpfrWQ9uaDmHLiTLrO/nuaumcvagN7BumdANLMnQy0IedVVXHlJi82ke23Q7ritqmQqrKYihZA1NBzLTjMII3u9R8ayDHgu0d5ttUwXQF8vdGZhT30npwppvIWkO2TIGDmqcUOlfc3/ONlIHQt3VgYcBwIdm0UXVh5IapPfK3vQ60WUAzX4WN92ixeksUD2Cw==",
+                "exponent": "AAEAAQ==",
+                "length": 256
+              },
+              "fingerprint": "dc923be5de359e63a08ebd8b8dc4057b4bb98f86de4b83d1dc7b922b8e11026c"
+            },
+            "signature": {
+              "self_signed": true,
+              "signature_algorithm": "SHA256-RSA"
+            }
+          }
+        },
+        "_encoding": {
+          "ja3s": "DISPLAY_HEX"
+        },
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4s": "t130200_1302_a56c5b993250",
+        "versions": [
+          {
+            "tls_version": "TLSv1_3",
+            "_encoding": {
+              "ja3s": "DISPLAY_HEX"
+            },
+            "ja3s": "15af977ce25de452b96affa2addb1036",
+            "ja4s": "t130200_1302_a56c5b993250"
+          },
+          {
+            "tls_version": "TLSv1_2",
+            "_encoding": {
+              "ja3s": "DISPLAY_HEX"
+            },
+            "ja3s": "0debd3853f330c574b05e0b6d882dc27",
+            "ja4s": "t120200_c030_344b4dce5a52"
+          }
+        ]
+      },
+      "transport_fingerprint": {
+        "raw": "65535,255,true,MNWST,1460,false,false"
+      },
+      "transport_protocol": "TCP",
+      "truncated": false
+    },
+    {
+      "_decoded": "http",
+      "_encoding": {
+        "banner": "DISPLAY_UTF8",
+        "certificate": "DISPLAY_HEX",
+        "banner_hex": "DISPLAY_HEX"
+      },
+      "banner": "HTTP/1.1 400 Bad Request\r\nContent-Type: text/html; charset=us-ascii\r\nServer: Microsoft-HTTPAPI/2.0\r\nDate:  <REDACTED>\r\nConnection: close\r\nContent-Length: 334\r\n",
+      "banner_hashes": [
+        "sha256:29298e562ed96657efcb840c0a4539eb78e550b87d3bf2978d2eee1df4706542"
+      ],
+      "banner_hex": "485454502f312e31203430302042616420526571756573740d0a436f6e74656e742d547970653a20746578742f68746d6c3b20636861727365743d75732d61736369690d0a5365727665723a204d6963726f736f66742d485454504150492f322e300d0a446174653a20203c52454441435445443e0d0a436f6e6e656374696f6e3a20636c6f73650d0a436f6e74656e742d4c656e6774683a203333340d0a",
+      "certificate": "dc01221d26bd1d8e419de575a65fcfa8a0c8cf59a70c9b4f7fbbae4cbe2489c9",
+      "discovery_method": "PREDICTIVE_METHOD_23",
+      "extended_service_name": "HTTPS",
+      "http": {
+        "request": {
+          "method": "GET",
+          "uri": "https://27.113.253.172:4443/",
+          "headers": {
+            "User_Agent": [
+              "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+            ],
+            "_encoding": {
+              "User_Agent": "DISPLAY_UTF8",
+              "Accept": "DISPLAY_UTF8"
+            },
+            "Accept": [
+              "*/*"
+            ]
+          }
+        },
+        "response": {
+          "protocol": "HTTP/1.1",
+          "status_code": 400,
+          "status_reason": "Bad Request",
+          "headers": {
+            "Date": [
+              "<REDACTED>"
+            ],
+            "_encoding": {
+              "Date": "DISPLAY_UTF8",
+              "Server": "DISPLAY_UTF8",
+              "Content_Length": "DISPLAY_UTF8",
+              "Content_Type": "DISPLAY_UTF8",
+              "Connection": "DISPLAY_UTF8"
+            },
+            "Server": [
+              "Microsoft-HTTPAPI/2.0"
+            ],
+            "Content_Length": [
+              "334"
+            ],
+            "Content_Type": [
+              "text/html; charset=us-ascii"
+            ],
+            "Connection": [
+              "close"
+            ]
+          },
+          "_encoding": {
+            "html_tags": "DISPLAY_UTF8",
+            "body": "DISPLAY_UTF8",
+            "body_hash": "DISPLAY_UTF8",
+            "html_title": "DISPLAY_UTF8"
+          },
+          "html_tags": [
+            "<TITLE>Bad Request</TITLE>",
+            "<META HTTP-EQUIV=\"Content-Type\" Content=\"text/html; charset=us-ascii\">"
+          ],
+          "body_size": 334,
+          "body": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\"\"http://www.w3.org/TR/html4/strict.dtd\">\r\n<HTML><HEAD><TITLE>Bad Request</TITLE>\r\n<META HTTP-EQUIV=\"Content-Type\" Content=\"text/html; charset=us-ascii\"></HEAD>\r\n<BODY><h2>Bad Request - Invalid Hostname</h2>\r\n<hr><p>HTTP Error 400. The request hostname is invalid.</p>\r\n</BODY></HTML>\r\n",
+          "body_hashes": [
+            "sha256:11817d8de31dfa9c918df2e6be30a8ecd778b72362f65825b29dc0e0c617db35",
+            "sha1:ec0a74912bbab9320d8b25cfe4193df2c05c8380"
+          ],
+          "body_hash": "sha1:ec0a74912bbab9320d8b25cfe4193df2c05c8380",
+          "html_title": "Bad Request"
+        },
+        "supports_http2": true
+      },
+      "jarm": {
+        "_encoding": {
+          "fingerprint": "DISPLAY_HEX",
+          "cipher_and_version_fingerprint": "DISPLAY_HEX",
+          "tls_extensions_sha256": "DISPLAY_HEX"
+        },
+        "fingerprint": "2ad2ad16d00000022c2ad2ad2ad2ad46ff59a659b30fd8aeaa6755c67691b4",
+        "cipher_and_version_fingerprint": "2ad2ad16d00000022c2ad2ad2ad2ad",
+        "tls_extensions_sha256": "46ff59a659b30fd8aeaa6755c67691b4",
+        "observed_at": "2024-11-13T06:25:28.832301980Z"
+      },
+      "observed_at": "2024-11-14T10:03:09.059572321Z",
+      "perspective_id": "PERSPECTIVE_TELIA",
+      "port": 4443,
+      "service_name": "HTTP",
+      "software": [
+        {
+          "uniform_resource_identifier": "cpe:2.3:o:microsoft:windows:*:*:*:*:*:*:*:*",
+          "part": "o",
+          "vendor": "Microsoft",
+          "product": "Windows",
+          "other": {
+            "family": "Windows"
+          },
+          "source": "OSI_APPLICATION_LAYER"
+        },
+        {
+          "uniform_resource_identifier": "cpe:2.3:a:microsoft:http_api:2.0:*:*:*:*:*:*:*",
+          "part": "a",
+          "vendor": "Microsoft",
+          "product": "HTTP API",
+          "version": "2.0",
+          "source": "OSI_APPLICATION_LAYER"
+        }
+      ],
+      "source_ip": "167.94.146.53",
+      "tls": {
+        "version_selected": "TLSv1_2",
+        "cipher_selected": "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+        "certificates": {
+          "_encoding": {
+            "leaf_fp_sha_256": "DISPLAY_HEX",
+            "chain_fps_sha_256": "DISPLAY_HEX"
+          },
+          "leaf_fp_sha_256": "dc01221d26bd1d8e419de575a65fcfa8a0c8cf59a70c9b4f7fbbae4cbe2489c9",
+          "chain_fps_sha_256": [
+            "43cac31ef8e8ba1b4b16b8206e4c0a26c5badb2fc3aa09e90170e41b66c2fd64"
+          ],
+          "leaf_data": {
+            "names": [
+              "mclerp.madhavcopper.com",
+              "www.mclerp.madhavcopper.com"
+            ],
+            "subject_dn": "CN=mclerp.madhavcopper.com",
+            "issuer_dn": "C=LV, L=Riga, O=GoGetSSL, CN=GoGetSSL RSA DV CA",
+            "pubkey_bit_size": 4096,
+            "pubkey_algorithm": "RSA",
+            "tbs_fingerprint": "a2c81a87510fb4b31762cace7ef780fe86c6e70583733cdb8eb0ee5f71877722",
+            "fingerprint": "dc01221d26bd1d8e419de575a65fcfa8a0c8cf59a70c9b4f7fbbae4cbe2489c9",
+            "issuer": {
+              "common_name": [
+                "GoGetSSL RSA DV CA"
+              ],
+              "locality": [
+                "Riga"
+              ],
+              "organization": [
+                "GoGetSSL"
+              ],
+              "country": [
+                "LV"
+              ]
+            },
+            "subject": {
+              "common_name": [
+                "mclerp.madhavcopper.com"
+              ]
+            },
+            "public_key": {
+              "key_algorithm": "RSA",
+              "rsa": {
+                "_encoding": {
+                  "modulus": "DISPLAY_BASE64",
+                  "exponent": "DISPLAY_BASE64"
+                },
+                "modulus": "1k/73UMI2TJTEOfcPqowaz0QLa83PTpVoQur5kGpA3zoyXiwoIWMFhTC0+xaP/N50OHF1h7zxpgGJeSjwXTS/3aLqrMITe2jnhSszyKlK4xS56SSyYkhcp1NqyCEmKlVqvbsPnXexxLj4aG8tTzadsep1FqRznaxSMpyz8Mhp04o8eBqSVlKiKhqPg5Nx7A1D6AZ5ASA64diZKZLqxCHjMqewxAlTALLyfCroyZGklJDyrY2o1/7zk0GBD6vZ21tHNHGmxlApxQcafw6MzoP6HjH8VL5fqyrmWYcajInzwXWxlBPAIEQ2QCDQPxSC8l3sTZUyRg0V508g6cFjDQxTT89wkIbCsH7QpUS94rMNnWxt1n19M86XNy49YVbm5SSXOUSvDPA3aoJ4BYG8tehKlLQOgEQ2nHTDZizseoGavWnE8ltfDy5NTKsxuLlE607214X0QLTYDLg/anNQznOBlapO7TJUFEbw1l/tAYrGHmBpTHkeSmhORxUhjHuEi0LpO4YuPThHUxAdfjYYAMzcS6LYy+YH0PIytKByHyyAFMFIbANQLlOTxtt4LeIbZ9PT8Ix189lHGNf400Hj0huPR/NIL5shLgFpg/F+DTWJrf3ERp2Wh+c4AiuOLfRISoJyJxTJsWiXJf4PCsxuSjAhhgKRIUKOpu25m5hAaY0Nwk=",
+                "exponent": "AAEAAQ==",
+                "length": 512
+              },
+              "fingerprint": "b2abffb2c520259ac6e84de25026b54744d38da7ee015de1ac9fb68f710be57c"
+            },
+            "signature": {
+              "signature_algorithm": "SHA256-RSA",
+              "self_signed": false
+            }
+          },
+          "chain": [
+            {
+              "fingerprint": "43cac31ef8e8ba1b4b16b8206e4c0a26c5badb2fc3aa09e90170e41b66c2fd64",
+              "subject_dn": "C=LV, L=Riga, O=GoGetSSL, CN=GoGetSSL RSA DV CA",
+              "issuer_dn": "C=US, ST=New Jersey, L=Jersey City, O=The USERTRUST Network, CN=USERTrust RSA Certification Authority"
+            }
+          ]
+        },
+        "server_key_exchange": {
+          "ec_params": {
+            "named_curve": 24
+          }
+        },
+        "_encoding": {
+          "ja3s": "DISPLAY_HEX"
+        },
+        "ja3s": "1d9c3e8c45ab7a2112263449a3ad9ece",
+        "ja4s": "t120200_c030_fee41c0d62a8",
+        "versions": [
+          {
+            "tls_version": "TLSv1_2",
+            "_encoding": {
+              "ja3s": "DISPLAY_HEX"
+            },
+            "ja3s": "1d9c3e8c45ab7a2112263449a3ad9ece",
+            "ja4s": "t120200_c030_fee41c0d62a8"
+          },
+          {
+            "tls_version": "TLSv1_1",
+            "_encoding": {
+              "ja3s": "DISPLAY_HEX"
+            },
+            "ja3s": "26336690a8f7aafc732cffde53dc8f72",
+            "ja4s": "t110200_c014_fee41c0d62a8"
+          },
+          {
+            "tls_version": "TLSv1_0",
+            "_encoding": {
+              "ja3s": "DISPLAY_HEX"
+            },
+            "ja3s": "e69f6e9634d5dabcd8f3162b12fe4fbf",
+            "ja4s": "t100200_c014_fee41c0d62a8"
+          }
+        ]
+      },
+      "transport_protocol": "TCP",
+      "truncated": false
+    }
+  ],
+  "location": {
+    "continent": "Asia",
+    "country": "India",
+    "country_code": "IN",
+    "city": "Bhavnagar",
+    "postal_code": "364001",
+    "timezone": "Asia/Kolkata",
+    "province": "Gujarat",
+    "coordinates": {
+      "latitude": 21.76287,
+      "longitude": 72.15331
+    }
+  },
+  "location_updated_at": "2024-11-11T15:02:02.302605631Z",
+  "autonomous_system": {
+    "asn": 131215,
+    "description": "SANCHARONLINE-IN 116 MADHAV DARSHAN",
+    "bgp_prefix": "27.113.252.0/24",
+    "name": "SANCHARONLINE-IN 116 MADHAV DARSHAN",
+    "country_code": "IN"
+  },
+  "autonomous_system_updated_at": "2024-11-11T15:02:02.302674916Z",
+  "whois": {
+    "network": {
+      "handle": "SANCHARONLINE-CUST",
+      "name": "SANCHARONOLINE IP POOL",
+      "cidrs": [
+        "27.113.253.0/24"
+      ],
+      "updated": "2010-07-17T00:00:00Z"
+    }
+  },
+  "operating_system": {
+    "uniform_resource_identifier": "cpe:2.3:o:microsoft:windows:*:*:*:*:*:*:*:*",
+    "part": "o",
+    "vendor": "Microsoft",
+    "product": "Windows",
+    "other": {
+      "family": "Windows"
+    }
+  },
+  "dns": {
+    "names": [
+      "mclerp.madhavcopper.com"
+    ],
+    "records": {
+      "mclerp.madhavcopper.com": {
+        "record_type": "A",
+        "resolved_at": "2024-11-06T17:19:01.754412153Z"
+      }
+    },
+    "reverse_dns": {
+      "names": [
+        "27-113-253-172.sancharonline.net"
+      ],
+      "resolved_at": "2024-11-10T16:11:07.781249087Z"
+    }
+  },
+  "last_updated_at": "2024-11-15T01:44:29.333Z",
+  "labels": [
+    "default-landing-page",
+    "jquery",
+    "login-page",
+    "network.device",
+    "open-dir"
+  ]
+}

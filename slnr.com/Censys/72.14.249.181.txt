@@ -1,0 +1,585 @@
+{
+  "ip": "72.14.249.181",
+  "services": [
+    {
+      "_decoded": "smtp",
+      "_encoding": {
+        "banner": "DISPLAY_UTF8",
+        "certificate": "DISPLAY_HEX",
+        "banner_hex": "DISPLAY_HEX"
+      },
+      "banner": "220 mx.google.com ESMTP d9443c01a7336-211c7c28f42sm9203915ad.33 - gsmtp\r\n",
+      "banner_hashes": [
+        "sha256:ecbb74dec4256af0a1e3a8c7d0022b0fa08795e46e83d1d6110b4cb85a530c50"
+      ],
+      "banner_hex": "323230206d782e676f6f676c652e636f6d2045534d545020643934343363303161373333362d3231316337633238663432736d3932303339313561642e3333202d2067736d74700d0a",
+      "certificate": "6bca3e2f831ea7e37497129eb80d832208d647e0b435434a520366bb5ee0a04c",
+      "extended_service_name": "SMTP-STARTTLS",
+      "labels": [
+        "email"
+      ],
+      "observed_at": "2024-11-14T11:56:06.561284802Z",
+      "perspective_id": "PERSPECTIVE_NTT_2",
+      "port": 25,
+      "service_name": "SMTP",
+      "smtp": {
+        "_encoding": {
+          "banner": "DISPLAY_UTF8",
+          "ehlo": "DISPLAY_UTF8",
+          "start_tls": "DISPLAY_UTF8"
+        },
+        "banner": "220 mx.google.com ESMTP d9443c01a7336-211c7c28f42sm9203915ad.33 - gsmtp\r\n",
+        "ehlo": "250-mx.google.com at your service, [199.45.155.102]\r\n250-SIZE 35882577\r\n250-8BITMIME\r\n250-STARTTLS\r\n250-ENHANCEDSTATUSCODES\r\n250-PIPELINING\r\n250-CHUNKING\r\n250 SMTPUTF8\r\n",
+        "start_tls": "220 2.0.0 Ready to start TLS\r\n"
+      },
+      "source_ip": "199.45.155.102",
+      "tls": {
+        "version_selected": "TLSv1_3",
+        "cipher_selected": "TLS_CHACHA20_POLY1305_SHA256",
+        "certificates": {
+          "_encoding": {
+            "leaf_fp_sha_256": "DISPLAY_HEX",
+            "chain_fps_sha_256": "DISPLAY_HEX"
+          },
+          "leaf_fp_sha_256": "6bca3e2f831ea7e37497129eb80d832208d647e0b435434a520366bb5ee0a04c",
+          "chain_fps_sha_256": [
+            "dc9416c2f855126d6de977677538f2f967ff4998e90dfa435a17219be077fc06",
+            "3ee0278df71fa3c125c4cd487f01d774694e6fc57e0cd94c24efd769133918e5"
+          ],
+          "leaf_data": {
+            "names": [
+              "smtp.gmail.com"
+            ],
+            "subject_dn": "CN=smtp.gmail.com",
+            "issuer_dn": "C=US, O=Google Trust Services, CN=WR4",
+            "pubkey_bit_size": 2048,
+            "pubkey_algorithm": "RSA",
+            "tbs_fingerprint": "3a44eb60e41582022e0074762bf5f282bb9908544f5dd70ee627e6ac41833618",
+            "fingerprint": "6bca3e2f831ea7e37497129eb80d832208d647e0b435434a520366bb5ee0a04c",
+            "issuer": {
+              "common_name": [
+                "WR4"
+              ],
+              "organization": [
+                "Google Trust Services"
+              ],
+              "country": [
+                "US"
+              ]
+            },
+            "subject": {
+              "common_name": [
+                "smtp.gmail.com"
+              ]
+            },
+            "public_key": {
+              "key_algorithm": "RSA",
+              "rsa": {
+                "_encoding": {
+                  "modulus": "DISPLAY_BASE64",
+                  "exponent": "DISPLAY_BASE64"
+                },
+                "modulus": "riZohiD2N7t+GJBArKPwwH9To24XSz6BfiJgs83qdywjzMKxUCWnyJMl9rMRIpcAIKHYj5gMaN/8925eBCL1PsM7y49rC2hbiJq7wWjTyR0ihC5TlqOf2vXLMHDXLUqdSN3HBSS9W39vMhFMsdZ1jRyBT8OqQYkXsHtscgwp3BkmA1Gq/BcviT0N28JHhfdtlltE3t0neP4hwZxm248/B1Ga+IWu/UZ2e7XSJCIVU9GdjRGqvOrVMlw3pX5S6hYQ0CiqWCeZXX6KlQYz0mKS6bGWMRPclfxMfYBc8zg0ErFWh0ROSvTTNP9GV40gpzJ2hOWvuqT39gFnuKIpZLyL+w==",
+                "exponent": "AAEAAQ==",
+                "length": 256
+              },
+              "fingerprint": "71d960c9bb3b611cb63434e657d299bf68ee79c7288080d10f8ec67aabd0173a"
+            },
+            "signature": {
+              "signature_algorithm": "SHA256-RSA",
+              "self_signed": false
+            }
+          },
+          "chain": [
+            {
+              "fingerprint": "dc9416c2f855126d6de977677538f2f967ff4998e90dfa435a17219be077fc06",
+              "subject_dn": "C=US, O=Google Trust Services, CN=WR4",
+              "issuer_dn": "C=US, O=Google Trust Services LLC, CN=GTS Root R1"
+            },
+            {
+              "fingerprint": "3ee0278df71fa3c125c4cd487f01d774694e6fc57e0cd94c24efd769133918e5",
+              "subject_dn": "C=US, O=Google Trust Services LLC, CN=GTS Root R1",
+              "issuer_dn": "C=BE, O=GlobalSign nv-sa, OU=Root CA, CN=GlobalSign Root CA"
+            }
+          ]
+        },
+        "_encoding": {
+          "ja3s": "DISPLAY_HEX"
+        },
+        "ja3s": "d75f9129bb5d05492a65ff78e081bcb2",
+        "ja4s": "t130200_1303_234ea6891581"
+      },
+      "transport_protocol": "TCP",
+      "truncated": false
+    },
+    {
+      "_decoded": "http",
+      "_encoding": {
+        "banner": "DISPLAY_UTF8",
+        "banner_hex": "DISPLAY_HEX"
+      },
+      "banner": "HTTP/1.1 404 Not Found\r\nDate:  <REDACTED>\r\nContent-Type: text/html; charset=UTF-8\r\nServer: ghs\r\nContent-Length: 1561\r\nX-XSS-Protection: 0\r\nX-Frame-Options: SAMEORIGIN\r\n",
+      "banner_hashes": [
+        "sha256:d711abe42f66f6cee9b12dcd53e5146c9716473f8dd882e3fdfb415107204839"
+      ],
+      "banner_hex": "485454502f312e3120343034204e6f7420466f756e640d0a446174653a20203c52454441435445443e0d0a436f6e74656e742d547970653a20746578742f68746d6c3b20636861727365743d5554462d380d0a5365727665723a206768730d0a436f6e74656e742d4c656e6774683a20313536310d0a582d5853532d50726f74656374696f6e3a20300d0a582d4672616d652d4f7074696f6e733a2053414d454f524947494e0d0a",
+      "extended_service_name": "HTTP",
+      "http": {
+        "request": {
+          "method": "GET",
+          "uri": "http://72.14.249.181/",
+          "headers": {
+            "User_Agent": [
+              "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+            ],
+            "_encoding": {
+              "User_Agent": "DISPLAY_UTF8",
+              "Accept": "DISPLAY_UTF8"
+            },
+            "Accept": [
+              "*/*"
+            ]
+          }
+        },
+        "response": {
+          "protocol": "HTTP/1.1",
+          "status_code": 404,
+          "status_reason": "Not Found",
+          "headers": {
+            "X_Frame_Options": [
+              "SAMEORIGIN"
+            ],
+            "_encoding": {
+              "X_Frame_Options": "DISPLAY_UTF8",
+              "Server": "DISPLAY_UTF8",
+              "Content_Length": "DISPLAY_UTF8",
+              "Content_Type": "DISPLAY_UTF8",
+              "X_XSS_Protection": "DISPLAY_UTF8",
+              "Date": "DISPLAY_UTF8"
+            },
+            "Server": [
+              "ghs"
+            ],
+            "Content_Length": [
+              "1561"
+            ],
+            "Content_Type": [
+              "text/html; charset=UTF-8"
+            ],
+            "X_XSS_Protection": [
+              "0"
+            ],
+            "Date": [
+              "<REDACTED>"
+            ]
+          },
+          "_encoding": {
+            "html_tags": "DISPLAY_UTF8",
+            "body": "DISPLAY_UTF8",
+            "body_hash": "DISPLAY_UTF8",
+            "html_title": "DISPLAY_UTF8"
+          },
+          "html_tags": [
+            "<title>Error 404 (Not Found)!!1</title>",
+            "<meta charset=utf-8>",
+            "<meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">"
+          ],
+          "body_size": 1561,
+          "body": "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 404 (Not Found)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>404.</b> <ins>That\u2019s an error.</ins>\n  <p>The requested URL <code>/</code> was not found on this server.  <ins>That\u2019s all we know.</ins>\n",
+          "body_hashes": [
+            "sha256:23926e9185d8d43c02807a838ffb373cc1977726094a4e46807c66ada9dd7660",
+            "sha1:905146c739943ce189795e234f1c6ebcab2f57a9"
+          ],
+          "body_hash": "sha1:905146c739943ce189795e234f1c6ebcab2f57a9",
+          "html_title": "Error 404 (Not Found)!!1"
+        },
+        "supports_http2": false
+      },
+      "observed_at": "2024-11-15T00:13:13.732479109Z",
+      "perspective_id": "PERSPECTIVE_NTT",
+      "port": 80,
+      "service_name": "HTTP",
+      "source_ip": "206.168.34.126",
+      "transport_protocol": "TCP",
+      "truncated": false
+    },
+    {
+      "_decoded": "banner_grab",
+      "_encoding": {
+        "banner": "DISPLAY_UTF8",
+        "banner_hex": "DISPLAY_HEX"
+      },
+      "banner": "\u0015\u0003\u0001\u0000\u0002\u0002(",
+      "banner_hashes": [
+        "sha256:6e25a3eaad79292acefde5d967457256a6e350ebef38424f237209cd391bf5ea"
+      ],
+      "banner_hex": "15030100020228",
+      "discovery_method": "IPV4_WALK_CLOUD_PRIORITY_1",
+      "extended_service_name": "UNKNOWN",
+      "observed_at": "2024-11-14T16:47:32.356724565Z",
+      "perspective_id": "PERSPECTIVE_ORANGE",
+      "port": 443,
+      "service_name": "UNKNOWN",
+      "source_ip": "167.94.145.110",
+      "transport_protocol": "TCP",
+      "truncated": false
+    },
+    {
+      "_decoded": "smtp",
+      "_encoding": {
+        "banner": "DISPLAY_UTF8",
+        "certificate": "DISPLAY_HEX",
+        "banner_hex": "DISPLAY_HEX"
+      },
+      "banner": "220 mx.google.com ESMTP 41be03b00d2f7-7f8c1c644c8sm232622a12.47 - gsmtp\r\n",
+      "banner_hashes": [
+        "sha256:0ce6ff2ac90b026106d078837b4617cb86c49de3e50412c523c0690b9fc2f8d2"
+      ],
+      "banner_hex": "323230206d782e676f6f676c652e636f6d2045534d545020343162653033623030643266372d3766386331633634346338736d3233323632326131322e3437202d2067736d74700d0a",
+      "certificate": "6bca3e2f831ea7e37497129eb80d832208d647e0b435434a520366bb5ee0a04c",
+      "discovery_method": "IPV4_WALK_FULL_PRIORITY_1",
+      "extended_service_name": "SMTPS",
+      "jarm": {
+        "_encoding": {
+          "fingerprint": "DISPLAY_HEX",
+          "cipher_and_version_fingerprint": "DISPLAY_HEX",
+          "tls_extensions_sha256": "DISPLAY_HEX"
+        },
+        "fingerprint": "29d3fd00029d29d21c42d43d00041da8f4179a47d9a9b5925b8832f26a448a",
+        "cipher_and_version_fingerprint": "29d3fd00029d29d21c42d43d00041d",
+        "tls_extensions_sha256": "a8f4179a47d9a9b5925b8832f26a448a",
+        "observed_at": "2024-11-07T02:40:41.711359262Z"
+      },
+      "labels": [
+        "email"
+      ],
+      "observed_at": "2024-11-15T00:37:07.086450293Z",
+      "perspective_id": "PERSPECTIVE_NTT_2",
+      "port": 465,
+      "service_name": "SMTP",
+      "smtp": {
+        "_encoding": {
+          "banner": "DISPLAY_UTF8",
+          "ehlo": "DISPLAY_UTF8"
+        },
+        "banner": "220 mx.google.com ESMTP 41be03b00d2f7-7f8c1c644c8sm232622a12.47 - gsmtp\r\n",
+        "ehlo": "250-mx.google.com at your service, [199.45.155.71]\r\n250-SIZE 35882577\r\n250-8BITMIME\r\n250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH\r\n250-ENHANCEDSTATUSCODES\r\n250-PIPELINING\r\n250-CHUNKING\r\n250 SMTPUTF8\r\n"
+      },
+      "source_ip": "199.45.155.71",
+      "tls": {
+        "version_selected": "TLSv1_3",
+        "cipher_selected": "TLS_CHACHA20_POLY1305_SHA256",
+        "certificates": {
+          "_encoding": {
+            "leaf_fp_sha_256": "DISPLAY_HEX",
+            "chain_fps_sha_256": "DISPLAY_HEX"
+          },
+          "leaf_fp_sha_256": "6bca3e2f831ea7e37497129eb80d832208d647e0b435434a520366bb5ee0a04c",
+          "chain_fps_sha_256": [
+            "dc9416c2f855126d6de977677538f2f967ff4998e90dfa435a17219be077fc06",
+            "3ee0278df71fa3c125c4cd487f01d774694e6fc57e0cd94c24efd769133918e5"
+          ],
+          "leaf_data": {
+            "names": [
+              "smtp.gmail.com"
+            ],
+            "subject_dn": "CN=smtp.gmail.com",
+            "issuer_dn": "C=US, O=Google Trust Services, CN=WR4",
+            "pubkey_bit_size": 2048,
+            "pubkey_algorithm": "RSA",
+            "tbs_fingerprint": "3a44eb60e41582022e0074762bf5f282bb9908544f5dd70ee627e6ac41833618",
+            "fingerprint": "6bca3e2f831ea7e37497129eb80d832208d647e0b435434a520366bb5ee0a04c",
+            "issuer": {
+              "common_name": [
+                "WR4"
+              ],
+              "organization": [
+                "Google Trust Services"
+              ],
+              "country": [
+                "US"
+              ]
+            },
+            "subject": {
+              "common_name": [
+                "smtp.gmail.com"
+              ]
+            },
+            "public_key": {
+              "key_algorithm": "RSA",
+              "rsa": {
+                "_encoding": {
+                  "modulus": "DISPLAY_BASE64",
+                  "exponent": "DISPLAY_BASE64"
+                },
+                "modulus": "riZohiD2N7t+GJBArKPwwH9To24XSz6BfiJgs83qdywjzMKxUCWnyJMl9rMRIpcAIKHYj5gMaN/8925eBCL1PsM7y49rC2hbiJq7wWjTyR0ihC5TlqOf2vXLMHDXLUqdSN3HBSS9W39vMhFMsdZ1jRyBT8OqQYkXsHtscgwp3BkmA1Gq/BcviT0N28JHhfdtlltE3t0neP4hwZxm248/B1Ga+IWu/UZ2e7XSJCIVU9GdjRGqvOrVMlw3pX5S6hYQ0CiqWCeZXX6KlQYz0mKS6bGWMRPclfxMfYBc8zg0ErFWh0ROSvTTNP9GV40gpzJ2hOWvuqT39gFnuKIpZLyL+w==",
+                "exponent": "AAEAAQ==",
+                "length": 256
+              },
+              "fingerprint": "71d960c9bb3b611cb63434e657d299bf68ee79c7288080d10f8ec67aabd0173a"
+            },
+            "signature": {
+              "signature_algorithm": "SHA256-RSA",
+              "self_signed": false
+            }
+          },
+          "chain": [
+            {
+              "fingerprint": "dc9416c2f855126d6de977677538f2f967ff4998e90dfa435a17219be077fc06",
+              "subject_dn": "C=US, O=Google Trust Services, CN=WR4",
+              "issuer_dn": "C=US, O=Google Trust Services LLC, CN=GTS Root R1"
+            },
+            {
+              "fingerprint": "3ee0278df71fa3c125c4cd487f01d774694e6fc57e0cd94c24efd769133918e5",
+              "subject_dn": "C=US, O=Google Trust Services LLC, CN=GTS Root R1",
+              "issuer_dn": "C=BE, O=GlobalSign nv-sa, OU=Root CA, CN=GlobalSign Root CA"
+            }
+          ]
+        },
+        "_encoding": {
+          "ja3s": "DISPLAY_HEX"
+        },
+        "ja3s": "d75f9129bb5d05492a65ff78e081bcb2",
+        "ja4s": "t130200_1303_234ea6891581",
+        "versions": [
+          {
+            "tls_version": "TLSv1_3",
+            "_encoding": {
+              "ja3s": "DISPLAY_HEX"
+            },
+            "ja3s": "d75f9129bb5d05492a65ff78e081bcb2",
+            "ja4s": "t130200_1303_234ea6891581"
+          },
+          {
+            "tls_version": "TLSv1_2",
+            "_encoding": {
+              "ja3s": "DISPLAY_HEX"
+            },
+            "ja3s": "d25619cb77d3219fc9fc14cb6b35eacc",
+            "ja4s": "t120200_cca8_344b4dce5a52"
+          },
+          {
+            "tls_version": "TLSv1_1",
+            "_encoding": {
+              "ja3s": "DISPLAY_HEX"
+            },
+            "ja3s": "b8d8f22562475aebf44ad54175c1d9c7",
+            "ja4s": "t110200_c013_344b4dce5a52"
+          },
+          {
+            "tls_version": "TLSv1_0",
+            "_encoding": {
+              "ja3s": "DISPLAY_HEX"
+            },
+            "ja3s": "184d532a16876b78846ae6a03f654890",
+            "ja4s": "t100200_c013_344b4dce5a52"
+          }
+        ]
+      },
+      "transport_fingerprint": {
+        "raw": "65535,128,true,MSTNW,1412,false,false"
+      },
+      "transport_protocol": "TCP",
+      "truncated": false
+    },
+    {
+      "_decoded": "smtp",
+      "_encoding": {
+        "banner": "DISPLAY_UTF8",
+        "certificate": "DISPLAY_HEX",
+        "banner_hex": "DISPLAY_HEX"
+      },
+      "banner": "220 mx.google.com ESMTP d9443c01a7336-211d0f348d9sm2335565ad.169 - gsmtp\r\n",
+      "banner_hashes": [
+        "sha256:e2e6fa73423ad60dee011fd3ae1ae23f2aadc246838b45f11120f14cded61895"
+      ],
+      "banner_hex": "323230206d782e676f6f676c652e636f6d2045534d545020643934343363303161373333362d3231316430663334386439736d3233333535363561642e313639202d2067736d74700d0a",
+      "certificate": "6bca3e2f831ea7e37497129eb80d832208d647e0b435434a520366bb5ee0a04c",
+      "extended_service_name": "SMTP-STARTTLS",
+      "labels": [
+        "email"
+      ],
+      "observed_at": "2024-11-15T00:51:33.745471864Z",
+      "perspective_id": "PERSPECTIVE_NTT_2",
+      "port": 587,
+      "service_name": "SMTP",
+      "smtp": {
+        "_encoding": {
+          "banner": "DISPLAY_UTF8",
+          "ehlo": "DISPLAY_UTF8",
+          "start_tls": "DISPLAY_UTF8"
+        },
+        "banner": "220 mx.google.com ESMTP d9443c01a7336-211d0f348d9sm2335565ad.169 - gsmtp\r\n",
+        "ehlo": "250-mx.google.com at your service, [199.45.155.66]\r\n250-SIZE 35882577\r\n250-8BITMIME\r\n250-STARTTLS\r\n250-ENHANCEDSTATUSCODES\r\n250-PIPELINING\r\n250-CHUNKING\r\n250 SMTPUTF8\r\n",
+        "start_tls": "220 2.0.0 Ready to start TLS\r\n"
+      },
+      "source_ip": "199.45.155.66",
+      "tls": {
+        "version_selected": "TLSv1_3",
+        "cipher_selected": "TLS_CHACHA20_POLY1305_SHA256",
+        "certificates": {
+          "_encoding": {
+            "leaf_fp_sha_256": "DISPLAY_HEX",
+            "chain_fps_sha_256": "DISPLAY_HEX"
+          },
+          "leaf_fp_sha_256": "6bca3e2f831ea7e37497129eb80d832208d647e0b435434a520366bb5ee0a04c",
+          "chain_fps_sha_256": [
+            "dc9416c2f855126d6de977677538f2f967ff4998e90dfa435a17219be077fc06",
+            "3ee0278df71fa3c125c4cd487f01d774694e6fc57e0cd94c24efd769133918e5"
+          ],
+          "leaf_data": {
+            "names": [
+              "smtp.gmail.com"
+            ],
+            "subject_dn": "CN=smtp.gmail.com",
+            "issuer_dn": "C=US, O=Google Trust Services, CN=WR4",
+            "pubkey_bit_size": 2048,
+            "pubkey_algorithm": "RSA",
+            "tbs_fingerprint": "3a44eb60e41582022e0074762bf5f282bb9908544f5dd70ee627e6ac41833618",
+            "fingerprint": "6bca3e2f831ea7e37497129eb80d832208d647e0b435434a520366bb5ee0a04c",
+            "issuer": {
+              "common_name": [
+                "WR4"
+              ],
+              "organization": [
+                "Google Trust Services"
+              ],
+              "country": [
+                "US"
+              ]
+            },
+            "subject": {
+              "common_name": [
+                "smtp.gmail.com"
+              ]
+            },
+            "public_key": {
+              "key_algorithm": "RSA",
+              "rsa": {
+                "_encoding": {
+                  "modulus": "DISPLAY_BASE64",
+                  "exponent": "DISPLAY_BASE64"
+                },
+                "modulus": "riZohiD2N7t+GJBArKPwwH9To24XSz6BfiJgs83qdywjzMKxUCWnyJMl9rMRIpcAIKHYj5gMaN/8925eBCL1PsM7y49rC2hbiJq7wWjTyR0ihC5TlqOf2vXLMHDXLUqdSN3HBSS9W39vMhFMsdZ1jRyBT8OqQYkXsHtscgwp3BkmA1Gq/BcviT0N28JHhfdtlltE3t0neP4hwZxm248/B1Ga+IWu/UZ2e7XSJCIVU9GdjRGqvOrVMlw3pX5S6hYQ0CiqWCeZXX6KlQYz0mKS6bGWMRPclfxMfYBc8zg0ErFWh0ROSvTTNP9GV40gpzJ2hOWvuqT39gFnuKIpZLyL+w==",
+                "exponent": "AAEAAQ==",
+                "length": 256
+              },
+              "fingerprint": "71d960c9bb3b611cb63434e657d299bf68ee79c7288080d10f8ec67aabd0173a"
+            },
+            "signature": {
+              "signature_algorithm": "SHA256-RSA",
+              "self_signed": false
+            }
+          },
+          "chain": [
+            {
+              "fingerprint": "dc9416c2f855126d6de977677538f2f967ff4998e90dfa435a17219be077fc06",
+              "subject_dn": "C=US, O=Google Trust Services, CN=WR4",
+              "issuer_dn": "C=US, O=Google Trust Services LLC, CN=GTS Root R1"
+            },
+            {
+              "fingerprint": "3ee0278df71fa3c125c4cd487f01d774694e6fc57e0cd94c24efd769133918e5",
+              "subject_dn": "C=US, O=Google Trust Services LLC, CN=GTS Root R1",
+              "issuer_dn": "C=BE, O=GlobalSign nv-sa, OU=Root CA, CN=GlobalSign Root CA"
+            }
+          ]
+        },
+        "_encoding": {
+          "ja3s": "DISPLAY_HEX"
+        },
+        "ja3s": "d75f9129bb5d05492a65ff78e081bcb2",
+        "ja4s": "t130200_1303_234ea6891581"
+      },
+      "transport_fingerprint": {
+        "raw": "65535,128,true,MSTNW,1412,false,false"
+      },
+      "transport_protocol": "TCP",
+      "truncated": false
+    }
+  ],
+  "location": {
+    "continent": "North America",
+    "country": "United States",
+    "country_code": "US",
+    "city": "Mountain View",
+    "postal_code": "94043",
+    "timezone": "America/Los_Angeles",
+    "province": "California",
+    "coordinates": {
+      "latitude": 37.4056,
+      "longitude": -122.0775
+    }
+  },
+  "location_updated_at": "2024-11-14T11:56:08.100679563Z",
+  "autonomous_system": {
+    "asn": 15169,
+    "description": "GOOGLE",
+    "bgp_prefix": "8.8.4.0/24",
+    "name": "GOOGLE",
+    "country_code": "US"
+  },
+  "autonomous_system_updated_at": "2024-11-14T11:56:08.100778536Z",
+  "whois": {
+    "network": {
+      "handle": "GOOGLE",
+      "name": "Google LLC",
+      "cidrs": [
+        "72.14.192.0/18"
+      ],
+      "created": "2004-11-10T00:00:00Z",
+      "updated": "2012-02-24T00:00:00Z",
+      "allocation_type": "ALLOCATION"
+    },
+    "organization": {
+      "handle": "GOGL",
+      "name": "Google LLC",
+      "street": "1600 Amphitheatre Parkway",
+      "city": "Mountain View",
+      "state": "CA",
+      "postal_code": "94043",
+      "country": "US",
+      "abuse_contacts": [
+        {
+          "handle": "ABUSE5250-ARIN",
+          "name": "Abuse",
+          "email": "network-abuse@google.com"
+        }
+      ],
+      "admin_contacts": [
+        {
+          "handle": "ZG39-ARIN",
+          "name": "Google LLC",
+          "email": "arin-contact@google.com"
+        }
+      ],
+      "tech_contacts": [
+        {
+          "handle": "ZG39-ARIN",
+          "name": "Google LLC",
+          "email": "arin-contact@google.com"
+        }
+      ]
+    }
+  },
+  "dns": {
+    "names": [
+      "ghs-vip-any-c1197.ghs-ssl.googlehosted.com"
+    ],
+    "records": {
+      "ghs-vip-any-c1197.ghs-ssl.googlehosted.com": {
+        "record_type": "A",
+        "resolved_at": "2024-10-27T16:35:45.056278466Z"
+      }
+    },
+    "reverse_dns": {
+      "names": [
+        "ghs-vip-any-c1197.ghs-ssl.googlehosted.com"
+      ],
+      "resolved_at": "2024-10-23T23:03:07.928255259Z"
+    }
+  },
+  "last_updated_at": "2024-11-15T00:51:37.904Z",
+  "labels": [
+    "email"
+  ]
+}
