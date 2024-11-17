@@ -1,0 +1,130 @@
+# Nmap 7.94SVN scan initiated Wed Nov 13 09:02:32 2024 as: nmap -O --reason --webxml --traceroute -sS -sV -sC -Pn -n -v -F -oA hideouts.io./nmap/143.244.220.150 143.244.220.150
+Nmap scan report for 143.244.220.150
+Host is up, received user-set (0.060s latency).
+Not shown: 99 filtered tcp ports (no-response)
+PORT   STATE SERVICE REASON         VERSION
+80/tcp open  http    syn-ack ttl 64
+|_http-favicon: Unknown favicon MD5: D41D8CD98F00B204E9800998ECF8427E
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+| fingerprint-strings: 
+|   DNSStatusRequestTCP: 
+|     HTTP/1.1 400 Bad Request
+|     content-length: 11
+|     content-type: text/plain
+|     date: Wed, 13 Nov 2024 14:03:11 GMT
+|     connection: close
+|     Request
+|   DNSVersionBindReqTCP: 
+|     HTTP/1.1 400 Bad Request
+|     content-length: 11
+|     content-type: text/plain
+|     date: Wed, 13 Nov 2024 14:03:10 GMT
+|     connection: close
+|     Request
+|   FourOhFourRequest: 
+|     HTTP/1.0 400 Bad Request
+|     date: Wed, 13 Nov 2024 14:03:07 GMT
+|     connection: close
+|     content-length: 0
+|   GenericLines: 
+|     HTTP/1.1 400 Bad Request
+|     content-length: 11
+|     content-type: text/plain
+|     date: Wed, 13 Nov 2024 14:03:08 GMT
+|     connection: close
+|     Request
+|   GetRequest: 
+|     HTTP/1.0 400 Bad Request
+|     date: Wed, 13 Nov 2024 14:03:01 GMT
+|     connection: close
+|     content-length: 0
+|   HTTPOptions: 
+|     HTTP/1.0 400 Bad Request
+|     date: Wed, 13 Nov 2024 14:03:03 GMT
+|     connection: close
+|     content-length: 0
+|   Help: 
+|     HTTP/1.1 400 Bad Request
+|     content-length: 11
+|     content-type: text/plain
+|     date: Wed, 13 Nov 2024 14:03:13 GMT
+|     connection: close
+|     Request
+|   RPCCheck: 
+|     HTTP/1.1 400 Bad Request
+|     content-length: 11
+|     content-type: text/plain
+|     date: Wed, 13 Nov 2024 14:03:09 GMT
+|     connection: close
+|     Request
+|   RTSPRequest: 
+|     HTTP/1.1 400 Bad Request
+|     content-length: 11
+|     content-type: text/plain
+|     date: Wed, 13 Nov 2024 14:03:04 GMT
+|     connection: close
+|     Request
+|   SSLSessionReq: 
+|     HTTP/1.1 400 Bad Request
+|     content-length: 11
+|     content-type: text/plain
+|     date: Wed, 13 Nov 2024 14:03:14 GMT
+|     connection: close
+|     Request
+|   X11Probe: 
+|     HTTP/1.1 400 Bad Request
+|     content-length: 11
+|     content-type: text/plain
+|     date: Wed, 13 Nov 2024 14:03:05 GMT
+|     connection: close
+|_    Request
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.94SVN%I=7%D=11/13%Time=6734B195%P=x86_64-pc-linux-gnu%r(
+SF:GetRequest,67,"HTTP/1\.0\x20400\x20Bad\x20Request\r\ndate:\x20Wed,\x201
+SF:3\x20Nov\x202024\x2014:03:01\x20GMT\r\nconnection:\x20close\r\ncontent-
+SF:length:\x200\r\n\r\n")%r(HTTPOptions,67,"HTTP/1\.0\x20400\x20Bad\x20Req
+SF:uest\r\ndate:\x20Wed,\x2013\x20Nov\x202024\x2014:03:03\x20GMT\r\nconnec
+SF:tion:\x20close\r\ncontent-length:\x200\r\n\r\n")%r(RTSPRequest,8D,"HTTP
+SF:/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type
+SF::\x20text/plain\r\ndate:\x20Wed,\x2013\x20Nov\x202024\x2014:03:04\x20GM
+SF:T\r\nconnection:\x20close\r\n\r\nBad\x20Request")%r(X11Probe,8D,"HTTP/1
+SF:\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type:\
+SF:x20text/plain\r\ndate:\x20Wed,\x2013\x20Nov\x202024\x2014:03:05\x20GMT\
+SF:r\nconnection:\x20close\r\n\r\nBad\x20Request")%r(FourOhFourRequest,67,
+SF:"HTTP/1\.0\x20400\x20Bad\x20Request\r\ndate:\x20Wed,\x2013\x20Nov\x2020
+SF:24\x2014:03:07\x20GMT\r\nconnection:\x20close\r\ncontent-length:\x200\r
+SF:\n\r\n")%r(GenericLines,8D,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nconte
+SF:nt-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20Wed,\x2013\
+SF:x20Nov\x202024\x2014:03:08\x20GMT\r\nconnection:\x20close\r\n\r\nBad\x2
+SF:0Request")%r(RPCCheck,8D,"HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent
+SF:-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20Wed,\x2013\x2
+SF:0Nov\x202024\x2014:03:09\x20GMT\r\nconnection:\x20close\r\n\r\nBad\x20R
+SF:equest")%r(DNSVersionBindReqTCP,8D,"HTTP/1\.1\x20400\x20Bad\x20Request\
+SF:r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20Wed
+SF:,\x2013\x20Nov\x202024\x2014:03:10\x20GMT\r\nconnection:\x20close\r\n\r
+SF:\nBad\x20Request")%r(DNSStatusRequestTCP,8D,"HTTP/1\.1\x20400\x20Bad\x2
+SF:0Request\r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndat
+SF:e:\x20Wed,\x2013\x20Nov\x202024\x2014:03:11\x20GMT\r\nconnection:\x20cl
+SF:ose\r\n\r\nBad\x20Request")%r(Help,8D,"HTTP/1\.1\x20400\x20Bad\x20Reque
+SF:st\r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20
+SF:Wed,\x2013\x20Nov\x202024\x2014:03:13\x20GMT\r\nconnection:\x20close\r\
+SF:n\r\nBad\x20Request")%r(SSLSessionReq,8D,"HTTP/1\.1\x20400\x20Bad\x20Re
+SF:quest\r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\
+SF:x20Wed,\x2013\x20Nov\x202024\x2014:03:14\x20GMT\r\nconnection:\x20close
+SF:\r\n\r\nBad\x20Request");
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: QEMU user mode network gateway (96%), Oracle Virtualbox (96%), Samsung CLP-315W printer (89%), Dell 1815dn printer (88%), VxWorks (88%), Bay Networks BayStack 450 switch (software version 3.1.0.22) (88%), Xerox WorkCentre 4150 printer (88%), Allied Telesyn AT-9006SX/SC switch (87%), Samsung CLP-310N or CLX-3175RW, or Xerox Phaser 6110 printer (87%), Samsung CLX-3160FN printer (87%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=19 (Good luck!)
+IP ID Sequence Generation: Incremental
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   113.18 ms 143.244.220.150
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Nov 13 09:04:09 2024 -- 1 IP address (1 host up) scanned in 103.24 seconds

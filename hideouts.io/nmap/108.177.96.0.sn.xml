@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Wed Nov 13 08:32:58 2024 as: nmap -sn -n -v -PP -PM -PS80,25 -PA -PY -PU53,40125 -PE -&#45;reason -oA hideouts.io./nmap/108.177.96.0.sn 108.177.96.0 -->
+<nmaprun scanner="nmap" args="nmap -sn -n -v -PP -PM -PS80,25 -PA -PY -PU53,40125 -PE -&#45;reason -oA hideouts.io./nmap/108.177.96.0.sn 108.177.96.0" start="1731504778" startstr="Wed Nov 13 08:32:58 2024" version="7.94SVN" xmloutputversion="1.05">
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Ping Scan" time="1731504778"/>
+<taskend task="Ping Scan" time="1731504780" extrainfo="1 total hosts"/>
+<host><status state="up" reason="reset" reason_ttl="255"/>
+<address addr="108.177.96.0" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="1569" rttvar="5000" to="100000"/>
+</host>
+<runstats><finished time="1731504780" timestr="Wed Nov 13 08:33:00 2024" summary="Nmap done at Wed Nov 13 08:33:00 2024; 1 IP address (1 host up) scanned in 2.37 seconds" elapsed="2.37" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

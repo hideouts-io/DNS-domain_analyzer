@@ -1,0 +1,58 @@
+# Nmap 7.94SVN scan initiated Wed Nov 13 08:43:46 2024 as: nmap -O --reason --webxml --traceroute -sS -sV -sC -Pn -n -v -F -oA hideouts.io./nmap/72.14.192.0 72.14.192.0
+Nmap scan report for 72.14.192.0
+Host is up, received user-set (0.035s latency).
+Not shown: 94 filtered tcp ports (no-response)
+PORT    STATE SERVICE    REASON         VERSION
+80/tcp  open  http       syn-ack ttl 64 Google httpd
+|_http-server-header: ghs
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Error 404 (Not Found)!!1
+443/tcp open  ssl/https? syn-ack ttl 64
+465/tcp open  ssl/smtp   syn-ack ttl 64 Google gsmtp
+|_smtp-commands: SMTP EHLO nmap.scanme.org: failed to receive data: failed to receive data
+| ssl-cert: Subject: commonName=smtp.gmail.com
+| Subject Alternative Name: DNS:smtp.gmail.com
+| Issuer: commonName=WR4/organizationName=Google Trust Services/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2024-10-28T11:45:31
+| Not valid after:  2025-01-26T11:45:30
+| MD5:   7d31:b2dd:6933:9225:1ec4:c69b:77b8:ae83
+|_SHA-1: 1078:71ca:d7f7:e195:a5dd:ad2a:b2ff:746b:7a47:b002
+|_ssl-date: TLS randomness does not represent time
+587/tcp open  smtp       syn-ack ttl 64 Google gsmtp
+| ssl-cert: Subject: commonName=smtp.gmail.com
+| Subject Alternative Name: DNS:smtp.gmail.com
+| Issuer: commonName=WR4/organizationName=Google Trust Services/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2024-10-28T11:45:31
+| Not valid after:  2025-01-26T11:45:30
+| MD5:   7d31:b2dd:6933:9225:1ec4:c69b:77b8:ae83
+|_SHA-1: 1078:71ca:d7f7:e195:a5dd:ad2a:b2ff:746b:7a47:b002
+| smtp-commands: mx.google.com at your service, [108.208.109.214], SIZE 35882577, 8BITMIME, STARTTLS, ENHANCEDSTATUSCODES, PIPELINING, CHUNKING, SMTPUTF8
+|_ 2.0.0 https://www.google.com/search?btnI&q=RFC+5321 d9443c01a7336-21177e6c8ffsm111258435ad.256 - gsmtp
+|_ssl-date: TLS randomness does not represent time
+993/tcp open  imaps?     syn-ack ttl 64
+995/tcp open  pop3s?     syn-ack ttl 64
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: bridge|general purpose
+Running (JUST GUESSING): Oracle Virtualbox (98%), QEMU (94%)
+OS CPE: cpe:/o:oracle:virtualbox cpe:/a:qemu:qemu
+Aggressive OS guesses: Oracle Virtualbox (98%), QEMU user mode network gateway (94%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=18 (Good luck!)
+IP ID Sequence Generation: Busy server or unknown class
+Service Info: Host: mx.google.com
+
+TRACEROUTE (using port 993/tcp)
+HOP RTT      ADDRESS
+1   59.53 ms 72.14.192.0
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Nov 13 08:45:33 2024 -- 1 IP address (1 host up) scanned in 107.68 seconds

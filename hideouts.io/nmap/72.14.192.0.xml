@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="https://svn.nmap.org/nmap/docs/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Wed Nov 13 08:43:46 2024 as: nmap -O -&#45;reason -&#45;webxml -&#45;traceroute -sS -sV -sC -Pn -n -v -F -oA hideouts.io./nmap/72.14.192.0 72.14.192.0 -->
+<nmaprun scanner="nmap" args="nmap -O -&#45;reason -&#45;webxml -&#45;traceroute -sS -sV -sC -Pn -n -v -F -oA hideouts.io./nmap/72.14.192.0 72.14.192.0" start="1731505426" startstr="Wed Nov 13 08:43:46 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="100" services="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1731505431"/>
+<taskend task="NSE" time="1731505431"/>
+<taskbegin task="NSE" time="1731505431"/>
+<taskend task="NSE" time="1731505431"/>
+<taskbegin task="NSE" time="1731505431"/>
+<taskend task="NSE" time="1731505431"/>
+<taskbegin task="SYN Stealth Scan" time="1731505431"/>
+<taskend task="SYN Stealth Scan" time="1731505433" extrainfo="100 total ports"/>
+<taskbegin task="Service scan" time="1731505435"/>
+<taskend task="Service scan" time="1731505448" extrainfo="6 services on 1 host"/>
+<taskbegin task="Traceroute" time="1731505453"/>
+<taskend task="Traceroute" time="1731505453"/>
+<taskbegin task="NSE" time="1731505453"/>
+<taskend task="NSE" time="1731505522"/>
+<taskbegin task="NSE" time="1731505522"/>
+<taskend task="NSE" time="1731505532"/>
+<taskbegin task="NSE" time="1731505532"/>
+<taskend task="NSE" time="1731505532"/>
+<host starttime="1731505431" endtime="1731505532"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="72.14.192.0" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="94">
+<extrareasons reason="no-response" count="94" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79,81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,444-445,513-515,543-544,548,554,631,646,873,990,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="Google httpd" method="probed" conf="10"/><script id="http-server-header" output="ghs"><elem>ghs</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Error 404 (Not Found)!!1"><elem key="title">Error 404 (Not Found)!!1</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="https" tunnel="ssl" method="table" conf="3"/></port>
+<port protocol="tcp" portid="465"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="smtp" product="Google gsmtp" hostname="mx.google.com" tunnel="ssl" method="probed" conf="10"/><script id="smtp-commands" output="SMTP EHLO nmap.scanme.org: failed to receive data: failed to receive data"/><script id="ssl-cert" output="Subject: commonName=smtp.gmail.com&#xa;Subject Alternative Name: DNS:smtp.gmail.com&#xa;Issuer: commonName=WR4/organizationName=Google Trust Services/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-28T11:45:31&#xa;Not valid after:  2025-01-26T11:45:30&#xa;MD5:   7d31:b2dd:6933:9225:1ec4:c69b:77b8:ae83&#xa;SHA-1: 1078:71ca:d7f7:e195:a5dd:ad2a:b2ff:746b:7a47:b002"><table key="subject">
+<elem key="commonName">smtp.gmail.com</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">WR4</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Google Trust Services</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">AE26688620F637BB7E189040ACA3F0C07F53A36E174B3E817E2260B3CDEA772C23CCC2B15025A7C89325F6B31122970020A1D88F980C68DFFCF76E5E0422F53EC33BCB8F6B0B685B889ABBC168D3C91D22842E5396A39FDAF5CB3070D72D4A9D48DDC70524BD5B7F6F32114CB1D6758D1C814FC3AA418917B07B6C720C29DC19260351AAFC172F893D0DDBC24785F76D965B44DEDD2778FE21C19C66DB8F3F07519AF885AEFD46767BB5D224221553D19D8D11AABCEAD5325C37A57E52EA1610D028AA5827995D7E8A950633D26292E9B1963113DC95FC4C7D805CF3383412B15687444E4AF4D334FF46578D20A7327684E5AFBAA4F7F60167B8A22964BC8BFB</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">7D:3D:8C:E7:86:AE:DD:48:9C:2D:5E:97:7D:F4:BB:1A:1C:21:85:E2</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">9B:C8:11:BC:3D:AA:36:B9:31:8C:4E:8F:44:D5:57:32:2F:C3:C0:61</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://o.pki.goog/s/wr4/6NE&#xa;CA Issuers - URI:http://i.pki.goog/wr4.crt</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:smtp.gmail.com</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://c.pki.goog/wr4/M6S2FnPYkvQ.crl</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:&#xa;                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF&#xa;    Timestamp : Oct 28 12:45:38.164 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:7B:14:3C:6B:5F:6F:46:A2:DF:8A:B2:65:&#xa;                4A:46:29:8C:C3:43:0A:1E:7B:63:4F:98:54:D6:5B:7D:&#xa;                69:A0:6E:32:02:21:00:EA:78:0A:6C:58:D2:56:F4:5C:&#xa;                D5:55:C7:28:6F:37:12:1D:CE:6D:71:3C:97:1E:DC:00:&#xa;                7E:D1:E2:60:A0:B3:55&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CC:FB:0F:6A:85:71:09:65:FE:95:9B:53:CE:E9:B2:7C:&#xa;                22:E9:85:5C:0D:97:8D:B6:A9:7E:54:C0:FE:4C:0D:B0&#xa;    Timestamp : Oct 28 12:45:38.213 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:D7:A4:0E:A1:C2:E2:C6:9A:26:EF:87:&#xa;                8D:1B:9E:93:35:E9:0F:44:A2:C6:77:4D:02:94:4B:63:&#xa;                B4:7D:26:C7:21:02:21:00:8C:0A:7D:8B:FB:B0:A1:4C:&#xa;                45:72:DB:CD:E2:1F:66:C5:89:8B:A4:61:6C:2C:31:79:&#xa;                EE:76:73:72:28:D6:D2:BF</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-28T11:45:31</elem>
+<elem key="notAfter">2025-01-26T11:45:30</elem>
+</table>
+<elem key="md5">7d31b2dd693392251ec4c69b77b8ae83</elem>
+<elem key="sha1">107871cad7f7e195a5ddad2ab2ff746b7a47b002</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFMzCCBBugAwIBAgIRAOjRoJlhNdx9EvbeMZE4eWowDQYJKoZIhvcNAQELBQAw&#xa;OzELMAkGA1UEBhMCVVMxHjAcBgNVBAoTFUdvb2dsZSBUcnVzdCBTZXJ2aWNlczEM&#xa;MAoGA1UEAxMDV1I0MB4XDTI0MTAyODExNDUzMVoXDTI1MDEyNjExNDUzMFowGTEX&#xa;MBUGA1UEAxMOc210cC5nbWFpbC5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw&#xa;ggEKAoIBAQCuJmiGIPY3u34YkECso/DAf1OjbhdLPoF+ImCzzep3LCPMwrFQJafI&#xa;kyX2sxEilwAgodiPmAxo3/z3bl4EIvU+wzvLj2sLaFuImrvBaNPJHSKELlOWo5/a&#xa;9cswcNctSp1I3ccFJL1bf28yEUyx1nWNHIFPw6pBiRewe2xyDCncGSYDUar8Fy+J&#xa;PQ3bwkeF922WW0Te3Sd4/iHBnGbbjz8HUZr4ha79RnZ7tdIkIhVT0Z2NEaq86tUy&#xa;XDelflLqFhDQKKpYJ5ldfoqVBjPSYpLpsZYxE9yV/Ex9gFzzODQSsVaHRE5K9NM0&#xa;/0ZXjSCnMnaE5a+6pPf2AWe4oilkvIv7AgMBAAGjggJSMIICTjAOBgNVHQ8BAf8E&#xa;BAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQC&#xa;MAAwHQYDVR0OBBYEFH09jOeGrt1InC1el330uxocIYXiMB8GA1UdIwQYMBaAFJvI&#xa;Ebw9qja5MYxOj0TVVzIvw8BhMF4GCCsGAQUFBwEBBFIwUDAnBggrBgEFBQcwAYYb&#xa;aHR0cDovL28ucGtpLmdvb2cvcy93cjQvNk5FMCUGCCsGAQUFBzAChhlodHRwOi8v&#xa;aS5wa2kuZ29vZy93cjQuY3J0MBkGA1UdEQQSMBCCDnNtdHAuZ21haWwuY29tMBMG&#xa;A1UdIAQMMAowCAYGZ4EMAQIBMDYGA1UdHwQvMC0wK6ApoCeGJWh0dHA6Ly9jLnBr&#xa;aS5nb29nL3dyNC9NNlMyRm5QWWt2US5jcmwwggEFBgorBgEEAdZ5AgQCBIH2BIHz&#xa;APEAdgBOdaMnXJoQwzhbbNTfP1LrHfDgjhuNacCx+mSxYpo53wAAAZLTKRX0AAAE&#xa;AwBHMEUCIHsUPGtfb0ai34qyZUpGKYzDQwoee2NPmFTWW31poG4yAiEA6ngKbFjS&#xa;VvRc1VXHKG83Eh3ObXE8lx7cAH7R4mCgs1UAdwDM+w9qhXEJZf6Vm1PO6bJ8IumF&#xa;XA2XjbapflTA/kwNsAAAAZLTKRYlAAAEAwBIMEYCIQDXpA6hwuLGmibvh40bnpM1&#xa;6Q9EosZ3TQKUS2O0fSbHIQIhAIwKfYv7sKFMRXLbzeIfZsWJi6RhbCwxee52c3Io&#xa;1tK/MA0GCSqGSIb3DQEBCwUAA4IBAQBCH5ub7V5apog5FkHpg8+xYrzdtBSQX4zC&#xa;oPprEj5r5sbllrUEyfC5NaDJ9+X6A4bVDTHYb65AoxFOWnpf9i6rIHgkq5k4r1J9&#xa;CV5i63TWuiTwWMJX9rEf5Ljy4AHq8ZYi/L8izmBfDeb/AXf50OJAL74UW+fiV7qg&#xa;gl3802oLhzj+9NddxyZwH+Megpjtpa+oMnug8Atz1y4L5xp3mJ9ResaafllzC18P&#xa;PEahr8Y8BxYKmG3N5l726tdWvPmf4uc5lBD6cHvc7JSZtm2mSannUt+GdBOp+uOq&#xa;tcx58gtSENf8bBhfw7H3noo9ISny10Ufl/vu1Unw3wKMVORSTBYZ&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="587"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="smtp" product="Google gsmtp" hostname="mx.google.com" method="probed" conf="10"/><script id="ssl-cert" output="Subject: commonName=smtp.gmail.com&#xa;Subject Alternative Name: DNS:smtp.gmail.com&#xa;Issuer: commonName=WR4/organizationName=Google Trust Services/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-28T11:45:31&#xa;Not valid after:  2025-01-26T11:45:30&#xa;MD5:   7d31:b2dd:6933:9225:1ec4:c69b:77b8:ae83&#xa;SHA-1: 1078:71ca:d7f7:e195:a5dd:ad2a:b2ff:746b:7a47:b002"><table key="subject">
+<elem key="commonName">smtp.gmail.com</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">WR4</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Google Trust Services</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">AE26688620F637BB7E189040ACA3F0C07F53A36E174B3E817E2260B3CDEA772C23CCC2B15025A7C89325F6B31122970020A1D88F980C68DFFCF76E5E0422F53EC33BCB8F6B0B685B889ABBC168D3C91D22842E5396A39FDAF5CB3070D72D4A9D48DDC70524BD5B7F6F32114CB1D6758D1C814FC3AA418917B07B6C720C29DC19260351AAFC172F893D0DDBC24785F76D965B44DEDD2778FE21C19C66DB8F3F07519AF885AEFD46767BB5D224221553D19D8D11AABCEAD5325C37A57E52EA1610D028AA5827995D7E8A950633D26292E9B1963113DC95FC4C7D805CF3383412B15687444E4AF4D334FF46578D20A7327684E5AFBAA4F7F60167B8A22964BC8BFB</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">7D:3D:8C:E7:86:AE:DD:48:9C:2D:5E:97:7D:F4:BB:1A:1C:21:85:E2</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">9B:C8:11:BC:3D:AA:36:B9:31:8C:4E:8F:44:D5:57:32:2F:C3:C0:61</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://o.pki.goog/s/wr4/6NE&#xa;CA Issuers - URI:http://i.pki.goog/wr4.crt</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:smtp.gmail.com</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://c.pki.goog/wr4/M6S2FnPYkvQ.crl</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:&#xa;                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF&#xa;    Timestamp : Oct 28 12:45:38.164 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:7B:14:3C:6B:5F:6F:46:A2:DF:8A:B2:65:&#xa;                4A:46:29:8C:C3:43:0A:1E:7B:63:4F:98:54:D6:5B:7D:&#xa;                69:A0:6E:32:02:21:00:EA:78:0A:6C:58:D2:56:F4:5C:&#xa;                D5:55:C7:28:6F:37:12:1D:CE:6D:71:3C:97:1E:DC:00:&#xa;                7E:D1:E2:60:A0:B3:55&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CC:FB:0F:6A:85:71:09:65:FE:95:9B:53:CE:E9:B2:7C:&#xa;                22:E9:85:5C:0D:97:8D:B6:A9:7E:54:C0:FE:4C:0D:B0&#xa;    Timestamp : Oct 28 12:45:38.213 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:D7:A4:0E:A1:C2:E2:C6:9A:26:EF:87:&#xa;                8D:1B:9E:93:35:E9:0F:44:A2:C6:77:4D:02:94:4B:63:&#xa;                B4:7D:26:C7:21:02:21:00:8C:0A:7D:8B:FB:B0:A1:4C:&#xa;                45:72:DB:CD:E2:1F:66:C5:89:8B:A4:61:6C:2C:31:79:&#xa;                EE:76:73:72:28:D6:D2:BF</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-28T11:45:31</elem>
+<elem key="notAfter">2025-01-26T11:45:30</elem>
+</table>
+<elem key="md5">7d31b2dd693392251ec4c69b77b8ae83</elem>
+<elem key="sha1">107871cad7f7e195a5ddad2ab2ff746b7a47b002</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFMzCCBBugAwIBAgIRAOjRoJlhNdx9EvbeMZE4eWowDQYJKoZIhvcNAQELBQAw&#xa;OzELMAkGA1UEBhMCVVMxHjAcBgNVBAoTFUdvb2dsZSBUcnVzdCBTZXJ2aWNlczEM&#xa;MAoGA1UEAxMDV1I0MB4XDTI0MTAyODExNDUzMVoXDTI1MDEyNjExNDUzMFowGTEX&#xa;MBUGA1UEAxMOc210cC5nbWFpbC5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw&#xa;ggEKAoIBAQCuJmiGIPY3u34YkECso/DAf1OjbhdLPoF+ImCzzep3LCPMwrFQJafI&#xa;kyX2sxEilwAgodiPmAxo3/z3bl4EIvU+wzvLj2sLaFuImrvBaNPJHSKELlOWo5/a&#xa;9cswcNctSp1I3ccFJL1bf28yEUyx1nWNHIFPw6pBiRewe2xyDCncGSYDUar8Fy+J&#xa;PQ3bwkeF922WW0Te3Sd4/iHBnGbbjz8HUZr4ha79RnZ7tdIkIhVT0Z2NEaq86tUy&#xa;XDelflLqFhDQKKpYJ5ldfoqVBjPSYpLpsZYxE9yV/Ex9gFzzODQSsVaHRE5K9NM0&#xa;/0ZXjSCnMnaE5a+6pPf2AWe4oilkvIv7AgMBAAGjggJSMIICTjAOBgNVHQ8BAf8E&#xa;BAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQC&#xa;MAAwHQYDVR0OBBYEFH09jOeGrt1InC1el330uxocIYXiMB8GA1UdIwQYMBaAFJvI&#xa;Ebw9qja5MYxOj0TVVzIvw8BhMF4GCCsGAQUFBwEBBFIwUDAnBggrBgEFBQcwAYYb&#xa;aHR0cDovL28ucGtpLmdvb2cvcy93cjQvNk5FMCUGCCsGAQUFBzAChhlodHRwOi8v&#xa;aS5wa2kuZ29vZy93cjQuY3J0MBkGA1UdEQQSMBCCDnNtdHAuZ21haWwuY29tMBMG&#xa;A1UdIAQMMAowCAYGZ4EMAQIBMDYGA1UdHwQvMC0wK6ApoCeGJWh0dHA6Ly9jLnBr&#xa;aS5nb29nL3dyNC9NNlMyRm5QWWt2US5jcmwwggEFBgorBgEEAdZ5AgQCBIH2BIHz&#xa;APEAdgBOdaMnXJoQwzhbbNTfP1LrHfDgjhuNacCx+mSxYpo53wAAAZLTKRX0AAAE&#xa;AwBHMEUCIHsUPGtfb0ai34qyZUpGKYzDQwoee2NPmFTWW31poG4yAiEA6ngKbFjS&#xa;VvRc1VXHKG83Eh3ObXE8lx7cAH7R4mCgs1UAdwDM+w9qhXEJZf6Vm1PO6bJ8IumF&#xa;XA2XjbapflTA/kwNsAAAAZLTKRYlAAAEAwBIMEYCIQDXpA6hwuLGmibvh40bnpM1&#xa;6Q9EosZ3TQKUS2O0fSbHIQIhAIwKfYv7sKFMRXLbzeIfZsWJi6RhbCwxee52c3Io&#xa;1tK/MA0GCSqGSIb3DQEBCwUAA4IBAQBCH5ub7V5apog5FkHpg8+xYrzdtBSQX4zC&#xa;oPprEj5r5sbllrUEyfC5NaDJ9+X6A4bVDTHYb65AoxFOWnpf9i6rIHgkq5k4r1J9&#xa;CV5i63TWuiTwWMJX9rEf5Ljy4AHq8ZYi/L8izmBfDeb/AXf50OJAL74UW+fiV7qg&#xa;gl3802oLhzj+9NddxyZwH+Megpjtpa+oMnug8Atz1y4L5xp3mJ9ResaafllzC18P&#xa;PEahr8Y8BxYKmG3N5l726tdWvPmf4uc5lBD6cHvc7JSZtm2mSannUt+GdBOp+uOq&#xa;tcx58gtSENf8bBhfw7H3noo9ISny10Ufl/vu1Unw3wKMVORSTBYZ&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="smtp-commands" output="mx.google.com at your service, [108.208.109.214], SIZE 35882577, 8BITMIME, STARTTLS, ENHANCEDSTATUSCODES, PIPELINING, CHUNKING, SMTPUTF8&#xa; 2.0.0 https://www.google.com/search?btnI&amp;q=RFC+5321 d9443c01a7336-21177e6c8ffsm111258435ad.256 - gsmtp"/><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="imaps" method="table" conf="3"/></port>
+<port protocol="tcp" portid="995"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="pop3s" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<osmatch name="Oracle Virtualbox" accuracy="98" line="92432">
+<osclass type="bridge" vendor="Oracle" osfamily="Virtualbox" accuracy="98"><cpe>cpe:/o:oracle:virtualbox</cpe></osclass>
+</osmatch>
+<osmatch name="QEMU user mode network gateway" accuracy="94" line="94209">
+<osclass type="general purpose" vendor="QEMU" osfamily="QEMU" accuracy="94"><cpe>cpe:/a:qemu:qemu</cpe></osclass>
+</osmatch>
+</os>
+<distance value="1"/>
+<tcpsequence index="18" difficulty="Good luck!" values="F155401,F164E01,F184201,F193C01,F1A3601,F1B3001"/>
+<ipidsequence class="Busy server or unknown class" values="CD29,CD30,CD33,CD36,CD42,CD4E"/>
+<tcptssequence class="none returned (unsupported)"/>
+<trace port="993" proto="tcp">
+<hop ttl="1" ipaddr="72.14.192.0" rtt="59.53"/>
+</trace>
+<times srtt="35381" rttvar="25453" to="137193"/>
+</host>
+<taskbegin task="NSE" time="1731505532"/>
+<taskend task="NSE" time="1731505532"/>
+<taskbegin task="NSE" time="1731505532"/>
+<taskend task="NSE" time="1731505532"/>
+<taskbegin task="NSE" time="1731505532"/>
+<taskend task="NSE" time="1731505532"/>
+<runstats><finished time="1731505533" timestr="Wed Nov 13 08:45:33 2024" summary="Nmap done at Wed Nov 13 08:45:33 2024; 1 IP address (1 host up) scanned in 107.68 seconds" elapsed="107.68" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
