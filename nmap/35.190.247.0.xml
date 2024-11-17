@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="https://svn.nmap.org/nmap/docs/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Wed Nov 13 08:38:07 2024 as: nmap -O -&#45;reason -&#45;webxml -&#45;traceroute -sS -sV -sC -Pn -n -v -F -oA hideouts.io./nmap/35.190.247.0 35.190.247.0 -->
+<nmaprun scanner="nmap" args="nmap -O -&#45;reason -&#45;webxml -&#45;traceroute -sS -sV -sC -Pn -n -v -F -oA hideouts.io./nmap/35.190.247.0 35.190.247.0" start="1731505087" startstr="Wed Nov 13 08:38:07 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="100" services="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1731505087"/>
+<taskend task="NSE" time="1731505087"/>
+<taskbegin task="NSE" time="1731505087"/>
+<taskend task="NSE" time="1731505087"/>
+<taskbegin task="NSE" time="1731505087"/>
+<taskend task="NSE" time="1731505087"/>
+<taskbegin task="SYN Stealth Scan" time="1731505087"/>
+<taskend task="SYN Stealth Scan" time="1731505089" extrainfo="100 total ports"/>
+<taskbegin task="Service scan" time="1731505090"/>
+<taskend task="Service scan" time="1731505223" extrainfo="95 services on 1 host"/>
+<taskbegin task="Traceroute" time="1731505227"/>
+<taskend task="Traceroute" time="1731505227"/>
+<taskbegin task="NSE" time="1731505227"/>
+<taskend task="NSE" time="1731505263"/>
+<taskbegin task="NSE" time="1731505263"/>
+<taskend task="NSE" time="1731505276"/>
+<taskbegin task="NSE" time="1731505276"/>
+<taskend task="NSE" time="1731505276"/>
+<host starttime="1731505087" endtime="1731505276"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="35.190.247.0" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="7"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="9"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="13"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/><script id="ssh-hostkey" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="23"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="25"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="smtp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="26"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="37"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="79"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="gws" servicefp="SF-Port80-TCP:V=7.94SVN%I=7%D=11/13%Time=6734ABC9%P=x86_64-pc-linux-gnu%r(GetRequest,E5EA,&quot;HTTP/1\.0\x20200\x20OK\r\nDate:\x20Wed,\x2013\x20Nov\x202024\x2013:38:18\x20GMT\r\nExpires:\x20-1\r\nCache-Control:\x20private,\x20max-age=0\r\nContent-Type:\x20text/html;\x20charset=ISO-8859-1\r\nContent-Security-Policy-Report-Only:\x20object-src\x20&apos;none&apos;;base-uri\x20&apos;self&apos;;script-src\x20&apos;nonce-tnUz08wKQciGaq5vY9OzuA&apos;\x20&apos;strict-dynamic&apos;\x20&apos;report-sample&apos;\x20&apos;unsafe-eval&apos;\x20&apos;unsafe-inline&apos;\x20https:\x20http:;report-uri\x20https://csp\.withgoogle\.com/csp/gws/other-hp\r\nP3P:\x20CP=\&quot;This\x20is\x20not\x20a\x20P3P\x20policy!\x20See\x20g\.co/p3phelp\x20for\x20more\x20info\.\&quot;\r\nServer:\x20gws\r\nX-XSS-Protection:\x200\r\nX-Frame-Options:\x20SAMEORIGIN\r\nSet-Cookie:\x20AEC=AZ6Zc-WBDTN4VoGAfmy1prC_4ki-6p8qE6Lwumte-q9USjck5Qea8-7zalw;\x20expires=Mon,\x2012-May-2025\x2013:38:18\x20GMT;\x20path=/;\x20domain=\.google\.com;\x20Secure;\x20HttpOnly;\x20SameSite=lax\r\nSet-Cookie:\x20NID=519=1yN28SrklHs3RXR7jTrbgFeOg7A53xgo06mH7vNFm1VdBECGfGzOheAMPBGeUE4EFtDVbhXJUSpUNSqfkXb6SNY5BRawrRGzx-cpy0GG_3DuuLsjc1A1Q6lNnRqAgyKs4Osi1hUg4nokLEVCgE7Z3GMf13l_Rdectc9H7iXpgWWAwJmjVhvH&quot;)%r(HTTPOptions,6DC,&quot;HTTP/1\.0\x20405\x20Method\x20Not\x20Allowed\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nReferrer-Policy:\x20no-referrer\r\nContent-Length:\x201592\r\nDate:\x20Wed,\x2013\x20Nov\x202024\x2013:38:19\x20GMT\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20lang=en&gt;\n\x20\x20&lt;meta\x20charset=utf-8&gt;\n\x20\x20&lt;meta\x20name=viewport\x20content=\&quot;initial-scale=1,\x20minimum-scale=1,\x20width=device-width\&quot;&gt;\n\x20\x20&lt;title&gt;Error\x20405\x20\(Method\x20Not\x20Allowed\)!!1&lt;/title&gt;\n\x20\x20&lt;style&gt;\n\x20\x20\x20\x20\*{margin:0;padding:0}html,code{font:15px/22px\x20arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7%\x20auto\x200;max-width:390px;min-height:180px;padding:30px\x200\x2015px}\*\x20&gt;\x20body{background:url\(//www\.google\.com/images/errors/robot\.png\)\x20100%\x205px\x20no-repeat;padding-right:205px}p{margin:11px\x200\x2022px;overflow:hidden}ins{color:#777;text-decoration:none}a\x20img{border:0}@media\x20screen\x20and\x20\(max-width:772px\){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url\(//www\.google\.com/images/branding&quot;);" method="probed" conf="10"/><script id="http-robots.txt" output="236 disallowed entries (15 shown)&#xa;/search /sdch /groups /index.html? /? /?hl=*&amp; &#xa;/?hl=*&amp;*&amp;gws_rd=ssl /imgres /u/ /setprefs /default /m? /m/ /wml? /wml/?"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="fingerprint-strings" output="&#xa;  GetRequest: &#xa;    HTTP/1.0 200 OK&#xa;    Date: Wed, 13 Nov 2024 13:38:18 GMT&#xa;    Expires: -1&#xa;    Cache-Control: private, max-age=0&#xa;    Content-Type: text/html; charset=ISO-8859-1&#xa;    Content-Security-Policy-Report-Only: object-src &apos;none&apos;;base-uri &apos;self&apos;;script-src &apos;nonce-tnUz08wKQciGaq5vY9OzuA&apos; &apos;strict-dynamic&apos; &apos;report-sample&apos; &apos;unsafe-eval&apos; &apos;unsafe-inline&apos; https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp&#xa;    P3P: CP=&quot;This is not a P3P policy! See g.co/p3phelp for more info.&quot;&#xa;    Server: gws&#xa;    X-XSS-Protection: 0&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Set-Cookie: AEC=AZ6Zc-WBDTN4VoGAfmy1prC_4ki-6p8qE6Lwumte-q9USjck5Qea8-7zalw; expires=Mon, 12-May-2025 13:38:18 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax&#xa;    Set-Cookie: NID=519=1yN28SrklHs3RXR7jTrbgFeOg7A53xgo06mH7vNFm1VdBECGfGzOheAMPBGeUE4EFtDVbhXJUSpUNSqfkXb6SNY5BRawrRGzx-cpy0GG_3DuuLsjc1A1Q6lNnRqAgyKs4Osi1hUg4nokLEVCgE7Z3GMf13l_Rdectc9H7iXpgWWAwJmjVhvH&#xa;  HTTPOptions: &#xa;    HTTP/1.0 405 Method Not Allowed&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Referrer-Policy: no-referrer&#xa;    Content-Length: 1592&#xa;    Date: Wed, 13 Nov 2024 13:38:19 GMT&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=en&gt;&#xa;    &lt;meta charset=utf-8&gt;&#xa;    &lt;meta name=viewport content=&quot;initial-scale=1, minimum-scale=1, width=device-width&quot;&gt;&#xa;    &lt;title&gt;Error 405 (Method Not Allowed)!!1&lt;/title&gt;&#xa;    &lt;style&gt;&#xa;    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* &gt; body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding"><elem key="GetRequest">&#xa;    HTTP/1.0 200 OK&#xa;    Date: Wed, 13 Nov 2024 13:38:18 GMT&#xa;    Expires: -1&#xa;    Cache-Control: private, max-age=0&#xa;    Content-Type: text/html; charset=ISO-8859-1&#xa;    Content-Security-Policy-Report-Only: object-src &apos;none&apos;;base-uri &apos;self&apos;;script-src &apos;nonce-tnUz08wKQciGaq5vY9OzuA&apos; &apos;strict-dynamic&apos; &apos;report-sample&apos; &apos;unsafe-eval&apos; &apos;unsafe-inline&apos; https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp&#xa;    P3P: CP=&quot;This is not a P3P policy! See g.co/p3phelp for more info.&quot;&#xa;    Server: gws&#xa;    X-XSS-Protection: 0&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Set-Cookie: AEC=AZ6Zc-WBDTN4VoGAfmy1prC_4ki-6p8qE6Lwumte-q9USjck5Qea8-7zalw; expires=Mon, 12-May-2025 13:38:18 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax&#xa;    Set-Cookie: NID=519=1yN28SrklHs3RXR7jTrbgFeOg7A53xgo06mH7vNFm1VdBECGfGzOheAMPBGeUE4EFtDVbhXJUSpUNSqfkXb6SNY5BRawrRGzx-cpy0GG_3DuuLsjc1A1Q6lNnRqAgyKs4Osi1hUg4nokLEVCgE7Z3GMf13l_Rdectc9H7iXpgWWAwJmjVhvH</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.0 405 Method Not Allowed&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Referrer-Policy: no-referrer&#xa;    Content-Length: 1592&#xa;    Date: Wed, 13 Nov 2024 13:38:19 GMT&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=en&gt;&#xa;    &lt;meta charset=utf-8&gt;&#xa;    &lt;meta name=viewport content=&quot;initial-scale=1, minimum-scale=1, width=device-width&quot;&gt;&#xa;    &lt;title&gt;Error 405 (Method Not Allowed)!!1&lt;/title&gt;&#xa;    &lt;style&gt;&#xa;    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* &gt; body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding</elem>
+</script><script id="http-favicon" output="Google"/><script id="http-server-header" output="gws"><elem>gws</elem>
+</script><script id="http-title" output="Did not follow redirect to http://www.google.com/"><elem key="redirect_url">http://www.google.com/</elem>
+</script></port>
+<port protocol="tcp" portid="81"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="106"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="111"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="113"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="119"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="135"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="144"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="179"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="199"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="389"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="427"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="444"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="465"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/><script id="smtp-commands" output="Couldn&apos;t establish connection on port 465"/></port>
+<port protocol="tcp" portid="513"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="514"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="515"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="543"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="544"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="548"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/><script id="afp-serverinfo" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="554"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="587"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/><script id="smtp-commands" output="Couldn&apos;t establish connection on port 587"/></port>
+<port protocol="tcp" portid="631"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="646"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="873"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="990"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="995"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="1025"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="1026"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="1027"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="1028"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="1029"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="1110"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="1433"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="1720"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="1723"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="1755"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="1900"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="2000"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="2001"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="2049"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="2121"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="2717"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="3000"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="3128"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="3986"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="4899"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="5000"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="5009"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="5051"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="5060"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="5101"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="5190"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="5357"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="5432"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="5631"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="5666"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="5800"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="5900"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="6000"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="6001"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="6646"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="7070"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="8000"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="8008"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="8009"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/><script id="ajp-methods" output="Failed to get a valid response for the OPTION request"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http-proxy" product="gws" servicefp="SF-Port8080-TCP:V=7.94SVN%I=7%D=11/13%Time=6734ABC9%P=x86_64-pc-linux-gnu%r(GetRequest,E5EB,&quot;HTTP/1\.0\x20200\x20OK\r\nDate:\x20Wed,\x2013\x20Nov\x202024\x2013:38:19\x20GMT\r\nExpires:\x20-1\r\nCache-Control:\x20private,\x20max-age=0\r\nContent-Type:\x20text/html;\x20charset=ISO-8859-1\r\nContent-Security-Policy-Report-Only:\x20object-src\x20&apos;none&apos;;base-uri\x20&apos;self&apos;;script-src\x20&apos;nonce-fDK79Qe_bk-or38LTjCIEQ&apos;\x20&apos;strict-dynamic&apos;\x20&apos;report-sample&apos;\x20&apos;unsafe-eval&apos;\x20&apos;unsafe-inline&apos;\x20https:\x20http:;report-uri\x20https://csp\.withgoogle\.com/csp/gws/other-hp\r\nP3P:\x20CP=\&quot;This\x20is\x20not\x20a\x20P3P\x20policy!\x20See\x20g\.co/p3phelp\x20for\x20more\x20info\.\&quot;\r\nServer:\x20gws\r\nX-XSS-Protection:\x200\r\nX-Frame-Options:\x20SAMEORIGIN\r\nSet-Cookie:\x20AEC=AZ6Zc-UkjRSbF2YyikAZd5Ed8hN0hpFmktoNBWkaePnTXt6vfaVGw9yTMSU;\x20expires=Mon,\x2012-May-2025\x2013:38:19\x20GMT;\x20path=/;\x20domain=\.google\.com;\x20Secure;\x20HttpOnly;\x20SameSite=lax\r\nSet-Cookie:\x20NID=519=YQMu7C9U5NjaWr57wf7JPvUvhCG6psHSJFUKsdKF9ftrE4NZ4rOlgzHhh3u7i5ewk2i5GgjMvMlzr-OhSY52UpolF_OqW_5yqB7shwjDC_knDZkyATdiKTypVsobvsCzwb1TAhg4VBXKjcbAKw83K9YqICZXL82d0LS5mlghUCeqsQVgdIya&quot;)%r(HTTPOptions,6DC,&quot;HTTP/1\.0\x20405\x20Method\x20Not\x20Allowed\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nReferrer-Policy:\x20no-referrer\r\nContent-Length:\x201592\r\nDate:\x20Wed,\x2013\x20Nov\x202024\x2013:38:20\x20GMT\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20lang=en&gt;\n\x20\x20&lt;meta\x20charset=utf-8&gt;\n\x20\x20&lt;meta\x20name=viewport\x20content=\&quot;initial-scale=1,\x20minimum-scale=1,\x20width=device-width\&quot;&gt;\n\x20\x20&lt;title&gt;Error\x20405\x20\(Method\x20Not\x20Allowed\)!!1&lt;/title&gt;\n\x20\x20&lt;style&gt;\n\x20\x20\x20\x20\*{margin:0;padding:0}html,code{font:15px/22px\x20arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7%\x20auto\x200;max-width:390px;min-height:180px;padding:30px\x200\x2015px}\*\x20&gt;\x20body{background:url\(//www\.google\.com/images/errors/robot\.png\)\x20100%\x205px\x20no-repeat;padding-right:205px}p{margin:11px\x200\x2022px;overflow:hidden}ins{color:#777;text-decoration:none}a\x20img{border:0}@media\x20screen\x20and\x20\(max-width:772px\){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url\(//www\.google\.com/images/branding&quot;);" method="probed" conf="10"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-robots.txt" output="236 disallowed entries (15 shown)&#xa;/search /sdch /groups /index.html? /? /?hl=*&amp; &#xa;/?hl=*&amp;*&amp;gws_rd=ssl /imgres /u/ /setprefs /default /m? /m/ /wml? /wml/?"/><script id="http-favicon" output="Google"/><script id="http-open-proxy" output="Potentially OPEN proxy.&#xa;Methods supported: HEAD"/><script id="http-server-header" output="gws"><elem>gws</elem>
+</script><script id="fingerprint-strings" output="&#xa;  GetRequest: &#xa;    HTTP/1.0 200 OK&#xa;    Date: Wed, 13 Nov 2024 13:38:19 GMT&#xa;    Expires: -1&#xa;    Cache-Control: private, max-age=0&#xa;    Content-Type: text/html; charset=ISO-8859-1&#xa;    Content-Security-Policy-Report-Only: object-src &apos;none&apos;;base-uri &apos;self&apos;;script-src &apos;nonce-fDK79Qe_bk-or38LTjCIEQ&apos; &apos;strict-dynamic&apos; &apos;report-sample&apos; &apos;unsafe-eval&apos; &apos;unsafe-inline&apos; https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp&#xa;    P3P: CP=&quot;This is not a P3P policy! See g.co/p3phelp for more info.&quot;&#xa;    Server: gws&#xa;    X-XSS-Protection: 0&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Set-Cookie: AEC=AZ6Zc-UkjRSbF2YyikAZd5Ed8hN0hpFmktoNBWkaePnTXt6vfaVGw9yTMSU; expires=Mon, 12-May-2025 13:38:19 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax&#xa;    Set-Cookie: NID=519=YQMu7C9U5NjaWr57wf7JPvUvhCG6psHSJFUKsdKF9ftrE4NZ4rOlgzHhh3u7i5ewk2i5GgjMvMlzr-OhSY52UpolF_OqW_5yqB7shwjDC_knDZkyATdiKTypVsobvsCzwb1TAhg4VBXKjcbAKw83K9YqICZXL82d0LS5mlghUCeqsQVgdIya&#xa;  HTTPOptions: &#xa;    HTTP/1.0 405 Method Not Allowed&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Referrer-Policy: no-referrer&#xa;    Content-Length: 1592&#xa;    Date: Wed, 13 Nov 2024 13:38:20 GMT&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=en&gt;&#xa;    &lt;meta charset=utf-8&gt;&#xa;    &lt;meta name=viewport content=&quot;initial-scale=1, minimum-scale=1, width=device-width&quot;&gt;&#xa;    &lt;title&gt;Error 405 (Method Not Allowed)!!1&lt;/title&gt;&#xa;    &lt;style&gt;&#xa;    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* &gt; body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding"><elem key="GetRequest">&#xa;    HTTP/1.0 200 OK&#xa;    Date: Wed, 13 Nov 2024 13:38:19 GMT&#xa;    Expires: -1&#xa;    Cache-Control: private, max-age=0&#xa;    Content-Type: text/html; charset=ISO-8859-1&#xa;    Content-Security-Policy-Report-Only: object-src &apos;none&apos;;base-uri &apos;self&apos;;script-src &apos;nonce-fDK79Qe_bk-or38LTjCIEQ&apos; &apos;strict-dynamic&apos; &apos;report-sample&apos; &apos;unsafe-eval&apos; &apos;unsafe-inline&apos; https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp&#xa;    P3P: CP=&quot;This is not a P3P policy! See g.co/p3phelp for more info.&quot;&#xa;    Server: gws&#xa;    X-XSS-Protection: 0&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Set-Cookie: AEC=AZ6Zc-UkjRSbF2YyikAZd5Ed8hN0hpFmktoNBWkaePnTXt6vfaVGw9yTMSU; expires=Mon, 12-May-2025 13:38:19 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax&#xa;    Set-Cookie: NID=519=YQMu7C9U5NjaWr57wf7JPvUvhCG6psHSJFUKsdKF9ftrE4NZ4rOlgzHhh3u7i5ewk2i5GgjMvMlzr-OhSY52UpolF_OqW_5yqB7shwjDC_knDZkyATdiKTypVsobvsCzwb1TAhg4VBXKjcbAKw83K9YqICZXL82d0LS5mlghUCeqsQVgdIya</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.0 405 Method Not Allowed&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Referrer-Policy: no-referrer&#xa;    Content-Length: 1592&#xa;    Date: Wed, 13 Nov 2024 13:38:20 GMT&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=en&gt;&#xa;    &lt;meta charset=utf-8&gt;&#xa;    &lt;meta name=viewport content=&quot;initial-scale=1, minimum-scale=1, width=device-width&quot;&gt;&#xa;    &lt;title&gt;Error 405 (Method Not Allowed)!!1&lt;/title&gt;&#xa;    &lt;style&gt;&#xa;    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* &gt; body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding</elem>
+</script><script id="http-title" output="Did not follow redirect to http://www.google.com:8080/"><elem key="redirect_url">http://www.google.com:8080/</elem>
+</script></port>
+<port protocol="tcp" portid="8081"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="8443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="8888"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="9100"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="jetdirect" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9999"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="10000"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="32768"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="49152"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="49153"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="49154"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="49155"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="49156"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="49157"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<osmatch name="Oracle Virtualbox" accuracy="94" line="92432">
+<osclass type="bridge" vendor="Oracle" osfamily="Virtualbox" accuracy="94"><cpe>cpe:/o:oracle:virtualbox</cpe></osclass>
+</osmatch>
+<osmatch name="QEMU user mode network gateway" accuracy="91" line="94209">
+<osclass type="general purpose" vendor="QEMU" osfamily="QEMU" accuracy="91"><cpe>cpe:/a:qemu:qemu</cpe></osclass>
+</osmatch>
+<osmatch name="Bay Networks BayStack 450 switch (software version 3.1.0.22)" accuracy="85" line="9534">
+<osclass type="switch" vendor="Bay Networks" osfamily="embedded" accuracy="85"><cpe>cpe:/h:baynetworks:baystack_450</cpe></osclass>
+</osmatch>
+</os>
+<distance value="1"/>
+<tcpsequence index="18" difficulty="Good luck!" values="74F1801,7510C01,7530001,753FA01,754F401,755EE01"/>
+<ipidsequence class="Incremental" values="84E0,84E4,84E8,84EA,84EC,84ED"/>
+<tcptssequence class="none returned (unsupported)"/>
+<trace port="143" proto="tcp">
+<hop ttl="1" ipaddr="35.190.247.0" rtt="12.04"/>
+</trace>
+<times srtt="8359" rttvar="3804" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1731505276"/>
+<taskend task="NSE" time="1731505276"/>
+<taskbegin task="NSE" time="1731505276"/>
+<taskend task="NSE" time="1731505276"/>
+<taskbegin task="NSE" time="1731505276"/>
+<taskend task="NSE" time="1731505276"/>
+<runstats><finished time="1731505276" timestr="Wed Nov 13 08:41:16 2024" summary="Nmap done at Wed Nov 13 08:41:16 2024; 1 IP address (1 host up) scanned in 189.87 seconds" elapsed="189.87" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

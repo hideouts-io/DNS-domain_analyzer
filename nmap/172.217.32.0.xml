@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="https://svn.nmap.org/nmap/docs/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Wed Nov 13 08:52:55 2024 as: nmap -O -&#45;reason -&#45;webxml -&#45;traceroute -sS -sV -sC -Pn -n -v -F -oA hideouts.io./nmap/172.217.32.0 172.217.32.0 -->
+<nmaprun scanner="nmap" args="nmap -O -&#45;reason -&#45;webxml -&#45;traceroute -sS -sV -sC -Pn -n -v -F -oA hideouts.io./nmap/172.217.32.0 172.217.32.0" start="1731505975" startstr="Wed Nov 13 08:52:55 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="100" services="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1731505979"/>
+<taskend task="NSE" time="1731505979"/>
+<taskbegin task="NSE" time="1731505979"/>
+<taskend task="NSE" time="1731505979"/>
+<taskbegin task="NSE" time="1731505979"/>
+<taskend task="NSE" time="1731505979"/>
+<taskbegin task="SYN Stealth Scan" time="1731505979"/>
+<taskend task="SYN Stealth Scan" time="1731506001" extrainfo="100 total ports"/>
+<taskbegin task="Service scan" time="1731506004"/>
+<taskbegin task="Traceroute" time="1731506007"/>
+<taskend task="Traceroute" time="1731506016"/>
+<taskbegin task="NSE" time="1731506016"/>
+<taskend task="NSE" time="1731506021"/>
+<taskbegin task="NSE" time="1731506021"/>
+<taskend task="NSE" time="1731506021"/>
+<taskbegin task="NSE" time="1731506022"/>
+<taskend task="NSE" time="1731506022"/>
+<host starttime="1731505979" endtime="1731506022"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.217.32.0" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+<os><osmatch name="3Com 4500G switch" accuracy="92" line="370">
+<osclass type="switch" vendor="3Com" osfamily="embedded" accuracy="92"><cpe>cpe:/h:3com:4500g</cpe></osclass>
+</osmatch>
+<osmatch name="H3C Comware 5.20" accuracy="92" line="32207">
+<osclass type="switch" vendor="H3C" osfamily="Comware" osgen="5.X" accuracy="92"><cpe>cpe:/o:h3c:comware:5.20</cpe></osclass>
+</osmatch>
+<osmatch name="Huawei VRP 8.100" accuracy="92" line="37725">
+<osclass type="broadband router" vendor="Huawei" osfamily="VRP" osgen="8.X" accuracy="92"><cpe>cpe:/o:huawei:vrp:8.100</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2003 SP1" accuracy="92" line="72732">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2003" accuracy="92"><cpe>cpe:/o:microsoft:windows_server_2003::sp1</cpe></osclass>
+</osmatch>
+<osmatch name="Oracle Virtualbox" accuracy="92" line="92432">
+<osclass type="bridge" vendor="Oracle" osfamily="Virtualbox" accuracy="92"><cpe>cpe:/o:oracle:virtualbox</cpe></osclass>
+</osmatch>
+<osmatch name="QEMU user mode network gateway" accuracy="92" line="94192">
+<osclass type="general purpose" vendor="QEMU" osfamily="QEMU" accuracy="92"><cpe>cpe:/a:qemu:qemu</cpe></osclass>
+</osmatch>
+<osmatch name="AXIS 2100 Network Camera" accuracy="92" line="9305">
+<osclass type="webcam" vendor="AXIS" osfamily="embedded" accuracy="92"><cpe>cpe:/h:axis:2100_network_camera</cpe></osclass>
+</osmatch>
+<osmatch name="D-Link DP-300U, DP-G310, or Hamlet HPS01UU print server" accuracy="92" line="19968">
+<osclass type="print server" vendor="D-Link" osfamily="embedded" accuracy="92"><cpe>cpe:/h:dlink:dp-300u</cpe><cpe>cpe:/h:dlink:dp-g310</cpe></osclass>
+<osclass type="print server" vendor="Hamlet" osfamily="embedded" accuracy="92"><cpe>cpe:/h:hamlet:hps01uu</cpe></osclass>
+</osmatch>
+<osmatch name="HP Tru64 UNIX 5.1A" accuracy="92" line="37295">
+<osclass type="general purpose" vendor="HP" osfamily="Tru64 UNIX" osgen="5.X" accuracy="92"><cpe>cpe:/o:hp:tru64:5.1a</cpe></osclass>
+</osmatch>
+<osmatch name="Sanyo PLC-XU88 digital video projector" accuracy="92" line="96419">
+<osclass type="media device" vendor="Sanyo" osfamily="embedded" accuracy="92"><cpe>cpe:/h:sanyo:plc-xu88</cpe></osclass>
+</osmatch>
+</os>
+<trace proto="icmp">
+</trace>
+<times srtt="5259" rttvar="5008" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1731506022"/>
+<taskend task="NSE" time="1731506022"/>
+<taskbegin task="NSE" time="1731506022"/>
+<taskend task="NSE" time="1731506022"/>
+<taskbegin task="NSE" time="1731506022"/>
+<taskend task="NSE" time="1731506022"/>
+<runstats><finished time="1731506022" timestr="Wed Nov 13 08:53:42 2024" summary="Nmap done at Wed Nov 13 08:53:42 2024; 1 IP address (1 host up) scanned in 51.63 seconds" elapsed="51.63" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

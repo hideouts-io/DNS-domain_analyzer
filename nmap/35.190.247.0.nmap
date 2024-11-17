@@ -1,0 +1,268 @@
+# Nmap 7.94SVN scan initiated Wed Nov 13 08:38:07 2024 as: nmap -O --reason --webxml --traceroute -sS -sV -sC -Pn -n -v -F -oA hideouts.io./nmap/35.190.247.0 35.190.247.0
+Nmap scan report for 35.190.247.0
+Host is up, received user-set (0.0084s latency).
+
+PORT      STATE    SERVICE      REASON         VERSION
+7/tcp     open     tcpwrapped   syn-ack ttl 64
+9/tcp     open     tcpwrapped   syn-ack ttl 64
+13/tcp    open     tcpwrapped   syn-ack ttl 64
+21/tcp    open     tcpwrapped   syn-ack ttl 64
+22/tcp    open     tcpwrapped   syn-ack ttl 64
+|_ssh-hostkey: ERROR: Script execution failed (use -d to debug)
+23/tcp    open     tcpwrapped   syn-ack ttl 64
+25/tcp    filtered smtp         no-response
+26/tcp    open     tcpwrapped   syn-ack ttl 64
+37/tcp    open     tcpwrapped   syn-ack ttl 64
+53/tcp    open     tcpwrapped   syn-ack ttl 64
+79/tcp    open     tcpwrapped   syn-ack ttl 64
+80/tcp    open     http         syn-ack ttl 64 gws
+| http-robots.txt: 236 disallowed entries (15 shown)
+| /search /sdch /groups /index.html? /? /?hl=*& 
+|_/?hl=*&*&gws_rd=ssl /imgres /u/ /setprefs /default /m? /m/ /wml? /wml/?
+| http-methods: 
+|_  Supported Methods: GET HEAD
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     Date: Wed, 13 Nov 2024 13:38:18 GMT
+|     Expires: -1
+|     Cache-Control: private, max-age=0
+|     Content-Type: text/html; charset=ISO-8859-1
+|     Content-Security-Policy-Report-Only: object-src 'none';base-uri 'self';script-src 'nonce-tnUz08wKQciGaq5vY9OzuA' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+|     P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+|     Server: gws
+|     X-XSS-Protection: 0
+|     X-Frame-Options: SAMEORIGIN
+|     Set-Cookie: AEC=AZ6Zc-WBDTN4VoGAfmy1prC_4ki-6p8qE6Lwumte-q9USjck5Qea8-7zalw; expires=Mon, 12-May-2025 13:38:18 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax
+|     Set-Cookie: NID=519=1yN28SrklHs3RXR7jTrbgFeOg7A53xgo06mH7vNFm1VdBECGfGzOheAMPBGeUE4EFtDVbhXJUSpUNSqfkXb6SNY5BRawrRGzx-cpy0GG_3DuuLsjc1A1Q6lNnRqAgyKs4Osi1hUg4nokLEVCgE7Z3GMf13l_Rdectc9H7iXpgWWAwJmjVhvH
+|   HTTPOptions: 
+|     HTTP/1.0 405 Method Not Allowed
+|     Content-Type: text/html; charset=UTF-8
+|     Referrer-Policy: no-referrer
+|     Content-Length: 1592
+|     Date: Wed, 13 Nov 2024 13:38:19 GMT
+|     <!DOCTYPE html>
+|     <html lang=en>
+|     <meta charset=utf-8>
+|     <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+|     <title>Error 405 (Method Not Allowed)!!1</title>
+|     <style>
+|_    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding
+|_http-favicon: Google
+|_http-server-header: gws
+|_http-title: Did not follow redirect to http://www.google.com/
+81/tcp    open     tcpwrapped   syn-ack ttl 64
+88/tcp    open     tcpwrapped   syn-ack ttl 64
+106/tcp   open     tcpwrapped   syn-ack ttl 64
+110/tcp   open     tcpwrapped   syn-ack ttl 64
+111/tcp   filtered rpcbind      no-response
+113/tcp   open     tcpwrapped   syn-ack ttl 64
+119/tcp   open     tcpwrapped   syn-ack ttl 64
+135/tcp   filtered msrpc        no-response
+139/tcp   filtered netbios-ssn  no-response
+143/tcp   open     tcpwrapped   syn-ack ttl 64
+144/tcp   open     tcpwrapped   syn-ack ttl 64
+179/tcp   open     tcpwrapped   syn-ack ttl 64
+199/tcp   open     tcpwrapped   syn-ack ttl 64
+389/tcp   open     tcpwrapped   syn-ack ttl 64
+427/tcp   open     tcpwrapped   syn-ack ttl 64
+443/tcp   open     tcpwrapped   syn-ack ttl 64
+444/tcp   open     tcpwrapped   syn-ack ttl 64
+445/tcp   filtered microsoft-ds no-response
+465/tcp   open     tcpwrapped   syn-ack ttl 64
+|_smtp-commands: Couldn't establish connection on port 465
+513/tcp   open     tcpwrapped   syn-ack ttl 64
+514/tcp   open     tcpwrapped   syn-ack ttl 64
+515/tcp   open     tcpwrapped   syn-ack ttl 64
+543/tcp   open     tcpwrapped   syn-ack ttl 64
+544/tcp   open     tcpwrapped   syn-ack ttl 64
+548/tcp   open     tcpwrapped   syn-ack ttl 64
+|_afp-serverinfo: ERROR: Script execution failed (use -d to debug)
+554/tcp   open     tcpwrapped   syn-ack ttl 64
+587/tcp   open     tcpwrapped   syn-ack ttl 64
+|_smtp-commands: Couldn't establish connection on port 587
+631/tcp   open     tcpwrapped   syn-ack ttl 64
+646/tcp   open     tcpwrapped   syn-ack ttl 64
+873/tcp   open     tcpwrapped   syn-ack ttl 64
+990/tcp   open     tcpwrapped   syn-ack ttl 64
+993/tcp   open     tcpwrapped   syn-ack ttl 64
+995/tcp   open     tcpwrapped   syn-ack ttl 64
+1025/tcp  open     tcpwrapped   syn-ack ttl 64
+1026/tcp  open     tcpwrapped   syn-ack ttl 64
+1027/tcp  open     tcpwrapped   syn-ack ttl 64
+1028/tcp  open     tcpwrapped   syn-ack ttl 64
+1029/tcp  open     tcpwrapped   syn-ack ttl 64
+1110/tcp  open     tcpwrapped   syn-ack ttl 64
+1433/tcp  open     tcpwrapped   syn-ack ttl 64
+1720/tcp  open     tcpwrapped   syn-ack ttl 64
+1723/tcp  open     tcpwrapped   syn-ack ttl 64
+1755/tcp  open     tcpwrapped   syn-ack ttl 64
+1900/tcp  open     tcpwrapped   syn-ack ttl 64
+2000/tcp  open     tcpwrapped   syn-ack ttl 64
+2001/tcp  open     tcpwrapped   syn-ack ttl 64
+2049/tcp  open     tcpwrapped   syn-ack ttl 64
+2121/tcp  open     tcpwrapped   syn-ack ttl 64
+2717/tcp  open     tcpwrapped   syn-ack ttl 64
+3000/tcp  open     tcpwrapped   syn-ack ttl 64
+3128/tcp  open     tcpwrapped   syn-ack ttl 64
+3306/tcp  open     tcpwrapped   syn-ack ttl 64
+3389/tcp  open     tcpwrapped   syn-ack ttl 64
+3986/tcp  open     tcpwrapped   syn-ack ttl 64
+4899/tcp  open     tcpwrapped   syn-ack ttl 64
+5000/tcp  open     tcpwrapped   syn-ack ttl 64
+5009/tcp  open     tcpwrapped   syn-ack ttl 64
+5051/tcp  open     tcpwrapped   syn-ack ttl 64
+5060/tcp  open     tcpwrapped   syn-ack ttl 64
+5101/tcp  open     tcpwrapped   syn-ack ttl 64
+5190/tcp  open     tcpwrapped   syn-ack ttl 64
+5357/tcp  open     tcpwrapped   syn-ack ttl 64
+5432/tcp  open     tcpwrapped   syn-ack ttl 64
+5631/tcp  open     tcpwrapped   syn-ack ttl 64
+5666/tcp  open     tcpwrapped   syn-ack ttl 64
+5800/tcp  open     tcpwrapped   syn-ack ttl 64
+5900/tcp  open     tcpwrapped   syn-ack ttl 64
+6000/tcp  open     tcpwrapped   syn-ack ttl 64
+6001/tcp  open     tcpwrapped   syn-ack ttl 64
+6646/tcp  open     tcpwrapped   syn-ack ttl 64
+7070/tcp  open     tcpwrapped   syn-ack ttl 64
+8000/tcp  open     tcpwrapped   syn-ack ttl 64
+8008/tcp  open     tcpwrapped   syn-ack ttl 64
+8009/tcp  open     tcpwrapped   syn-ack ttl 64
+|_ajp-methods: Failed to get a valid response for the OPTION request
+8080/tcp  open     http-proxy   syn-ack ttl 64 gws
+| http-methods: 
+|_  Supported Methods: GET HEAD
+| http-robots.txt: 236 disallowed entries (15 shown)
+| /search /sdch /groups /index.html? /? /?hl=*& 
+|_/?hl=*&*&gws_rd=ssl /imgres /u/ /setprefs /default /m? /m/ /wml? /wml/?
+|_http-favicon: Google
+| http-open-proxy: Potentially OPEN proxy.
+|_Methods supported: HEAD
+|_http-server-header: gws
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     Date: Wed, 13 Nov 2024 13:38:19 GMT
+|     Expires: -1
+|     Cache-Control: private, max-age=0
+|     Content-Type: text/html; charset=ISO-8859-1
+|     Content-Security-Policy-Report-Only: object-src 'none';base-uri 'self';script-src 'nonce-fDK79Qe_bk-or38LTjCIEQ' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+|     P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+|     Server: gws
+|     X-XSS-Protection: 0
+|     X-Frame-Options: SAMEORIGIN
+|     Set-Cookie: AEC=AZ6Zc-UkjRSbF2YyikAZd5Ed8hN0hpFmktoNBWkaePnTXt6vfaVGw9yTMSU; expires=Mon, 12-May-2025 13:38:19 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax
+|     Set-Cookie: NID=519=YQMu7C9U5NjaWr57wf7JPvUvhCG6psHSJFUKsdKF9ftrE4NZ4rOlgzHhh3u7i5ewk2i5GgjMvMlzr-OhSY52UpolF_OqW_5yqB7shwjDC_knDZkyATdiKTypVsobvsCzwb1TAhg4VBXKjcbAKw83K9YqICZXL82d0LS5mlghUCeqsQVgdIya
+|   HTTPOptions: 
+|     HTTP/1.0 405 Method Not Allowed
+|     Content-Type: text/html; charset=UTF-8
+|     Referrer-Policy: no-referrer
+|     Content-Length: 1592
+|     Date: Wed, 13 Nov 2024 13:38:20 GMT
+|     <!DOCTYPE html>
+|     <html lang=en>
+|     <meta charset=utf-8>
+|     <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+|     <title>Error 405 (Method Not Allowed)!!1</title>
+|     <style>
+|_    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding
+|_http-title: Did not follow redirect to http://www.google.com:8080/
+8081/tcp  open     tcpwrapped   syn-ack ttl 64
+8443/tcp  open     tcpwrapped   syn-ack ttl 64
+8888/tcp  open     tcpwrapped   syn-ack ttl 64
+9100/tcp  open     jetdirect?   syn-ack ttl 64
+9999/tcp  open     tcpwrapped   syn-ack ttl 64
+10000/tcp open     tcpwrapped   syn-ack ttl 64
+32768/tcp open     tcpwrapped   syn-ack ttl 64
+49152/tcp open     tcpwrapped   syn-ack ttl 64
+49153/tcp open     tcpwrapped   syn-ack ttl 64
+49154/tcp open     tcpwrapped   syn-ack ttl 64
+49155/tcp open     tcpwrapped   syn-ack ttl 64
+49156/tcp open     tcpwrapped   syn-ack ttl 64
+49157/tcp open     tcpwrapped   syn-ack ttl 64
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.94SVN%I=7%D=11/13%Time=6734ABC9%P=x86_64-pc-linux-gnu%r(
+SF:GetRequest,E5EA,"HTTP/1\.0\x20200\x20OK\r\nDate:\x20Wed,\x2013\x20Nov\x
+SF:202024\x2013:38:18\x20GMT\r\nExpires:\x20-1\r\nCache-Control:\x20privat
+SF:e,\x20max-age=0\r\nContent-Type:\x20text/html;\x20charset=ISO-8859-1\r\
+SF:nContent-Security-Policy-Report-Only:\x20object-src\x20'none';base-uri\
+SF:x20'self';script-src\x20'nonce-tnUz08wKQciGaq5vY9OzuA'\x20'strict-dynam
+SF:ic'\x20'report-sample'\x20'unsafe-eval'\x20'unsafe-inline'\x20https:\x2
+SF:0http:;report-uri\x20https://csp\.withgoogle\.com/csp/gws/other-hp\r\nP
+SF:3P:\x20CP=\"This\x20is\x20not\x20a\x20P3P\x20policy!\x20See\x20g\.co/p3
+SF:phelp\x20for\x20more\x20info\.\"\r\nServer:\x20gws\r\nX-XSS-Protection:
+SF:\x200\r\nX-Frame-Options:\x20SAMEORIGIN\r\nSet-Cookie:\x20AEC=AZ6Zc-WBD
+SF:TN4VoGAfmy1prC_4ki-6p8qE6Lwumte-q9USjck5Qea8-7zalw;\x20expires=Mon,\x20
+SF:12-May-2025\x2013:38:18\x20GMT;\x20path=/;\x20domain=\.google\.com;\x20
+SF:Secure;\x20HttpOnly;\x20SameSite=lax\r\nSet-Cookie:\x20NID=519=1yN28Srk
+SF:lHs3RXR7jTrbgFeOg7A53xgo06mH7vNFm1VdBECGfGzOheAMPBGeUE4EFtDVbhXJUSpUNSq
+SF:fkXb6SNY5BRawrRGzx-cpy0GG_3DuuLsjc1A1Q6lNnRqAgyKs4Osi1hUg4nokLEVCgE7Z3G
+SF:Mf13l_Rdectc9H7iXpgWWAwJmjVhvH")%r(HTTPOptions,6DC,"HTTP/1\.0\x20405\x2
+SF:0Method\x20Not\x20Allowed\r\nContent-Type:\x20text/html;\x20charset=UTF
+SF:-8\r\nReferrer-Policy:\x20no-referrer\r\nContent-Length:\x201592\r\nDat
+SF:e:\x20Wed,\x2013\x20Nov\x202024\x2013:38:19\x20GMT\r\n\r\n<!DOCTYPE\x20
+SF:html>\n<html\x20lang=en>\n\x20\x20<meta\x20charset=utf-8>\n\x20\x20<met
+SF:a\x20name=viewport\x20content=\"initial-scale=1,\x20minimum-scale=1,\x2
+SF:0width=device-width\">\n\x20\x20<title>Error\x20405\x20\(Method\x20Not\
+SF:x20Allowed\)!!1</title>\n\x20\x20<style>\n\x20\x20\x20\x20\*{margin:0;p
+SF:adding:0}html,code{font:15px/22px\x20arial,sans-serif}html{background:#
+SF:fff;color:#222;padding:15px}body{margin:7%\x20auto\x200;max-width:390px
+SF:;min-height:180px;padding:30px\x200\x2015px}\*\x20>\x20body{background:
+SF:url\(//www\.google\.com/images/errors/robot\.png\)\x20100%\x205px\x20no
+SF:-repeat;padding-right:205px}p{margin:11px\x200\x2022px;overflow:hidden}
+SF:ins{color:#777;text-decoration:none}a\x20img{border:0}@media\x20screen\
+SF:x20and\x20\(max-width:772px\){body{background:none;margin-top:0;max-wid
+SF:th:none;padding-right:0}}#logo{background:url\(//www\.google\.com/image
+SF:s/branding");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8080-TCP:V=7.94SVN%I=7%D=11/13%Time=6734ABC9%P=x86_64-pc-linux-gnu%
+SF:r(GetRequest,E5EB,"HTTP/1\.0\x20200\x20OK\r\nDate:\x20Wed,\x2013\x20Nov
+SF:\x202024\x2013:38:19\x20GMT\r\nExpires:\x20-1\r\nCache-Control:\x20priv
+SF:ate,\x20max-age=0\r\nContent-Type:\x20text/html;\x20charset=ISO-8859-1\
+SF:r\nContent-Security-Policy-Report-Only:\x20object-src\x20'none';base-ur
+SF:i\x20'self';script-src\x20'nonce-fDK79Qe_bk-or38LTjCIEQ'\x20'strict-dyn
+SF:amic'\x20'report-sample'\x20'unsafe-eval'\x20'unsafe-inline'\x20https:\
+SF:x20http:;report-uri\x20https://csp\.withgoogle\.com/csp/gws/other-hp\r\
+SF:nP3P:\x20CP=\"This\x20is\x20not\x20a\x20P3P\x20policy!\x20See\x20g\.co/
+SF:p3phelp\x20for\x20more\x20info\.\"\r\nServer:\x20gws\r\nX-XSS-Protectio
+SF:n:\x200\r\nX-Frame-Options:\x20SAMEORIGIN\r\nSet-Cookie:\x20AEC=AZ6Zc-U
+SF:kjRSbF2YyikAZd5Ed8hN0hpFmktoNBWkaePnTXt6vfaVGw9yTMSU;\x20expires=Mon,\x
+SF:2012-May-2025\x2013:38:19\x20GMT;\x20path=/;\x20domain=\.google\.com;\x
+SF:20Secure;\x20HttpOnly;\x20SameSite=lax\r\nSet-Cookie:\x20NID=519=YQMu7C
+SF:9U5NjaWr57wf7JPvUvhCG6psHSJFUKsdKF9ftrE4NZ4rOlgzHhh3u7i5ewk2i5GgjMvMlzr
+SF:-OhSY52UpolF_OqW_5yqB7shwjDC_knDZkyATdiKTypVsobvsCzwb1TAhg4VBXKjcbAKw83
+SF:K9YqICZXL82d0LS5mlghUCeqsQVgdIya")%r(HTTPOptions,6DC,"HTTP/1\.0\x20405\
+SF:x20Method\x20Not\x20Allowed\r\nContent-Type:\x20text/html;\x20charset=U
+SF:TF-8\r\nReferrer-Policy:\x20no-referrer\r\nContent-Length:\x201592\r\nD
+SF:ate:\x20Wed,\x2013\x20Nov\x202024\x2013:38:20\x20GMT\r\n\r\n<!DOCTYPE\x
+SF:20html>\n<html\x20lang=en>\n\x20\x20<meta\x20charset=utf-8>\n\x20\x20<m
+SF:eta\x20name=viewport\x20content=\"initial-scale=1,\x20minimum-scale=1,\
+SF:x20width=device-width\">\n\x20\x20<title>Error\x20405\x20\(Method\x20No
+SF:t\x20Allowed\)!!1</title>\n\x20\x20<style>\n\x20\x20\x20\x20\*{margin:0
+SF:;padding:0}html,code{font:15px/22px\x20arial,sans-serif}html{background
+SF::#fff;color:#222;padding:15px}body{margin:7%\x20auto\x200;max-width:390
+SF:px;min-height:180px;padding:30px\x200\x2015px}\*\x20>\x20body{backgroun
+SF:d:url\(//www\.google\.com/images/errors/robot\.png\)\x20100%\x205px\x20
+SF:no-repeat;padding-right:205px}p{margin:11px\x200\x2022px;overflow:hidde
+SF:n}ins{color:#777;text-decoration:none}a\x20img{border:0}@media\x20scree
+SF:n\x20and\x20\(max-width:772px\){body{background:none;margin-top:0;max-w
+SF:idth:none;padding-right:0}}#logo{background:url\(//www\.google\.com/ima
+SF:ges/branding");
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: bridge|general purpose|switch
+Running (JUST GUESSING): Oracle Virtualbox (94%), QEMU (91%), Bay Networks embedded (85%)
+OS CPE: cpe:/o:oracle:virtualbox cpe:/a:qemu:qemu cpe:/h:baynetworks:baystack_450
+Aggressive OS guesses: Oracle Virtualbox (94%), QEMU user mode network gateway (91%), Bay Networks BayStack 450 switch (software version 3.1.0.22) (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=18 (Good luck!)
+IP ID Sequence Generation: Incremental
+
+TRACEROUTE (using port 143/tcp)
+HOP RTT      ADDRESS
+1   12.04 ms 35.190.247.0
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Nov 13 08:41:16 2024 -- 1 IP address (1 host up) scanned in 189.87 seconds
