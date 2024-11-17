@@ -1,0 +1,921 @@
+Analysing domain : hideouts.io.
+	Output directory name: hideouts.io.
+	Output summary file: hideouts.io./hideouts.io..txt
+	Checking NameServers using system default resolver...
+			HostName: ns-cloud-b3.googledomains.com			Type: NS
+			HostName: 107.36.239.216.in-addr.arpa			Type: PTR
+			HostName: ns-cloud-b1.googledomains.com			Type: NS
+			HostName: 107.32.239.216.in-addr.arpa			Type: PTR
+			HostName: ns-cloud-b4.googledomains.com			Type: NS
+			HostName: 107.38.239.216.in-addr.arpa			Type: PTR
+			HostName: ns-cloud-b2.googledomains.com			Type: NS
+			HostName: 107.34.239.216.in-addr.arpa			Type: PTR
+
+	Checking MailServers using system default resolver...
+			HostName: alt1.aspmx.l.google.com			Type: MX
+			HostName: 26.104.177.108.in-addr.arpa			Type: PTR
+			HostName: aspmx.l.google.com			Type: MX
+			HostName: 27.137.125.74.in-addr.arpa			Type: PTR
+			HostName: alt2.aspmx.l.google.com			Type: MX
+			HostName: 26.113.253.172.in-addr.arpa			Type: PTR
+			HostName: alt4.aspmx.l.google.com			Type: MX
+			HostName: 27.219.194.173.in-addr.arpa			Type: PTR
+			HostName: alt3.aspmx.l.google.com			Type: MX
+			HostName: 27.113.253.172.in-addr.arpa			Type: PTR
+		WARNING!! This domain has wildcards activated for hostnames resolution. We are checking "www" anyway, but perhaps it doesn't exists!
+
+	Checking the zone transfer for each NS... (if this takes more than 10 seconds, just hit CTRL-C and it will continue. Bug in the libs)
+		No zone transfer found on nameserver 216.239.36.107
+		No zone transfer found on nameserver 216.239.32.107
+		No zone transfer found on nameserver 216.239.38.107
+		No zone transfer found on nameserver 216.239.34.107
+
+	Checking SPF record...
+
+	Checking SPF record...
+
+	Checking SPF record...
+		WARNING! SPF record allows an entire network to send mails. Probably an ISP network. We are not going to check the entire network by now: 35.190.247.0/24, but only the network IP
+		New IP found: 35.190.247.0
+		WARNING! SPF record allows an entire network to send mails. Probably an ISP network. We are not going to check the entire network by now: 64.233.160.0/19, but only the network IP
+		New IP found: 64.233.160.0
+		WARNING! SPF record allows an entire network to send mails. Probably an ISP network. We are not going to check the entire network by now: 66.102.0.0/20, but only the network IP
+		New IP found: 66.102.0.0
+		WARNING! SPF record allows an entire network to send mails. Probably an ISP network. We are not going to check the entire network by now: 66.249.80.0/20, but only the network IP
+		New IP found: 66.249.80.0
+		WARNING! SPF record allows an entire network to send mails. Probably an ISP network. We are not going to check the entire network by now: 72.14.192.0/18, but only the network IP
+		New IP found: 72.14.192.0
+		WARNING! SPF record allows an entire network to send mails. Probably an ISP network. We are not going to check the entire network by now: 74.125.0.0/16, but only the network IP
+		New IP found: 74.125.0.0
+		WARNING! SPF record allows an entire network to send mails. Probably an ISP network. We are not going to check the entire network by now: 108.177.8.0/21, but only the network IP
+		New IP found: 108.177.8.0
+		WARNING! SPF record allows an entire network to send mails. Probably an ISP network. We are not going to check the entire network by now: 173.194.0.0/16, but only the network IP
+		New IP found: 173.194.0.0
+		WARNING! SPF record allows an entire network to send mails. Probably an ISP network. We are not going to check the entire network by now: 209.85.128.0/17, but only the network IP
+		New IP found: 209.85.128.0
+		WARNING! SPF record allows an entire network to send mails. Probably an ISP network. We are not going to check the entire network by now: 216.58.192.0/19, but only the network IP
+		New IP found: 216.58.192.0
+		WARNING! SPF record allows an entire network to send mails. Probably an ISP network. We are not going to check the entire network by now: 216.239.32.0/19, but only the network IP
+		New IP found: 216.239.32.0
+
+	Checking SPF record...
+			There are no IPv4 addresses in the SPF. Maybe IPv6.
+			There are no IPv4 addresses in the SPF. Maybe IPv6.
+			There are no IPv4 addresses in the SPF. Maybe IPv6.
+			There are no IPv4 addresses in the SPF. Maybe IPv6.
+			There are no IPv4 addresses in the SPF. Maybe IPv6.
+			There are no IPv4 addresses in the SPF. Maybe IPv6.
+
+	Checking SPF record...
+		WARNING! SPF record allows an entire network to send mails. Probably an ISP network. We are not going to check the entire network by now: 172.217.0.0/19, but only the network IP
+		New IP found: 172.217.0.0
+		WARNING! SPF record allows an entire network to send mails. Probably an ISP network. We are not going to check the entire network by now: 172.217.32.0/20, but only the network IP
+		New IP found: 172.217.32.0
+		WARNING! SPF record allows an entire network to send mails. Probably an ISP network. We are not going to check the entire network by now: 172.217.128.0/19, but only the network IP
+		New IP found: 172.217.128.0
+		WARNING! SPF record allows an entire network to send mails. Probably an ISP network. We are not going to check the entire network by now: 172.217.160.0/20, but only the network IP
+		New IP found: 172.217.160.0
+		WARNING! SPF record allows an entire network to send mails. Probably an ISP network. We are not going to check the entire network by now: 172.217.192.0/19, but only the network IP
+		New IP found: 172.217.192.0
+		WARNING! SPF record allows an entire network to send mails. Probably an ISP network. We are not going to check the entire network by now: 172.253.56.0/21, but only the network IP
+		New IP found: 172.253.56.0
+		WARNING! SPF record allows an entire network to send mails. Probably an ISP network. We are not going to check the entire network by now: 172.253.112.0/20, but only the network IP
+		New IP found: 172.253.112.0
+		WARNING! SPF record allows an entire network to send mails. Probably an ISP network. We are not going to check the entire network by now: 108.177.96.0/19, but only the network IP
+		New IP found: 108.177.96.0
+		WARNING! SPF record allows an entire network to send mails. Probably an ISP network. We are not going to check the entire network by now: 35.191.0.0/16, but only the network IP
+		New IP found: 35.191.0.0
+		WARNING! SPF record allows an entire network to send mails. Probably an ISP network. We are not going to check the entire network by now: 130.211.0.0/22, but only the network IP
+		New IP found: 130.211.0.0
+
+	Checking 1 most common hostnames using system default resolver...
+			HostName: www.hideouts.io.			Type: A
+
+	Checking with nmap the reverse DNS hostnames of every <ip>/24 netblock using system default resolver...
+		Checking netblock 216.239.36.0
+
+	Searching for hideouts.io. emails in Google
+
+	Checking 31 active hosts using nmap... (nmap -sn -n -v -PP -PM -PS80,25 -PA -PY -PU53,40125 -PE --reason <ip> -oA <output_directory>/nmap/<ip>.sn)
+		Host 216.239.36.107 is up (echo-reply ttl 255)
+		Host 216.239.32.107 is up (udp-response ttl 64)
+		Host 216.239.38.107 is up (udp-response ttl 64)
+		Host 216.239.34.107 is up (echo-reply ttl 255)
+		Host 108.177.104.26 is up (echo-reply ttl 255)
+		Host 74.125.137.27 is up (echo-reply ttl 255)
+		Host 172.253.113.26 is up (echo-reply ttl 255)
+		Host 173.194.219.27 is up (echo-reply ttl 255)
+		Host 172.253.113.27 is up (echo-reply ttl 255)
+		Host 35.190.247.0 is up (echo-reply ttl 255)
+		Host 64.233.160.0 is up (reset ttl 255)
+		Host 66.102.0.0 is up (reset ttl 255)
+		Host 66.249.80.0 is up (reset ttl 255)
+		Host 72.14.192.0 is up (echo-reply ttl 255)
+		Host 74.125.0.0 is up (reset ttl 255)
+		Host 108.177.8.0 is up (reset ttl 255)
+		Host 173.194.0.0 is up (reset ttl 255)
+		Host 209.85.128.0 is up (reset ttl 255)
+		Host 216.58.192.0 is up (reset ttl 255)
+		Host 216.239.32.0 is up (reset ttl 255)
+		Host 172.217.0.0 is up (reset ttl 255)
+		Host 172.217.32.0 is up (reset ttl 255)
+		Host 172.217.128.0 is up (reset ttl 255)
+		Host 172.217.160.0 is up (echo-reply ttl 255)
+		Host 172.217.192.0 is up (reset ttl 255)
+		Host 172.253.56.0 is up (reset ttl 255)
+		Host 172.253.112.0 is up (reset ttl 255)
+		Host 108.177.96.0 is up (reset ttl 255)
+		Host 35.191.0.0 is up (reset ttl 255)
+		Host 130.211.0.0 is up (reset ttl 255)
+		Host 143.244.220.150 is up (echo-reply ttl 255)
+
+	Checking ports on every active host using nmap... (nmap -O --reason --webxml --traceroute -sS -sV -sC -Pn -n -v -F  <ip> -oA <output_directory>/nmap/<ip>)
+		Scanning ip 216.239.36.107 (107.36.239.216.in-addr.arpa (PTR)):
+			53/tcp open  domain  syn-ack ttl 64 (generic dns response: NOTIMP)
+				| fingerprint-strings: 
+				|   DNSVersionBindReqTCP: 
+				|     version
+				|     bind
+				|     ns-cloud-b1
+				|     googledomains
+				|     cloud-dns-hostmaster
+				|_    google
+		Scanning ip 216.239.32.107 (107.32.239.216.in-addr.arpa (PTR)):
+			53/tcp open  domain  syn-ack ttl 64 (generic dns response: NOTIMP)
+				| fingerprint-strings: 
+				|   DNSVersionBindReqTCP: 
+				|     version
+				|     bind
+				|     ns-cloud-b1
+				|     googledomains
+				|     cloud-dns-hostmaster
+				|_    google
+		Scanning ip 216.239.38.107 (107.38.239.216.in-addr.arpa (PTR)):
+			53/tcp open  domain  syn-ack ttl 64 (generic dns response: NOTIMP)
+				| fingerprint-strings: 
+				|   DNSVersionBindReqTCP: 
+				|     version
+				|     bind
+				|     ns-cloud-b1
+				|     googledomains
+				|     cloud-dns-hostmaster
+				|_    google
+		Scanning ip 216.239.34.107 (107.34.239.216.in-addr.arpa (PTR)):
+			53/tcp open  domain  syn-ack ttl 64 (generic dns response: NOTIMP)
+				| fingerprint-strings: 
+				|   DNSVersionBindReqTCP: 
+				|     version
+				|     bind
+				|     ns-cloud-b1
+				|     googledomains
+				|     cloud-dns-hostmaster
+				|_    google
+		Scanning ip 108.177.104.26 (26.104.177.108.in-addr.arpa (PTR)):
+		Scanning ip 74.125.137.27 (27.137.125.74.in-addr.arpa (PTR)):
+		Scanning ip 172.253.113.26 (26.113.253.172.in-addr.arpa (PTR)):
+		Scanning ip 173.194.219.27 (27.219.194.173.in-addr.arpa (PTR)):
+		Scanning ip 172.253.113.27 (27.113.253.172.in-addr.arpa (PTR)):
+		Scanning ip 35.190.247.0 ():
+			7/tcp     open     tcpwrapped   syn-ack ttl 64
+			9/tcp     open     tcpwrapped   syn-ack ttl 64
+			13/tcp    open     tcpwrapped   syn-ack ttl 64
+			21/tcp    open     tcpwrapped   syn-ack ttl 64
+			22/tcp    open     tcpwrapped   syn-ack ttl 64
+				|_ssh-hostkey: ERROR: Script execution failed (use -d to debug)
+			23/tcp    open     tcpwrapped   syn-ack ttl 64
+			26/tcp    open     tcpwrapped   syn-ack ttl 64
+			37/tcp    open     tcpwrapped   syn-ack ttl 64
+			53/tcp    open     tcpwrapped   syn-ack ttl 64
+			79/tcp    open     tcpwrapped   syn-ack ttl 64
+			80/tcp    open     http         syn-ack ttl 64 gws
+				| http-robots.txt: 236 disallowed entries (15 shown)
+				| /search /sdch /groups /index.html? /? /?hl=*& 
+				|_/?hl=*&*&gws_rd=ssl /imgres /u/ /setprefs /default /m? /m/ /wml? /wml/?
+				| http-methods: 
+				|_  Supported Methods: GET HEAD
+				| fingerprint-strings: 
+				|   GetRequest: 
+				|     HTTP/1.0 200 OK
+				|     Date: Wed, 13 Nov 2024 13:38:18 GMT
+				|     Expires: -1
+				|     Cache-Control: private, max-age=0
+				|     Content-Type: text/html; charset=ISO-8859-1
+				|     Content-Security-Policy-Report-Only: object-src 'none';base-uri 'self';script-src 'nonce-tnUz08wKQciGaq5vY9OzuA' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+				|     P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+				|     Server: gws
+				|     X-XSS-Protection: 0
+				|     X-Frame-Options: SAMEORIGIN
+				|     Set-Cookie: AEC=AZ6Zc-WBDTN4VoGAfmy1prC_4ki-6p8qE6Lwumte-q9USjck5Qea8-7zalw; expires=Mon, 12-May-2025 13:38:18 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax
+				|     Set-Cookie: NID=519=1yN28SrklHs3RXR7jTrbgFeOg7A53xgo06mH7vNFm1VdBECGfGzOheAMPBGeUE4EFtDVbhXJUSpUNSqfkXb6SNY5BRawrRGzx-cpy0GG_3DuuLsjc1A1Q6lNnRqAgyKs4Osi1hUg4nokLEVCgE7Z3GMf13l_Rdectc9H7iXpgWWAwJmjVhvH
+				|   HTTPOptions: 
+				|     HTTP/1.0 405 Method Not Allowed
+				|     Content-Type: text/html; charset=UTF-8
+				|     Referrer-Policy: no-referrer
+				|     Content-Length: 1592
+				|     Date: Wed, 13 Nov 2024 13:38:19 GMT
+				|     <!DOCTYPE html>
+				|     <html lang=en>
+				|     <meta charset=utf-8>
+				|     <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+				|     <title>Error 405 (Method Not Allowed)!!1</title>
+				|     <style>
+				|_    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding
+				|_http-favicon: Google
+				|_http-server-header: gws
+				|_http-title: Did not follow redirect to http://www.google.com/
+			81/tcp    open     tcpwrapped   syn-ack ttl 64
+			88/tcp    open     tcpwrapped   syn-ack ttl 64
+			106/tcp   open     tcpwrapped   syn-ack ttl 64
+			110/tcp   open     tcpwrapped   syn-ack ttl 64
+			113/tcp   open     tcpwrapped   syn-ack ttl 64
+			119/tcp   open     tcpwrapped   syn-ack ttl 64
+			143/tcp   open     tcpwrapped   syn-ack ttl 64
+			144/tcp   open     tcpwrapped   syn-ack ttl 64
+			179/tcp   open     tcpwrapped   syn-ack ttl 64
+			199/tcp   open     tcpwrapped   syn-ack ttl 64
+			389/tcp   open     tcpwrapped   syn-ack ttl 64
+			427/tcp   open     tcpwrapped   syn-ack ttl 64
+			443/tcp   open     tcpwrapped   syn-ack ttl 64
+			444/tcp   open     tcpwrapped   syn-ack ttl 64
+			465/tcp   open     tcpwrapped   syn-ack ttl 64
+				|_smtp-commands: Couldn't establish connection on port 465
+			513/tcp   open     tcpwrapped   syn-ack ttl 64
+			514/tcp   open     tcpwrapped   syn-ack ttl 64
+			515/tcp   open     tcpwrapped   syn-ack ttl 64
+			543/tcp   open     tcpwrapped   syn-ack ttl 64
+			544/tcp   open     tcpwrapped   syn-ack ttl 64
+			548/tcp   open     tcpwrapped   syn-ack ttl 64
+				|_afp-serverinfo: ERROR: Script execution failed (use -d to debug)
+			554/tcp   open     tcpwrapped   syn-ack ttl 64
+			587/tcp   open     tcpwrapped   syn-ack ttl 64
+				|_smtp-commands: Couldn't establish connection on port 587
+			631/tcp   open     tcpwrapped   syn-ack ttl 64
+			646/tcp   open     tcpwrapped   syn-ack ttl 64
+			873/tcp   open     tcpwrapped   syn-ack ttl 64
+			990/tcp   open     tcpwrapped   syn-ack ttl 64
+			993/tcp   open     tcpwrapped   syn-ack ttl 64
+			995/tcp   open     tcpwrapped   syn-ack ttl 64
+			1025/tcp  open     tcpwrapped   syn-ack ttl 64
+			1026/tcp  open     tcpwrapped   syn-ack ttl 64
+			1027/tcp  open     tcpwrapped   syn-ack ttl 64
+			1028/tcp  open     tcpwrapped   syn-ack ttl 64
+			1029/tcp  open     tcpwrapped   syn-ack ttl 64
+			1110/tcp  open     tcpwrapped   syn-ack ttl 64
+			1433/tcp  open     tcpwrapped   syn-ack ttl 64
+			1720/tcp  open     tcpwrapped   syn-ack ttl 64
+			1723/tcp  open     tcpwrapped   syn-ack ttl 64
+			1755/tcp  open     tcpwrapped   syn-ack ttl 64
+			1900/tcp  open     tcpwrapped   syn-ack ttl 64
+			2000/tcp  open     tcpwrapped   syn-ack ttl 64
+			2001/tcp  open     tcpwrapped   syn-ack ttl 64
+			2049/tcp  open     tcpwrapped   syn-ack ttl 64
+			2121/tcp  open     tcpwrapped   syn-ack ttl 64
+			2717/tcp  open     tcpwrapped   syn-ack ttl 64
+			3000/tcp  open     tcpwrapped   syn-ack ttl 64
+			3128/tcp  open     tcpwrapped   syn-ack ttl 64
+			3306/tcp  open     tcpwrapped   syn-ack ttl 64
+			3389/tcp  open     tcpwrapped   syn-ack ttl 64
+			3986/tcp  open     tcpwrapped   syn-ack ttl 64
+			4899/tcp  open     tcpwrapped   syn-ack ttl 64
+			5000/tcp  open     tcpwrapped   syn-ack ttl 64
+			5009/tcp  open     tcpwrapped   syn-ack ttl 64
+			5051/tcp  open     tcpwrapped   syn-ack ttl 64
+			5060/tcp  open     tcpwrapped   syn-ack ttl 64
+			5101/tcp  open     tcpwrapped   syn-ack ttl 64
+			5190/tcp  open     tcpwrapped   syn-ack ttl 64
+			5357/tcp  open     tcpwrapped   syn-ack ttl 64
+			5432/tcp  open     tcpwrapped   syn-ack ttl 64
+			5631/tcp  open     tcpwrapped   syn-ack ttl 64
+			5666/tcp  open     tcpwrapped   syn-ack ttl 64
+			5800/tcp  open     tcpwrapped   syn-ack ttl 64
+			5900/tcp  open     tcpwrapped   syn-ack ttl 64
+			6000/tcp  open     tcpwrapped   syn-ack ttl 64
+			6001/tcp  open     tcpwrapped   syn-ack ttl 64
+			6646/tcp  open     tcpwrapped   syn-ack ttl 64
+			7070/tcp  open     tcpwrapped   syn-ack ttl 64
+			8000/tcp  open     tcpwrapped   syn-ack ttl 64
+			8008/tcp  open     tcpwrapped   syn-ack ttl 64
+			8009/tcp  open     tcpwrapped   syn-ack ttl 64
+				|_ajp-methods: Failed to get a valid response for the OPTION request
+			8080/tcp  open     http-proxy   syn-ack ttl 64 gws
+				| http-methods: 
+				|_  Supported Methods: GET HEAD
+				| http-robots.txt: 236 disallowed entries (15 shown)
+				| /search /sdch /groups /index.html? /? /?hl=*& 
+				|_/?hl=*&*&gws_rd=ssl /imgres /u/ /setprefs /default /m? /m/ /wml? /wml/?
+				|_http-favicon: Google
+				| http-open-proxy: Potentially OPEN proxy.
+				|_Methods supported: HEAD
+				|_http-server-header: gws
+				| fingerprint-strings: 
+				|   GetRequest: 
+				|     HTTP/1.0 200 OK
+				|     Date: Wed, 13 Nov 2024 13:38:19 GMT
+				|     Expires: -1
+				|     Cache-Control: private, max-age=0
+				|     Content-Type: text/html; charset=ISO-8859-1
+				|     Content-Security-Policy-Report-Only: object-src 'none';base-uri 'self';script-src 'nonce-fDK79Qe_bk-or38LTjCIEQ' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+				|     P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+				|     Server: gws
+				|     X-XSS-Protection: 0
+				|     X-Frame-Options: SAMEORIGIN
+				|     Set-Cookie: AEC=AZ6Zc-UkjRSbF2YyikAZd5Ed8hN0hpFmktoNBWkaePnTXt6vfaVGw9yTMSU; expires=Mon, 12-May-2025 13:38:19 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax
+				|     Set-Cookie: NID=519=YQMu7C9U5NjaWr57wf7JPvUvhCG6psHSJFUKsdKF9ftrE4NZ4rOlgzHhh3u7i5ewk2i5GgjMvMlzr-OhSY52UpolF_OqW_5yqB7shwjDC_knDZkyATdiKTypVsobvsCzwb1TAhg4VBXKjcbAKw83K9YqICZXL82d0LS5mlghUCeqsQVgdIya
+				|   HTTPOptions: 
+				|     HTTP/1.0 405 Method Not Allowed
+				|     Content-Type: text/html; charset=UTF-8
+				|     Referrer-Policy: no-referrer
+				|     Content-Length: 1592
+				|     Date: Wed, 13 Nov 2024 13:38:20 GMT
+				|     <!DOCTYPE html>
+				|     <html lang=en>
+				|     <meta charset=utf-8>
+				|     <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+				|     <title>Error 405 (Method Not Allowed)!!1</title>
+				|     <style>
+				|_    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding
+				|_http-title: Did not follow redirect to http://www.google.com:8080/
+			8081/tcp  open     tcpwrapped   syn-ack ttl 64
+			8443/tcp  open     tcpwrapped   syn-ack ttl 64
+			8888/tcp  open     tcpwrapped   syn-ack ttl 64
+			9100/tcp  open     jetdirect?   syn-ack ttl 64
+			9999/tcp  open     tcpwrapped   syn-ack ttl 64
+			10000/tcp open     tcpwrapped   syn-ack ttl 64
+			32768/tcp open     tcpwrapped   syn-ack ttl 64
+			49152/tcp open     tcpwrapped   syn-ack ttl 64
+			49153/tcp open     tcpwrapped   syn-ack ttl 64
+			49154/tcp open     tcpwrapped   syn-ack ttl 64
+			49155/tcp open     tcpwrapped   syn-ack ttl 64
+			49156/tcp open     tcpwrapped   syn-ack ttl 64
+			49157/tcp open     tcpwrapped   syn-ack ttl 64
+		Scanning ip 64.233.160.0 ():
+		Scanning ip 66.102.0.0 ():
+		Scanning ip 66.249.80.0 ():
+		Scanning ip 72.14.192.0 ():
+			80/tcp  open  http       syn-ack ttl 64 Google httpd
+				|_http-server-header: ghs
+				| http-methods: 
+				|_  Supported Methods: GET HEAD POST OPTIONS
+				|_http-title: Error 404 (Not Found)!!1
+			443/tcp open  ssl/https? syn-ack ttl 64
+			465/tcp open  ssl/smtp   syn-ack ttl 64 Google gsmtp
+				|_smtp-commands: SMTP EHLO nmap.scanme.org: failed to receive data: failed to receive data
+				| ssl-cert: Subject: commonName=smtp.gmail.com
+				| Subject Alternative Name: DNS:smtp.gmail.com
+				| Issuer: commonName=WR4/organizationName=Google Trust Services/countryName=US
+				| Public Key type: rsa
+				| Public Key bits: 2048
+				| Signature Algorithm: sha256WithRSAEncryption
+				| Not valid before: 2024-10-28T11:45:31
+				| Not valid after:  2025-01-26T11:45:30
+				| MD5:   7d31:b2dd:6933:9225:1ec4:c69b:77b8:ae83
+				|_SHA-1: 1078:71ca:d7f7:e195:a5dd:ad2a:b2ff:746b:7a47:b002
+				|_ssl-date: TLS randomness does not represent time
+			587/tcp open  smtp       syn-ack ttl 64 Google gsmtp
+				| ssl-cert: Subject: commonName=smtp.gmail.com
+				| Subject Alternative Name: DNS:smtp.gmail.com
+				| Issuer: commonName=WR4/organizationName=Google Trust Services/countryName=US
+				| Public Key type: rsa
+				| Public Key bits: 2048
+				| Signature Algorithm: sha256WithRSAEncryption
+				| Not valid before: 2024-10-28T11:45:31
+				| Not valid after:  2025-01-26T11:45:30
+				| MD5:   7d31:b2dd:6933:9225:1ec4:c69b:77b8:ae83
+				|_SHA-1: 1078:71ca:d7f7:e195:a5dd:ad2a:b2ff:746b:7a47:b002
+				| smtp-commands: mx.google.com at your service, [108.208.109.214], SIZE 35882577, 8BITMIME, STARTTLS, ENHANCEDSTATUSCODES, PIPELINING, CHUNKING, SMTPUTF8
+				|_ 2.0.0 https://www.google.com/search?btnI&q=RFC+5321 d9443c01a7336-21177e6c8ffsm111258435ad.256 - gsmtp
+				|_ssl-date: TLS randomness does not represent time
+			993/tcp open  imaps?     syn-ack ttl 64
+			995/tcp open  pop3s?     syn-ack ttl 64
+				Device type: bridge|general purpose
+			OS Info: Service Info: Host: mx.google.com
+		Scanning ip 74.125.0.0 ():
+		Scanning ip 108.177.8.0 ():
+		Scanning ip 173.194.0.0 ():
+		Scanning ip 209.85.128.0 ():
+		Scanning ip 216.58.192.0 ():
+		Scanning ip 216.239.32.0 ():
+		Scanning ip 172.217.0.0 ():
+		Scanning ip 172.217.32.0 ():
+		Scanning ip 172.217.128.0 ():
+		Scanning ip 172.217.160.0 ():
+		Scanning ip 172.217.192.0 ():
+		Scanning ip 172.253.56.0 ():
+		Scanning ip 172.253.112.0 ():
+		Scanning ip 108.177.96.0 ():
+		Scanning ip 35.191.0.0 ():
+		Scanning ip 130.211.0.0 ():
+		Scanning ip 143.244.220.150 (www.hideouts.io.):
+			80/tcp open  http    syn-ack ttl 64
+				|_http-favicon: Unknown favicon MD5: D41D8CD98F00B204E9800998ECF8427E
+				|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+				| http-methods: 
+				|_  Supported Methods: GET HEAD POST OPTIONS
+				| fingerprint-strings: 
+				|   DNSStatusRequestTCP: 
+				|     HTTP/1.1 400 Bad Request
+				|     content-length: 11
+				|     content-type: text/plain
+				|     date: Wed, 13 Nov 2024 14:03:11 GMT
+				|     connection: close
+				|     Request
+				|   DNSVersionBindReqTCP: 
+				|     HTTP/1.1 400 Bad Request
+				|     content-length: 11
+				|     content-type: text/plain
+				|     date: Wed, 13 Nov 2024 14:03:10 GMT
+				|     connection: close
+				|     Request
+				|   FourOhFourRequest: 
+				|     HTTP/1.0 400 Bad Request
+				|     date: Wed, 13 Nov 2024 14:03:07 GMT
+				|     connection: close
+				|     content-length: 0
+				|   GenericLines: 
+				|     HTTP/1.1 400 Bad Request
+				|     content-length: 11
+				|     content-type: text/plain
+				|     date: Wed, 13 Nov 2024 14:03:08 GMT
+				|     connection: close
+				|     Request
+				|   GetRequest: 
+				|     HTTP/1.0 400 Bad Request
+				|     date: Wed, 13 Nov 2024 14:03:01 GMT
+				|     connection: close
+				|     content-length: 0
+				|   HTTPOptions: 
+				|     HTTP/1.0 400 Bad Request
+				|     date: Wed, 13 Nov 2024 14:03:03 GMT
+				|     connection: close
+				|     content-length: 0
+				|   Help: 
+				|     HTTP/1.1 400 Bad Request
+				|     content-length: 11
+				|     content-type: text/plain
+				|     date: Wed, 13 Nov 2024 14:03:13 GMT
+				|     connection: close
+				|     Request
+				|   RPCCheck: 
+				|     HTTP/1.1 400 Bad Request
+				|     content-length: 11
+				|     content-type: text/plain
+				|     date: Wed, 13 Nov 2024 14:03:09 GMT
+				|     connection: close
+				|     Request
+				|   RTSPRequest: 
+				|     HTTP/1.1 400 Bad Request
+				|     content-length: 11
+				|     content-type: text/plain
+				|     date: Wed, 13 Nov 2024 14:03:04 GMT
+				|     connection: close
+				|     Request
+				|   SSLSessionReq: 
+				|     HTTP/1.1 400 Bad Request
+				|     content-length: 11
+				|     content-type: text/plain
+				|     date: Wed, 13 Nov 2024 14:03:14 GMT
+				|     connection: close
+				|     Request
+				|   X11Probe: 
+				|     HTTP/1.1 400 Bad Request
+				|     content-length: 11
+				|     content-type: text/plain
+				|     date: Wed, 13 Nov 2024 14:03:05 GMT
+				|     connection: close
+				|_    Request
+	WebCrawling domain's web servers... up to 50 max links.
+
+
+--Finished--
+Summary information for domain hideouts.io.
+-----------------------------------------
+
+	Domain Ips Information:
+		IP: 216.239.36.107
+			HostName: ns-cloud-b3.googledomains.com			Type: NS
+			HostName: 107.36.239.216.in-addr.arpa			Type: PTR
+			Is Active: True (echo-reply ttl 255)
+			Port: 53/tcp open  domain  syn-ack ttl 64 (generic dns response: NOTIMP)
+				Script Info: | fingerprint-strings: 
+				Script Info: |   DNSVersionBindReqTCP: 
+				Script Info: |     version
+				Script Info: |     bind
+				Script Info: |     ns-cloud-b1
+				Script Info: |     googledomains
+				Script Info: |     cloud-dns-hostmaster
+				Script Info: |_    google
+		IP: 216.239.32.107
+			HostName: ns-cloud-b1.googledomains.com			Type: NS
+			HostName: 107.32.239.216.in-addr.arpa			Type: PTR
+			Is Active: True (udp-response ttl 64)
+			Port: 53/tcp open  domain  syn-ack ttl 64 (generic dns response: NOTIMP)
+				Script Info: | fingerprint-strings: 
+				Script Info: |   DNSVersionBindReqTCP: 
+				Script Info: |     version
+				Script Info: |     bind
+				Script Info: |     ns-cloud-b1
+				Script Info: |     googledomains
+				Script Info: |     cloud-dns-hostmaster
+				Script Info: |_    google
+		IP: 216.239.38.107
+			HostName: ns-cloud-b4.googledomains.com			Type: NS
+			HostName: 107.38.239.216.in-addr.arpa			Type: PTR
+			Is Active: True (udp-response ttl 64)
+			Port: 53/tcp open  domain  syn-ack ttl 64 (generic dns response: NOTIMP)
+				Script Info: | fingerprint-strings: 
+				Script Info: |   DNSVersionBindReqTCP: 
+				Script Info: |     version
+				Script Info: |     bind
+				Script Info: |     ns-cloud-b1
+				Script Info: |     googledomains
+				Script Info: |     cloud-dns-hostmaster
+				Script Info: |_    google
+		IP: 216.239.34.107
+			HostName: ns-cloud-b2.googledomains.com			Type: NS
+			HostName: 107.34.239.216.in-addr.arpa			Type: PTR
+			Is Active: True (echo-reply ttl 255)
+			Port: 53/tcp open  domain  syn-ack ttl 64 (generic dns response: NOTIMP)
+				Script Info: | fingerprint-strings: 
+				Script Info: |   DNSVersionBindReqTCP: 
+				Script Info: |     version
+				Script Info: |     bind
+				Script Info: |     ns-cloud-b1
+				Script Info: |     googledomains
+				Script Info: |     cloud-dns-hostmaster
+				Script Info: |_    google
+		IP: 108.177.104.26
+			HostName: alt1.aspmx.l.google.com			Type: MX
+			HostName: 26.104.177.108.in-addr.arpa			Type: PTR
+			Is Active: True (echo-reply ttl 255)
+		IP: 74.125.137.27
+			HostName: aspmx.l.google.com			Type: MX
+			HostName: 27.137.125.74.in-addr.arpa			Type: PTR
+			Is Active: True (echo-reply ttl 255)
+		IP: 172.253.113.26
+			HostName: alt2.aspmx.l.google.com			Type: MX
+			HostName: 26.113.253.172.in-addr.arpa			Type: PTR
+			Is Active: True (echo-reply ttl 255)
+		IP: 173.194.219.27
+			HostName: alt4.aspmx.l.google.com			Type: MX
+			HostName: 27.219.194.173.in-addr.arpa			Type: PTR
+			Is Active: True (echo-reply ttl 255)
+		IP: 172.253.113.27
+			HostName: alt3.aspmx.l.google.com			Type: MX
+			HostName: 27.113.253.172.in-addr.arpa			Type: PTR
+			Is Active: True (echo-reply ttl 255)
+		IP: 35.190.247.0
+			Type: SPF
+			Is Active: True (echo-reply ttl 255)
+			Port: 7/tcp     open     tcpwrapped   syn-ack ttl 64
+			Port: 9/tcp     open     tcpwrapped   syn-ack ttl 64
+			Port: 13/tcp    open     tcpwrapped   syn-ack ttl 64
+			Port: 21/tcp    open     tcpwrapped   syn-ack ttl 64
+			Port: 22/tcp    open     tcpwrapped   syn-ack ttl 64
+				Script Info: |_ssh-hostkey: ERROR: Script execution failed (use -d to debug)
+			Port: 23/tcp    open     tcpwrapped   syn-ack ttl 64
+			Port: 26/tcp    open     tcpwrapped   syn-ack ttl 64
+			Port: 37/tcp    open     tcpwrapped   syn-ack ttl 64
+			Port: 53/tcp    open     tcpwrapped   syn-ack ttl 64
+			Port: 79/tcp    open     tcpwrapped   syn-ack ttl 64
+			Port: 80/tcp    open     http         syn-ack ttl 64 gws
+				Script Info: | http-robots.txt: 236 disallowed entries (15 shown)
+				Script Info: | /search /sdch /groups /index.html? /? /?hl=*& 
+				Script Info: |_/?hl=*&*&gws_rd=ssl /imgres /u/ /setprefs /default /m? /m/ /wml? /wml/?
+				Script Info: | http-methods: 
+				Script Info: |_  Supported Methods: GET HEAD
+				Script Info: | fingerprint-strings: 
+				Script Info: |   GetRequest: 
+				Script Info: |     HTTP/1.0 200 OK
+				Script Info: |     Date: Wed, 13 Nov 2024 13:38:18 GMT
+				Script Info: |     Expires: -1
+				Script Info: |     Cache-Control: private, max-age=0
+				Script Info: |     Content-Type: text/html; charset=ISO-8859-1
+				Script Info: |     Content-Security-Policy-Report-Only: object-src 'none';base-uri 'self';script-src 'nonce-tnUz08wKQciGaq5vY9OzuA' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+				Script Info: |     P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+				Script Info: |     Server: gws
+				Script Info: |     X-XSS-Protection: 0
+				Script Info: |     X-Frame-Options: SAMEORIGIN
+				Script Info: |     Set-Cookie: AEC=AZ6Zc-WBDTN4VoGAfmy1prC_4ki-6p8qE6Lwumte-q9USjck5Qea8-7zalw; expires=Mon, 12-May-2025 13:38:18 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax
+				Script Info: |     Set-Cookie: NID=519=1yN28SrklHs3RXR7jTrbgFeOg7A53xgo06mH7vNFm1VdBECGfGzOheAMPBGeUE4EFtDVbhXJUSpUNSqfkXb6SNY5BRawrRGzx-cpy0GG_3DuuLsjc1A1Q6lNnRqAgyKs4Osi1hUg4nokLEVCgE7Z3GMf13l_Rdectc9H7iXpgWWAwJmjVhvH
+				Script Info: |   HTTPOptions: 
+				Script Info: |     HTTP/1.0 405 Method Not Allowed
+				Script Info: |     Content-Type: text/html; charset=UTF-8
+				Script Info: |     Referrer-Policy: no-referrer
+				Script Info: |     Content-Length: 1592
+				Script Info: |     Date: Wed, 13 Nov 2024 13:38:19 GMT
+				Script Info: |     <!DOCTYPE html>
+				Script Info: |     <html lang=en>
+				Script Info: |     <meta charset=utf-8>
+				Script Info: |     <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+				Script Info: |     <title>Error 405 (Method Not Allowed)!!1</title>
+				Script Info: |     <style>
+				Script Info: |_    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding
+				Script Info: |_http-favicon: Google
+				Script Info: |_http-server-header: gws
+				Script Info: |_http-title: Did not follow redirect to http://www.google.com/
+			Port: 81/tcp    open     tcpwrapped   syn-ack ttl 64
+			Port: 88/tcp    open     tcpwrapped   syn-ack ttl 64
+			Port: 106/tcp   open     tcpwrapped   syn-ack ttl 64
+			Port: 110/tcp   open     tcpwrapped   syn-ack ttl 64
+			Port: 113/tcp   open     tcpwrapped   syn-ack ttl 64
+			Port: 119/tcp   open     tcpwrapped   syn-ack ttl 64
+			Port: 143/tcp   open     tcpwrapped   syn-ack ttl 64
+			Port: 144/tcp   open     tcpwrapped   syn-ack ttl 64
+			Port: 179/tcp   open     tcpwrapped   syn-ack ttl 64
+			Port: 199/tcp   open     tcpwrapped   syn-ack ttl 64
+			Port: 389/tcp   open     tcpwrapped   syn-ack ttl 64
+			Port: 427/tcp   open     tcpwrapped   syn-ack ttl 64
+			Port: 443/tcp   open     tcpwrapped   syn-ack ttl 64
+			Port: 444/tcp   open     tcpwrapped   syn-ack ttl 64
+			Port: 465/tcp   open     tcpwrapped   syn-ack ttl 64
+				Script Info: |_smtp-commands: Couldn't establish connection on port 465
+			Port: 513/tcp   open     tcpwrapped   syn-ack ttl 64
+			Port: 514/tcp   open     tcpwrapped   syn-ack ttl 64
+			Port: 515/tcp   open     tcpwrapped   syn-ack ttl 64
+			Port: 543/tcp   open     tcpwrapped   syn-ack ttl 64
+			Port: 544/tcp   open     tcpwrapped   syn-ack ttl 64
+			Port: 548/tcp   open     tcpwrapped   syn-ack ttl 64
+				Script Info: |_afp-serverinfo: ERROR: Script execution failed (use -d to debug)
+			Port: 554/tcp   open     tcpwrapped   syn-ack ttl 64
+			Port: 587/tcp   open     tcpwrapped   syn-ack ttl 64
+				Script Info: |_smtp-commands: Couldn't establish connection on port 587
+			Port: 631/tcp   open     tcpwrapped   syn-ack ttl 64
+			Port: 646/tcp   open     tcpwrapped   syn-ack ttl 64
+			Port: 873/tcp   open     tcpwrapped   syn-ack ttl 64
+			Port: 990/tcp   open     tcpwrapped   syn-ack ttl 64
+			Port: 993/tcp   open     tcpwrapped   syn-ack ttl 64
+			Port: 995/tcp   open     tcpwrapped   syn-ack ttl 64
+			Port: 1025/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 1026/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 1027/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 1028/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 1029/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 1110/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 1433/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 1720/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 1723/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 1755/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 1900/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 2000/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 2001/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 2049/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 2121/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 2717/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 3000/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 3128/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 3306/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 3389/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 3986/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 4899/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 5000/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 5009/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 5051/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 5060/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 5101/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 5190/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 5357/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 5432/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 5631/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 5666/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 5800/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 5900/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 6000/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 6001/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 6646/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 7070/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 8000/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 8008/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 8009/tcp  open     tcpwrapped   syn-ack ttl 64
+				Script Info: |_ajp-methods: Failed to get a valid response for the OPTION request
+			Port: 8080/tcp  open     http-proxy   syn-ack ttl 64 gws
+				Script Info: | http-methods: 
+				Script Info: |_  Supported Methods: GET HEAD
+				Script Info: | http-robots.txt: 236 disallowed entries (15 shown)
+				Script Info: | /search /sdch /groups /index.html? /? /?hl=*& 
+				Script Info: |_/?hl=*&*&gws_rd=ssl /imgres /u/ /setprefs /default /m? /m/ /wml? /wml/?
+				Script Info: |_http-favicon: Google
+				Script Info: | http-open-proxy: Potentially OPEN proxy.
+				Script Info: |_Methods supported: HEAD
+				Script Info: |_http-server-header: gws
+				Script Info: | fingerprint-strings: 
+				Script Info: |   GetRequest: 
+				Script Info: |     HTTP/1.0 200 OK
+				Script Info: |     Date: Wed, 13 Nov 2024 13:38:19 GMT
+				Script Info: |     Expires: -1
+				Script Info: |     Cache-Control: private, max-age=0
+				Script Info: |     Content-Type: text/html; charset=ISO-8859-1
+				Script Info: |     Content-Security-Policy-Report-Only: object-src 'none';base-uri 'self';script-src 'nonce-fDK79Qe_bk-or38LTjCIEQ' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+				Script Info: |     P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+				Script Info: |     Server: gws
+				Script Info: |     X-XSS-Protection: 0
+				Script Info: |     X-Frame-Options: SAMEORIGIN
+				Script Info: |     Set-Cookie: AEC=AZ6Zc-UkjRSbF2YyikAZd5Ed8hN0hpFmktoNBWkaePnTXt6vfaVGw9yTMSU; expires=Mon, 12-May-2025 13:38:19 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax
+				Script Info: |     Set-Cookie: NID=519=YQMu7C9U5NjaWr57wf7JPvUvhCG6psHSJFUKsdKF9ftrE4NZ4rOlgzHhh3u7i5ewk2i5GgjMvMlzr-OhSY52UpolF_OqW_5yqB7shwjDC_knDZkyATdiKTypVsobvsCzwb1TAhg4VBXKjcbAKw83K9YqICZXL82d0LS5mlghUCeqsQVgdIya
+				Script Info: |   HTTPOptions: 
+				Script Info: |     HTTP/1.0 405 Method Not Allowed
+				Script Info: |     Content-Type: text/html; charset=UTF-8
+				Script Info: |     Referrer-Policy: no-referrer
+				Script Info: |     Content-Length: 1592
+				Script Info: |     Date: Wed, 13 Nov 2024 13:38:20 GMT
+				Script Info: |     <!DOCTYPE html>
+				Script Info: |     <html lang=en>
+				Script Info: |     <meta charset=utf-8>
+				Script Info: |     <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+				Script Info: |     <title>Error 405 (Method Not Allowed)!!1</title>
+				Script Info: |     <style>
+				Script Info: |_    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding
+				Script Info: |_http-title: Did not follow redirect to http://www.google.com:8080/
+			Port: 8081/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 8443/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 8888/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 9100/tcp  open     jetdirect?   syn-ack ttl 64
+			Port: 9999/tcp  open     tcpwrapped   syn-ack ttl 64
+			Port: 10000/tcp open     tcpwrapped   syn-ack ttl 64
+			Port: 32768/tcp open     tcpwrapped   syn-ack ttl 64
+			Port: 49152/tcp open     tcpwrapped   syn-ack ttl 64
+			Port: 49153/tcp open     tcpwrapped   syn-ack ttl 64
+			Port: 49154/tcp open     tcpwrapped   syn-ack ttl 64
+			Port: 49155/tcp open     tcpwrapped   syn-ack ttl 64
+			Port: 49156/tcp open     tcpwrapped   syn-ack ttl 64
+			Port: 49157/tcp open     tcpwrapped   syn-ack ttl 64
+		IP: 64.233.160.0
+			Type: SPF
+			Is Active: True (reset ttl 255)
+		IP: 66.102.0.0
+			Type: SPF
+			Is Active: True (reset ttl 255)
+		IP: 66.249.80.0
+			Type: SPF
+			Is Active: True (reset ttl 255)
+		IP: 72.14.192.0
+			Type: SPF
+			Is Active: True (echo-reply ttl 255)
+			Port: 80/tcp  open  http       syn-ack ttl 64 Google httpd
+				Script Info: |_http-server-header: ghs
+				Script Info: | http-methods: 
+				Script Info: |_  Supported Methods: GET HEAD POST OPTIONS
+				Script Info: |_http-title: Error 404 (Not Found)!!1
+			Port: 443/tcp open  ssl/https? syn-ack ttl 64
+			Port: 465/tcp open  ssl/smtp   syn-ack ttl 64 Google gsmtp
+				Script Info: |_smtp-commands: SMTP EHLO nmap.scanme.org: failed to receive data: failed to receive data
+				Script Info: | ssl-cert: Subject: commonName=smtp.gmail.com
+				Script Info: | Subject Alternative Name: DNS:smtp.gmail.com
+				Script Info: | Issuer: commonName=WR4/organizationName=Google Trust Services/countryName=US
+				Script Info: | Public Key type: rsa
+				Script Info: | Public Key bits: 2048
+				Script Info: | Signature Algorithm: sha256WithRSAEncryption
+				Script Info: | Not valid before: 2024-10-28T11:45:31
+				Script Info: | Not valid after:  2025-01-26T11:45:30
+				Script Info: | MD5:   7d31:b2dd:6933:9225:1ec4:c69b:77b8:ae83
+				Script Info: |_SHA-1: 1078:71ca:d7f7:e195:a5dd:ad2a:b2ff:746b:7a47:b002
+				Script Info: |_ssl-date: TLS randomness does not represent time
+			Port: 587/tcp open  smtp       syn-ack ttl 64 Google gsmtp
+				Script Info: | ssl-cert: Subject: commonName=smtp.gmail.com
+				Script Info: | Subject Alternative Name: DNS:smtp.gmail.com
+				Script Info: | Issuer: commonName=WR4/organizationName=Google Trust Services/countryName=US
+				Script Info: | Public Key type: rsa
+				Script Info: | Public Key bits: 2048
+				Script Info: | Signature Algorithm: sha256WithRSAEncryption
+				Script Info: | Not valid before: 2024-10-28T11:45:31
+				Script Info: | Not valid after:  2025-01-26T11:45:30
+				Script Info: | MD5:   7d31:b2dd:6933:9225:1ec4:c69b:77b8:ae83
+				Script Info: |_SHA-1: 1078:71ca:d7f7:e195:a5dd:ad2a:b2ff:746b:7a47:b002
+				Script Info: | smtp-commands: mx.google.com at your service, [108.208.109.214], SIZE 35882577, 8BITMIME, STARTTLS, ENHANCEDSTATUSCODES, PIPELINING, CHUNKING, SMTPUTF8
+				Script Info: |_ 2.0.0 https://www.google.com/search?btnI&q=RFC+5321 d9443c01a7336-21177e6c8ffsm111258435ad.256 - gsmtp
+				Script Info: |_ssl-date: TLS randomness does not represent time
+			Port: 993/tcp open  imaps?     syn-ack ttl 64
+			Port: 995/tcp open  pop3s?     syn-ack ttl 64
+				Script Info: Device type: bridge|general purpose
+			Os Info:  Host: mx.google.com
+		IP: 74.125.0.0
+			Type: SPF
+			Is Active: True (reset ttl 255)
+		IP: 108.177.8.0
+			Type: SPF
+			Is Active: True (reset ttl 255)
+		IP: 173.194.0.0
+			Type: SPF
+			Is Active: True (reset ttl 255)
+		IP: 209.85.128.0
+			Type: SPF
+			Is Active: True (reset ttl 255)
+		IP: 216.58.192.0
+			Type: SPF
+			Is Active: True (reset ttl 255)
+		IP: 216.239.32.0
+			Type: SPF
+			Is Active: True (reset ttl 255)
+		IP: 172.217.0.0
+			Type: SPF
+			Is Active: True (reset ttl 255)
+		IP: 172.217.32.0
+			Type: SPF
+			Is Active: True (reset ttl 255)
+		IP: 172.217.128.0
+			Type: SPF
+			Is Active: True (reset ttl 255)
+		IP: 172.217.160.0
+			Type: SPF
+			Is Active: True (echo-reply ttl 255)
+		IP: 172.217.192.0
+			Type: SPF
+			Is Active: True (reset ttl 255)
+		IP: 172.253.56.0
+			Type: SPF
+			Is Active: True (reset ttl 255)
+		IP: 172.253.112.0
+			Type: SPF
+			Is Active: True (reset ttl 255)
+		IP: 108.177.96.0
+			Type: SPF
+			Is Active: True (reset ttl 255)
+		IP: 35.191.0.0
+			Type: SPF
+			Is Active: True (reset ttl 255)
+		IP: 130.211.0.0
+			Type: SPF
+			Is Active: True (reset ttl 255)
+		IP: 143.244.220.150
+			HostName: www.hideouts.io.			Type: A
+			Is Active: True (echo-reply ttl 255)
+			Port: 80/tcp open  http    syn-ack ttl 64
+				Script Info: |_http-favicon: Unknown favicon MD5: D41D8CD98F00B204E9800998ECF8427E
+				Script Info: |_http-title: Site doesn't have a title (text/html; charset=utf-8).
+				Script Info: | http-methods: 
+				Script Info: |_  Supported Methods: GET HEAD POST OPTIONS
+				Script Info: | fingerprint-strings: 
+				Script Info: |   DNSStatusRequestTCP: 
+				Script Info: |     HTTP/1.1 400 Bad Request
+				Script Info: |     content-length: 11
+				Script Info: |     content-type: text/plain
+				Script Info: |     date: Wed, 13 Nov 2024 14:03:11 GMT
+				Script Info: |     connection: close
+				Script Info: |     Request
+				Script Info: |   DNSVersionBindReqTCP: 
+				Script Info: |     HTTP/1.1 400 Bad Request
+				Script Info: |     content-length: 11
+				Script Info: |     content-type: text/plain
+				Script Info: |     date: Wed, 13 Nov 2024 14:03:10 GMT
+				Script Info: |     connection: close
+				Script Info: |     Request
+				Script Info: |   FourOhFourRequest: 
+				Script Info: |     HTTP/1.0 400 Bad Request
+				Script Info: |     date: Wed, 13 Nov 2024 14:03:07 GMT
+				Script Info: |     connection: close
+				Script Info: |     content-length: 0
+				Script Info: |   GenericLines: 
+				Script Info: |     HTTP/1.1 400 Bad Request
+				Script Info: |     content-length: 11
+				Script Info: |     content-type: text/plain
+				Script Info: |     date: Wed, 13 Nov 2024 14:03:08 GMT
+				Script Info: |     connection: close
+				Script Info: |     Request
+				Script Info: |   GetRequest: 
+				Script Info: |     HTTP/1.0 400 Bad Request
+				Script Info: |     date: Wed, 13 Nov 2024 14:03:01 GMT
+				Script Info: |     connection: close
+				Script Info: |     content-length: 0
+				Script Info: |   HTTPOptions: 
+				Script Info: |     HTTP/1.0 400 Bad Request
+				Script Info: |     date: Wed, 13 Nov 2024 14:03:03 GMT
+				Script Info: |     connection: close
+				Script Info: |     content-length: 0
+				Script Info: |   Help: 
+				Script Info: |     HTTP/1.1 400 Bad Request
+				Script Info: |     content-length: 11
+				Script Info: |     content-type: text/plain
+				Script Info: |     date: Wed, 13 Nov 2024 14:03:13 GMT
+				Script Info: |     connection: close
+				Script Info: |     Request
+				Script Info: |   RPCCheck: 
+				Script Info: |     HTTP/1.1 400 Bad Request
+				Script Info: |     content-length: 11
+				Script Info: |     content-type: text/plain
+				Script Info: |     date: Wed, 13 Nov 2024 14:03:09 GMT
+				Script Info: |     connection: close
+				Script Info: |     Request
+				Script Info: |   RTSPRequest: 
+				Script Info: |     HTTP/1.1 400 Bad Request
+				Script Info: |     content-length: 11
+				Script Info: |     content-type: text/plain
+				Script Info: |     date: Wed, 13 Nov 2024 14:03:04 GMT
+				Script Info: |     connection: close
+				Script Info: |     Request
+				Script Info: |   SSLSessionReq: 
+				Script Info: |     HTTP/1.1 400 Bad Request
+				Script Info: |     content-length: 11
+				Script Info: |     content-type: text/plain
+				Script Info: |     date: Wed, 13 Nov 2024 14:03:14 GMT
+				Script Info: |     connection: close
+				Script Info: |     Request
+				Script Info: |   X11Probe: 
+				Script Info: |     HTTP/1.1 400 Bad Request
+				Script Info: |     content-length: 11
+				Script Info: |     content-type: text/plain
+				Script Info: |     date: Wed, 13 Nov 2024 14:03:05 GMT
+				Script Info: |     connection: close
+				Script Info: |_    Request
+
+--------------End Summary --------------
+-----------------------------------------
+
