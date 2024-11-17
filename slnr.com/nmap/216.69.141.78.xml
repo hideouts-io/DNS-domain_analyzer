@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="https://svn.nmap.org/nmap/docs/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Wed Nov 13 09:27:05 2024 as: nmap -O -&#45;reason -&#45;webxml -&#45;traceroute -sS -sV -sC -Pn -n -v -F -oA slnr.com./nmap/216.69.141.78 216.69.141.78 -->
+<nmaprun scanner="nmap" args="nmap -O -&#45;reason -&#45;webxml -&#45;traceroute -sS -sV -sC -Pn -n -v -F -oA slnr.com./nmap/216.69.141.78 216.69.141.78" start="1731508025" startstr="Wed Nov 13 09:27:05 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="100" services="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1731508026"/>
+<taskend task="NSE" time="1731508026"/>
+<taskbegin task="NSE" time="1731508026"/>
+<taskend task="NSE" time="1731508026"/>
+<taskbegin task="NSE" time="1731508026"/>
+<taskend task="NSE" time="1731508026"/>
+<taskbegin task="SYN Stealth Scan" time="1731508026"/>
+<taskend task="SYN Stealth Scan" time="1731508047" extrainfo="100 total ports"/>
+<taskbegin task="Service scan" time="1731508047"/>
+<taskbegin task="Traceroute" time="1731508048"/>
+<taskend task="Traceroute" time="1731508048"/>
+<taskbegin task="NSE" time="1731508048"/>
+<taskend task="NSE" time="1731508053"/>
+<taskbegin task="NSE" time="1731508053"/>
+<taskend task="NSE" time="1731508053"/>
+<taskbegin task="NSE" time="1731508053"/>
+<taskend task="NSE" time="1731508053"/>
+<host starttime="1731508026" endtime="1731508053"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="216.69.141.78" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+<os><osmatch name="QEMU user mode network gateway" accuracy="100" line="94192">
+<osclass type="general purpose" vendor="QEMU" osfamily="QEMU" accuracy="100"><cpe>cpe:/a:qemu:qemu</cpe></osclass>
+</osmatch>
+</os>
+<distance value="1"/>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="216.69.141.78" rtt="48.60"/>
+</trace>
+<times srtt="36990" rttvar="30289" to="158146"/>
+</host>
+<taskbegin task="NSE" time="1731508053"/>
+<taskend task="NSE" time="1731508053"/>
+<taskbegin task="NSE" time="1731508053"/>
+<taskend task="NSE" time="1731508053"/>
+<taskbegin task="NSE" time="1731508053"/>
+<taskend task="NSE" time="1731508053"/>
+<runstats><finished time="1731508053" timestr="Wed Nov 13 09:27:33 2024" summary="Nmap done at Wed Nov 13 09:27:33 2024; 1 IP address (1 host up) scanned in 27.99 seconds" elapsed="27.99" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

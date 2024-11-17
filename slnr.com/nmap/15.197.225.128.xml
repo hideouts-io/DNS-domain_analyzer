@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="https://svn.nmap.org/nmap/docs/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Wed Nov 13 09:27:33 2024 as: nmap -O -&#45;reason -&#45;webxml -&#45;traceroute -sS -sV -sC -Pn -n -v -F -oA slnr.com./nmap/15.197.225.128 15.197.225.128 -->
+<nmaprun scanner="nmap" args="nmap -O -&#45;reason -&#45;webxml -&#45;traceroute -sS -sV -sC -Pn -n -v -F -oA slnr.com./nmap/15.197.225.128 15.197.225.128" start="1731508053" startstr="Wed Nov 13 09:27:33 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="100" services="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1731508053"/>
+<taskend task="NSE" time="1731508054"/>
+<taskbegin task="NSE" time="1731508054"/>
+<taskend task="NSE" time="1731508054"/>
+<taskbegin task="NSE" time="1731508054"/>
+<taskend task="NSE" time="1731508054"/>
+<taskbegin task="SYN Stealth Scan" time="1731508054"/>
+<taskend task="SYN Stealth Scan" time="1731508057" extrainfo="100 total ports"/>
+<taskbegin task="Service scan" time="1731508058"/>
+<taskend task="Service scan" time="1731508192" extrainfo="2 services on 1 host"/>
+<taskbegin task="Traceroute" time="1731508196"/>
+<taskend task="Traceroute" time="1731508196"/>
+<taskbegin task="NSE" time="1731508196"/>
+<taskend task="NSE" time="1731508254"/>
+<taskbegin task="NSE" time="1731508254"/>
+<taskend task="NSE" time="1731508256"/>
+<taskbegin task="NSE" time="1731508256"/>
+<taskend task="NSE" time="1731508256"/>
+<host starttime="1731508054" endtime="1731508256"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="15.197.225.128" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="98">
+<extrareasons reason="no-response" count="98" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79,81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,444-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="awselb/2.0" servicefp="SF-Port80-TCP:V=7.94SVN%I=7%D=11/13%Time=6734B765%P=x86_64-pc-linux-gnu%r(GetRequest,10A,&quot;HTTP/1\.1\x20403\x20Forbidden\r\nServer:\x20awselb/2\.0\r\nDate:\x20Wed,\x2013\x20Nov\x202024\x2014:27:45\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20118\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;403\x20Forbidden&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;403\x20Forbidden&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(HTTPOptions,10A,&quot;HTTP/1\.1\x20403\x20Forbidden\r\nServer:\x20awselb/2\.0\r\nDate:\x20Wed,\x2013\x20Nov\x202024\x2014:27:50\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20118\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;403\x20Forbidden&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;403\x20Forbidden&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(RTSPRequest,7A,&quot;&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(X11Probe,110,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20awselb/2\.0\r\nDate:\x20Wed,\x2013\x20Nov\x202024\x2014:28:00\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20122\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(FourOhFourRequest,10A,&quot;HTTP/1\.1\x20403\x20Forbidden\r\nServer:\x20awselb/2\.0\r\nDate:\x20Wed,\x2013\x20Nov\x202024\x2014:28:00\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20118\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;403\x20Forbidden&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;403\x20Forbidden&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(RPCCheck,110,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20awselb/2\.0\r\nDate:\x20Wed,\x2013\x20Nov\x202024\x2014:28:10\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20122\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(DNSVersionBindReqTCP,110,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20awselb/2\.0\r\nDate:\x20Wed,\x2013\x20Nov\x202024\x2014:28:10\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20122\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" method="probed" conf="10"/><script id="http-server-header" output="awselb/2.0"><elem>awselb/2.0</elem>
+</script><script id="http-title" output="403 Forbidden"><elem key="title">403 Forbidden</elem>
+</script><script id="fingerprint-strings" output="&#xa;  DNSVersionBindReqTCP, RPCCheck: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Server: awselb/2.0&#xa;    Date: Wed, 13 Nov 2024 14:28:10 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 122&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  FourOhFourRequest: &#xa;    HTTP/1.1 403 Forbidden&#xa;    Server: awselb/2.0&#xa;    Date: Wed, 13 Nov 2024 14:28:00 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 118&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;403 Forbidden&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;403 Forbidden&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  GetRequest: &#xa;    HTTP/1.1 403 Forbidden&#xa;    Server: awselb/2.0&#xa;    Date: Wed, 13 Nov 2024 14:27:45 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 118&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;403 Forbidden&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;403 Forbidden&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  HTTPOptions: &#xa;    HTTP/1.1 403 Forbidden&#xa;    Server: awselb/2.0&#xa;    Date: Wed, 13 Nov 2024 14:27:50 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 118&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;403 Forbidden&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;403 Forbidden&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  RTSPRequest: &#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  X11Probe: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Server: awselb/2.0&#xa;    Date: Wed, 13 Nov 2024 14:28:00 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 122&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;"><elem key="DNSVersionBindReqTCP, RPCCheck">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Server: awselb/2.0&#xa;    Date: Wed, 13 Nov 2024 14:28:10 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 122&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="FourOhFourRequest">&#xa;    HTTP/1.1 403 Forbidden&#xa;    Server: awselb/2.0&#xa;    Date: Wed, 13 Nov 2024 14:28:00 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 118&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;403 Forbidden&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;403 Forbidden&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.1 403 Forbidden&#xa;    Server: awselb/2.0&#xa;    Date: Wed, 13 Nov 2024 14:27:45 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 118&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;403 Forbidden&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;403 Forbidden&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.1 403 Forbidden&#xa;    Server: awselb/2.0&#xa;    Date: Wed, 13 Nov 2024 14:27:50 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 118&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;403 Forbidden&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;403 Forbidden&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="RTSPRequest">&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="X11Probe">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Server: awselb/2.0&#xa;    Date: Wed, 13 Nov 2024 14:28:00 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 122&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="https" tunnel="ssl" method="probed" conf="10"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="http-title" output="Site doesn&apos;t have a title."></script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<osmatch name="Oracle Virtualbox" accuracy="98" line="92432">
+<osclass type="bridge" vendor="Oracle" osfamily="Virtualbox" accuracy="98"><cpe>cpe:/o:oracle:virtualbox</cpe></osclass>
+</osmatch>
+<osmatch name="QEMU user mode network gateway" accuracy="94" line="94209">
+<osclass type="general purpose" vendor="QEMU" osfamily="QEMU" accuracy="94"><cpe>cpe:/a:qemu:qemu</cpe></osclass>
+</osmatch>
+</os>
+<distance value="1"/>
+<tcpsequence index="17" difficulty="Good luck!" values="279E9401,279F8E01,27A08801,27A18201,27A37601,27A47001"/>
+<ipidsequence class="Incremental" values="16F6,16F7,16F8,16F9,16FA,16FB"/>
+<tcptssequence class="none returned (unsupported)"/>
+<trace port="443" proto="tcp">
+<hop ttl="1" ipaddr="15.197.225.128" rtt="18.08"/>
+</trace>
+<times srtt="8554" rttvar="6648" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1731508256"/>
+<taskend task="NSE" time="1731508256"/>
+<taskbegin task="NSE" time="1731508256"/>
+<taskend task="NSE" time="1731508256"/>
+<taskbegin task="NSE" time="1731508256"/>
+<taskend task="NSE" time="1731508256"/>
+<runstats><finished time="1731508256" timestr="Wed Nov 13 09:30:56 2024" summary="Nmap done at Wed Nov 13 09:30:56 2024; 1 IP address (1 host up) scanned in 202.72 seconds" elapsed="202.72" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

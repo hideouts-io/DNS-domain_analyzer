@@ -1,0 +1,467 @@
+Analysing domain : slnr.com.
+	Output directory name: slnr.com.
+	Output summary file: slnr.com./slnr.com..txt
+	Checking NameServers using system default resolver...
+			HostName: ns20.domaincontrol.com			Type: NS
+			HostName: 10.77.201.173.in-addr.arpa			Type: PTR
+			HostName: ns19.domaincontrol.com			Type: NS
+			HostName: 10.109.74.97.in-addr.arpa			Type: PTR
+
+	Checking MailServers using system default resolver...
+			HostName: smtp.secureserver.net			Type: MX
+			HostName: 71.141.69.216.in-addr.arpa			Type: PTR
+			HostName: smtp.secureserver.net			Type: MX
+			HostName: 84.141.69.216.in-addr.arpa			Type: PTR
+			HostName: smtp.secureserver.net			Type: MX
+			HostName: 113.141.69.216.in-addr.arpa			Type: PTR
+			HostName: mailstore1.secureserver.net			Type: MX
+			HostName: 162.141.69.216.in-addr.arpa			Type: PTR
+			HostName: mailstore1.secureserver.net			Type: MX
+			HostName: 114.141.69.216.in-addr.arpa			Type: PTR
+			HostName: mailstore1.secureserver.net			Type: MX
+			HostName: 78.141.69.216.in-addr.arpa			Type: PTR
+		WARNING!! This domain has wildcards activated for hostnames resolution. We are checking "www" anyway, but perhaps it doesn't exists!
+
+	Checking the zone transfer for each NS... (if this takes more than 10 seconds, just hit CTRL-C and it will continue. Bug in the libs)
+		No zone transfer found on nameserver 173.201.77.10
+		No zone transfer found on nameserver 97.74.109.10
+
+	Checking SPF record...
+		No SPF record
+
+	Checking 1 most common hostnames using system default resolver...
+			HostName: www.slnr.com.			Type: A
+			HostName: www.slnr.com.			Type: A
+
+	Checking with nmap the reverse DNS hostnames of every <ip>/24 netblock using system default resolver...
+		Checking netblock 173.201.77.0
+
+	Searching for slnr.com. emails in Google
+
+	Checking 10 active hosts using nmap... (nmap -sn -n -v -PP -PM -PS80,25 -PA -PY -PU53,40125 -PE --reason <ip> -oA <output_directory>/nmap/<ip>.sn)
+		Host 173.201.77.10 is up (udp-response ttl 64)
+		Host 97.74.109.10 is up (udp-response ttl 64)
+		Host 216.69.141.71 is up (echo-reply ttl 255)
+		Host 216.69.141.84 is up (echo-reply ttl 255)
+		Host 216.69.141.113 is up (echo-reply ttl 255)
+		Host 216.69.141.162 is up (echo-reply ttl 255)
+		Host 216.69.141.114 is up (echo-reply ttl 255)
+		Host 216.69.141.78 is up (echo-reply ttl 255)
+		Host 15.197.225.128 is up (syn-ack ttl 64)
+		Host 3.33.251.168 is up (syn-ack ttl 64)
+
+	Checking ports on every active host using nmap... (nmap -O --reason --webxml --traceroute -sS -sV -sC -Pn -n -v -F  <ip> -oA <output_directory>/nmap/<ip>)
+		Scanning ip 173.201.77.10 (10.77.201.173.in-addr.arpa (PTR)):
+			53/tcp open  tcpwrapped syn-ack ttl 64
+		Scanning ip 97.74.109.10 (10.109.74.97.in-addr.arpa (PTR)):
+			53/tcp open  tcpwrapped syn-ack ttl 64
+		Scanning ip 216.69.141.71 (71.141.69.216.in-addr.arpa (PTR)):
+		Scanning ip 216.69.141.84 (84.141.69.216.in-addr.arpa (PTR)):
+		Scanning ip 216.69.141.113 (113.141.69.216.in-addr.arpa (PTR)):
+		Scanning ip 216.69.141.162 (162.141.69.216.in-addr.arpa (PTR)):
+		Scanning ip 216.69.141.114 (114.141.69.216.in-addr.arpa (PTR)):
+		Scanning ip 216.69.141.78 (78.141.69.216.in-addr.arpa (PTR)):
+		Scanning ip 15.197.225.128 (www.slnr.com.):
+			80/tcp  open  http      syn-ack ttl 64 awselb/2.0
+				|_http-server-header: awselb/2.0
+				|_http-title: 403 Forbidden
+				| fingerprint-strings: 
+				|   DNSVersionBindReqTCP, RPCCheck: 
+				|     HTTP/1.1 400 Bad Request
+				|     Server: awselb/2.0
+				|     Date: Wed, 13 Nov 2024 14:28:10 GMT
+				|     Content-Type: text/html
+				|     Content-Length: 122
+				|     Connection: close
+				|     <html>
+				|     <head><title>400 Bad Request</title></head>
+				|     <body>
+				|     <center><h1>400 Bad Request</h1></center>
+				|     </body>
+				|     </html>
+				|   FourOhFourRequest: 
+				|     HTTP/1.1 403 Forbidden
+				|     Server: awselb/2.0
+				|     Date: Wed, 13 Nov 2024 14:28:00 GMT
+				|     Content-Type: text/html
+				|     Content-Length: 118
+				|     Connection: close
+				|     <html>
+				|     <head><title>403 Forbidden</title></head>
+				|     <body>
+				|     <center><h1>403 Forbidden</h1></center>
+				|     </body>
+				|     </html>
+				|   GetRequest: 
+				|     HTTP/1.1 403 Forbidden
+				|     Server: awselb/2.0
+				|     Date: Wed, 13 Nov 2024 14:27:45 GMT
+				|     Content-Type: text/html
+				|     Content-Length: 118
+				|     Connection: close
+				|     <html>
+				|     <head><title>403 Forbidden</title></head>
+				|     <body>
+				|     <center><h1>403 Forbidden</h1></center>
+				|     </body>
+				|     </html>
+				|   HTTPOptions: 
+				|     HTTP/1.1 403 Forbidden
+				|     Server: awselb/2.0
+				|     Date: Wed, 13 Nov 2024 14:27:50 GMT
+				|     Content-Type: text/html
+				|     Content-Length: 118
+				|     Connection: close
+				|     <html>
+				|     <head><title>403 Forbidden</title></head>
+				|     <body>
+				|     <center><h1>403 Forbidden</h1></center>
+				|     </body>
+				|     </html>
+				|   RTSPRequest: 
+				|     <html>
+				|     <head><title>400 Bad Request</title></head>
+				|     <body>
+				|     <center><h1>400 Bad Request</h1></center>
+				|     </body>
+				|     </html>
+				|   X11Probe: 
+				|     HTTP/1.1 400 Bad Request
+				|     Server: awselb/2.0
+				|     Date: Wed, 13 Nov 2024 14:28:00 GMT
+				|     Content-Type: text/html
+				|     Content-Length: 122
+				|     Connection: close
+				|     <html>
+				|     <head><title>400 Bad Request</title></head>
+				|     <body>
+				|     <center><h1>400 Bad Request</h1></center>
+				|     </body>
+				|_    </html>
+			443/tcp open  ssl/https syn-ack ttl 64
+				| http-methods: 
+				|_  Supported Methods: GET HEAD POST OPTIONS
+				|_ssl-date: TLS randomness does not represent time
+				|_http-title: Site doesn't have a title.
+		Scanning ip 3.33.251.168 (www.slnr.com.):
+			80/tcp  open  http      syn-ack ttl 64 awselb/2.0
+				|_http-server-header: awselb/2.0
+				|_http-title: 403 Forbidden
+				| fingerprint-strings: 
+				|   DNSVersionBindReqTCP: 
+				|     HTTP/1.1 400 Bad Request
+				|     Server: awselb/2.0
+				|     Date: Wed, 13 Nov 2024 14:31:43 GMT
+				|     Content-Type: text/html
+				|     Content-Length: 122
+				|     Connection: close
+				|     <html>
+				|     <head><title>400 Bad Request</title></head>
+				|     <body>
+				|     <center><h1>400 Bad Request</h1></center>
+				|     </body>
+				|     </html>
+				|   FourOhFourRequest: 
+				|     HTTP/1.1 403 Forbidden
+				|     Server: awselb/2.0
+				|     Date: Wed, 13 Nov 2024 14:31:27 GMT
+				|     Content-Type: text/html
+				|     Content-Length: 118
+				|     Connection: close
+				|     <html>
+				|     <head><title>403 Forbidden</title></head>
+				|     <body>
+				|     <center><h1>403 Forbidden</h1></center>
+				|     </body>
+				|     </html>
+				|   GetRequest: 
+				|     HTTP/1.1 403 Forbidden
+				|     Server: awselb/2.0
+				|     Date: Wed, 13 Nov 2024 14:31:07 GMT
+				|     Content-Type: text/html
+				|     Content-Length: 118
+				|     Connection: close
+				|     <html>
+				|     <head><title>403 Forbidden</title></head>
+				|     <body>
+				|     <center><h1>403 Forbidden</h1></center>
+				|     </body>
+				|     </html>
+				|   HTTPOptions: 
+				|     HTTP/1.1 403 Forbidden
+				|     Server: awselb/2.0
+				|     Date: Wed, 13 Nov 2024 14:31:12 GMT
+				|     Content-Type: text/html
+				|     Content-Length: 118
+				|     Connection: close
+				|     <html>
+				|     <head><title>403 Forbidden</title></head>
+				|     <body>
+				|     <center><h1>403 Forbidden</h1></center>
+				|     </body>
+				|     </html>
+				|   RPCCheck: 
+				|     HTTP/1.1 400 Bad Request
+				|     Server: awselb/2.0
+				|     Date: Wed, 13 Nov 2024 14:31:38 GMT
+				|     Content-Type: text/html
+				|     Content-Length: 122
+				|     Connection: close
+				|     <html>
+				|     <head><title>400 Bad Request</title></head>
+				|     <body>
+				|     <center><h1>400 Bad Request</h1></center>
+				|     </body>
+				|     </html>
+				|   RTSPRequest: 
+				|     <html>
+				|     <head><title>400 Bad Request</title></head>
+				|     <body>
+				|     <center><h1>400 Bad Request</h1></center>
+				|     </body>
+				|     </html>
+				|   X11Probe: 
+				|     HTTP/1.1 400 Bad Request
+				|     Server: awselb/2.0
+				|     Date: Wed, 13 Nov 2024 14:31:22 GMT
+				|     Content-Type: text/html
+				|     Content-Length: 122
+				|     Connection: close
+				|     <html>
+				|     <head><title>400 Bad Request</title></head>
+				|     <body>
+				|     <center><h1>400 Bad Request</h1></center>
+				|     </body>
+				|_    </html>
+			443/tcp open  ssl/https syn-ack ttl 64
+				|_http-title: Site doesn't have a title.
+				|_ssl-date: TLS randomness does not represent time
+				| http-methods: 
+				|_  Supported Methods: GET HEAD POST OPTIONS
+	WebCrawling domain's web servers... up to 50 max links.
+
+
+--Finished--
+Summary information for domain slnr.com.
+-----------------------------------------
+
+	Domain Ips Information:
+		IP: 173.201.77.10
+			HostName: ns20.domaincontrol.com			Type: NS
+			HostName: 10.77.201.173.in-addr.arpa			Type: PTR
+			Is Active: True (udp-response ttl 64)
+			Port: 53/tcp open  tcpwrapped syn-ack ttl 64
+		IP: 97.74.109.10
+			HostName: ns19.domaincontrol.com			Type: NS
+			HostName: 10.109.74.97.in-addr.arpa			Type: PTR
+			Is Active: True (udp-response ttl 64)
+			Port: 53/tcp open  tcpwrapped syn-ack ttl 64
+		IP: 216.69.141.71
+			HostName: smtp.secureserver.net			Type: MX
+			HostName: 71.141.69.216.in-addr.arpa			Type: PTR
+			Is Active: True (echo-reply ttl 255)
+		IP: 216.69.141.84
+			HostName: smtp.secureserver.net			Type: MX
+			HostName: 84.141.69.216.in-addr.arpa			Type: PTR
+			Is Active: True (echo-reply ttl 255)
+		IP: 216.69.141.113
+			HostName: smtp.secureserver.net			Type: MX
+			HostName: 113.141.69.216.in-addr.arpa			Type: PTR
+			Is Active: True (echo-reply ttl 255)
+		IP: 216.69.141.162
+			HostName: mailstore1.secureserver.net			Type: MX
+			HostName: 162.141.69.216.in-addr.arpa			Type: PTR
+			Is Active: True (echo-reply ttl 255)
+		IP: 216.69.141.114
+			HostName: mailstore1.secureserver.net			Type: MX
+			HostName: 114.141.69.216.in-addr.arpa			Type: PTR
+			Is Active: True (echo-reply ttl 255)
+		IP: 216.69.141.78
+			HostName: mailstore1.secureserver.net			Type: MX
+			HostName: 78.141.69.216.in-addr.arpa			Type: PTR
+			Is Active: True (echo-reply ttl 255)
+		IP: 15.197.225.128
+			HostName: www.slnr.com.			Type: A
+			Is Active: True (syn-ack ttl 64)
+			Port: 80/tcp  open  http      syn-ack ttl 64 awselb/2.0
+				Script Info: |_http-server-header: awselb/2.0
+				Script Info: |_http-title: 403 Forbidden
+				Script Info: | fingerprint-strings: 
+				Script Info: |   DNSVersionBindReqTCP, RPCCheck: 
+				Script Info: |     HTTP/1.1 400 Bad Request
+				Script Info: |     Server: awselb/2.0
+				Script Info: |     Date: Wed, 13 Nov 2024 14:28:10 GMT
+				Script Info: |     Content-Type: text/html
+				Script Info: |     Content-Length: 122
+				Script Info: |     Connection: close
+				Script Info: |     <html>
+				Script Info: |     <head><title>400 Bad Request</title></head>
+				Script Info: |     <body>
+				Script Info: |     <center><h1>400 Bad Request</h1></center>
+				Script Info: |     </body>
+				Script Info: |     </html>
+				Script Info: |   FourOhFourRequest: 
+				Script Info: |     HTTP/1.1 403 Forbidden
+				Script Info: |     Server: awselb/2.0
+				Script Info: |     Date: Wed, 13 Nov 2024 14:28:00 GMT
+				Script Info: |     Content-Type: text/html
+				Script Info: |     Content-Length: 118
+				Script Info: |     Connection: close
+				Script Info: |     <html>
+				Script Info: |     <head><title>403 Forbidden</title></head>
+				Script Info: |     <body>
+				Script Info: |     <center><h1>403 Forbidden</h1></center>
+				Script Info: |     </body>
+				Script Info: |     </html>
+				Script Info: |   GetRequest: 
+				Script Info: |     HTTP/1.1 403 Forbidden
+				Script Info: |     Server: awselb/2.0
+				Script Info: |     Date: Wed, 13 Nov 2024 14:27:45 GMT
+				Script Info: |     Content-Type: text/html
+				Script Info: |     Content-Length: 118
+				Script Info: |     Connection: close
+				Script Info: |     <html>
+				Script Info: |     <head><title>403 Forbidden</title></head>
+				Script Info: |     <body>
+				Script Info: |     <center><h1>403 Forbidden</h1></center>
+				Script Info: |     </body>
+				Script Info: |     </html>
+				Script Info: |   HTTPOptions: 
+				Script Info: |     HTTP/1.1 403 Forbidden
+				Script Info: |     Server: awselb/2.0
+				Script Info: |     Date: Wed, 13 Nov 2024 14:27:50 GMT
+				Script Info: |     Content-Type: text/html
+				Script Info: |     Content-Length: 118
+				Script Info: |     Connection: close
+				Script Info: |     <html>
+				Script Info: |     <head><title>403 Forbidden</title></head>
+				Script Info: |     <body>
+				Script Info: |     <center><h1>403 Forbidden</h1></center>
+				Script Info: |     </body>
+				Script Info: |     </html>
+				Script Info: |   RTSPRequest: 
+				Script Info: |     <html>
+				Script Info: |     <head><title>400 Bad Request</title></head>
+				Script Info: |     <body>
+				Script Info: |     <center><h1>400 Bad Request</h1></center>
+				Script Info: |     </body>
+				Script Info: |     </html>
+				Script Info: |   X11Probe: 
+				Script Info: |     HTTP/1.1 400 Bad Request
+				Script Info: |     Server: awselb/2.0
+				Script Info: |     Date: Wed, 13 Nov 2024 14:28:00 GMT
+				Script Info: |     Content-Type: text/html
+				Script Info: |     Content-Length: 122
+				Script Info: |     Connection: close
+				Script Info: |     <html>
+				Script Info: |     <head><title>400 Bad Request</title></head>
+				Script Info: |     <body>
+				Script Info: |     <center><h1>400 Bad Request</h1></center>
+				Script Info: |     </body>
+				Script Info: |_    </html>
+			Port: 443/tcp open  ssl/https syn-ack ttl 64
+				Script Info: | http-methods: 
+				Script Info: |_  Supported Methods: GET HEAD POST OPTIONS
+				Script Info: |_ssl-date: TLS randomness does not represent time
+				Script Info: |_http-title: Site doesn't have a title.
+		IP: 3.33.251.168
+			HostName: www.slnr.com.			Type: A
+			Is Active: True (syn-ack ttl 64)
+			Port: 80/tcp  open  http      syn-ack ttl 64 awselb/2.0
+				Script Info: |_http-server-header: awselb/2.0
+				Script Info: |_http-title: 403 Forbidden
+				Script Info: | fingerprint-strings: 
+				Script Info: |   DNSVersionBindReqTCP: 
+				Script Info: |     HTTP/1.1 400 Bad Request
+				Script Info: |     Server: awselb/2.0
+				Script Info: |     Date: Wed, 13 Nov 2024 14:31:43 GMT
+				Script Info: |     Content-Type: text/html
+				Script Info: |     Content-Length: 122
+				Script Info: |     Connection: close
+				Script Info: |     <html>
+				Script Info: |     <head><title>400 Bad Request</title></head>
+				Script Info: |     <body>
+				Script Info: |     <center><h1>400 Bad Request</h1></center>
+				Script Info: |     </body>
+				Script Info: |     </html>
+				Script Info: |   FourOhFourRequest: 
+				Script Info: |     HTTP/1.1 403 Forbidden
+				Script Info: |     Server: awselb/2.0
+				Script Info: |     Date: Wed, 13 Nov 2024 14:31:27 GMT
+				Script Info: |     Content-Type: text/html
+				Script Info: |     Content-Length: 118
+				Script Info: |     Connection: close
+				Script Info: |     <html>
+				Script Info: |     <head><title>403 Forbidden</title></head>
+				Script Info: |     <body>
+				Script Info: |     <center><h1>403 Forbidden</h1></center>
+				Script Info: |     </body>
+				Script Info: |     </html>
+				Script Info: |   GetRequest: 
+				Script Info: |     HTTP/1.1 403 Forbidden
+				Script Info: |     Server: awselb/2.0
+				Script Info: |     Date: Wed, 13 Nov 2024 14:31:07 GMT
+				Script Info: |     Content-Type: text/html
+				Script Info: |     Content-Length: 118
+				Script Info: |     Connection: close
+				Script Info: |     <html>
+				Script Info: |     <head><title>403 Forbidden</title></head>
+				Script Info: |     <body>
+				Script Info: |     <center><h1>403 Forbidden</h1></center>
+				Script Info: |     </body>
+				Script Info: |     </html>
+				Script Info: |   HTTPOptions: 
+				Script Info: |     HTTP/1.1 403 Forbidden
+				Script Info: |     Server: awselb/2.0
+				Script Info: |     Date: Wed, 13 Nov 2024 14:31:12 GMT
+				Script Info: |     Content-Type: text/html
+				Script Info: |     Content-Length: 118
+				Script Info: |     Connection: close
+				Script Info: |     <html>
+				Script Info: |     <head><title>403 Forbidden</title></head>
+				Script Info: |     <body>
+				Script Info: |     <center><h1>403 Forbidden</h1></center>
+				Script Info: |     </body>
+				Script Info: |     </html>
+				Script Info: |   RPCCheck: 
+				Script Info: |     HTTP/1.1 400 Bad Request
+				Script Info: |     Server: awselb/2.0
+				Script Info: |     Date: Wed, 13 Nov 2024 14:31:38 GMT
+				Script Info: |     Content-Type: text/html
+				Script Info: |     Content-Length: 122
+				Script Info: |     Connection: close
+				Script Info: |     <html>
+				Script Info: |     <head><title>400 Bad Request</title></head>
+				Script Info: |     <body>
+				Script Info: |     <center><h1>400 Bad Request</h1></center>
+				Script Info: |     </body>
+				Script Info: |     </html>
+				Script Info: |   RTSPRequest: 
+				Script Info: |     <html>
+				Script Info: |     <head><title>400 Bad Request</title></head>
+				Script Info: |     <body>
+				Script Info: |     <center><h1>400 Bad Request</h1></center>
+				Script Info: |     </body>
+				Script Info: |     </html>
+				Script Info: |   X11Probe: 
+				Script Info: |     HTTP/1.1 400 Bad Request
+				Script Info: |     Server: awselb/2.0
+				Script Info: |     Date: Wed, 13 Nov 2024 14:31:22 GMT
+				Script Info: |     Content-Type: text/html
+				Script Info: |     Content-Length: 122
+				Script Info: |     Connection: close
+				Script Info: |     <html>
+				Script Info: |     <head><title>400 Bad Request</title></head>
+				Script Info: |     <body>
+				Script Info: |     <center><h1>400 Bad Request</h1></center>
+				Script Info: |     </body>
+				Script Info: |_    </html>
+			Port: 443/tcp open  ssl/https syn-ack ttl 64
+				Script Info: |_http-title: Site doesn't have a title.
+				Script Info: |_ssl-date: TLS randomness does not represent time
+				Script Info: | http-methods: 
+				Script Info: |_  Supported Methods: GET HEAD POST OPTIONS
+
+--------------End Summary --------------
+-----------------------------------------
+

@@ -1,0 +1,139 @@
+# Nmap 7.94SVN scan initiated Wed Nov 13 09:27:33 2024 as: nmap -O --reason --webxml --traceroute -sS -sV -sC -Pn -n -v -F -oA slnr.com./nmap/15.197.225.128 15.197.225.128
+Nmap scan report for 15.197.225.128
+Host is up, received user-set (0.0086s latency).
+Not shown: 98 filtered tcp ports (no-response)
+PORT    STATE SERVICE   REASON         VERSION
+80/tcp  open  http      syn-ack ttl 64 awselb/2.0
+|_http-server-header: awselb/2.0
+|_http-title: 403 Forbidden
+| fingerprint-strings: 
+|   DNSVersionBindReqTCP, RPCCheck: 
+|     HTTP/1.1 400 Bad Request
+|     Server: awselb/2.0
+|     Date: Wed, 13 Nov 2024 14:28:10 GMT
+|     Content-Type: text/html
+|     Content-Length: 122
+|     Connection: close
+|     <html>
+|     <head><title>400 Bad Request</title></head>
+|     <body>
+|     <center><h1>400 Bad Request</h1></center>
+|     </body>
+|     </html>
+|   FourOhFourRequest: 
+|     HTTP/1.1 403 Forbidden
+|     Server: awselb/2.0
+|     Date: Wed, 13 Nov 2024 14:28:00 GMT
+|     Content-Type: text/html
+|     Content-Length: 118
+|     Connection: close
+|     <html>
+|     <head><title>403 Forbidden</title></head>
+|     <body>
+|     <center><h1>403 Forbidden</h1></center>
+|     </body>
+|     </html>
+|   GetRequest: 
+|     HTTP/1.1 403 Forbidden
+|     Server: awselb/2.0
+|     Date: Wed, 13 Nov 2024 14:27:45 GMT
+|     Content-Type: text/html
+|     Content-Length: 118
+|     Connection: close
+|     <html>
+|     <head><title>403 Forbidden</title></head>
+|     <body>
+|     <center><h1>403 Forbidden</h1></center>
+|     </body>
+|     </html>
+|   HTTPOptions: 
+|     HTTP/1.1 403 Forbidden
+|     Server: awselb/2.0
+|     Date: Wed, 13 Nov 2024 14:27:50 GMT
+|     Content-Type: text/html
+|     Content-Length: 118
+|     Connection: close
+|     <html>
+|     <head><title>403 Forbidden</title></head>
+|     <body>
+|     <center><h1>403 Forbidden</h1></center>
+|     </body>
+|     </html>
+|   RTSPRequest: 
+|     <html>
+|     <head><title>400 Bad Request</title></head>
+|     <body>
+|     <center><h1>400 Bad Request</h1></center>
+|     </body>
+|     </html>
+|   X11Probe: 
+|     HTTP/1.1 400 Bad Request
+|     Server: awselb/2.0
+|     Date: Wed, 13 Nov 2024 14:28:00 GMT
+|     Content-Type: text/html
+|     Content-Length: 122
+|     Connection: close
+|     <html>
+|     <head><title>400 Bad Request</title></head>
+|     <body>
+|     <center><h1>400 Bad Request</h1></center>
+|     </body>
+|_    </html>
+443/tcp open  ssl/https syn-ack ttl 64
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_ssl-date: TLS randomness does not represent time
+|_http-title: Site doesn't have a title.
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.94SVN%I=7%D=11/13%Time=6734B765%P=x86_64-pc-linux-gnu%r(
+SF:GetRequest,10A,"HTTP/1\.1\x20403\x20Forbidden\r\nServer:\x20awselb/2\.0
+SF:\r\nDate:\x20Wed,\x2013\x20Nov\x202024\x2014:27:45\x20GMT\r\nContent-Ty
+SF:pe:\x20text/html\r\nContent-Length:\x20118\r\nConnection:\x20close\r\n\
+SF:r\n<html>\r\n<head><title>403\x20Forbidden</title></head>\r\n<body>\r\n
+SF:<center><h1>403\x20Forbidden</h1></center>\r\n</body>\r\n</html>\r\n")%
+SF:r(HTTPOptions,10A,"HTTP/1\.1\x20403\x20Forbidden\r\nServer:\x20awselb/2
+SF:\.0\r\nDate:\x20Wed,\x2013\x20Nov\x202024\x2014:27:50\x20GMT\r\nContent
+SF:-Type:\x20text/html\r\nContent-Length:\x20118\r\nConnection:\x20close\r
+SF:\n\r\n<html>\r\n<head><title>403\x20Forbidden</title></head>\r\n<body>\
+SF:r\n<center><h1>403\x20Forbidden</h1></center>\r\n</body>\r\n</html>\r\n
+SF:")%r(RTSPRequest,7A,"<html>\r\n<head><title>400\x20Bad\x20Request</titl
+SF:e></head>\r\n<body>\r\n<center><h1>400\x20Bad\x20Request</h1></center>\
+SF:r\n</body>\r\n</html>\r\n")%r(X11Probe,110,"HTTP/1\.1\x20400\x20Bad\x20
+SF:Request\r\nServer:\x20awselb/2\.0\r\nDate:\x20Wed,\x2013\x20Nov\x202024
+SF:\x2014:28:00\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x2
+SF:0122\r\nConnection:\x20close\r\n\r\n<html>\r\n<head><title>400\x20Bad\x
+SF:20Request</title></head>\r\n<body>\r\n<center><h1>400\x20Bad\x20Request
+SF:</h1></center>\r\n</body>\r\n</html>\r\n")%r(FourOhFourRequest,10A,"HTT
+SF:P/1\.1\x20403\x20Forbidden\r\nServer:\x20awselb/2\.0\r\nDate:\x20Wed,\x
+SF:2013\x20Nov\x202024\x2014:28:00\x20GMT\r\nContent-Type:\x20text/html\r\
+SF:nContent-Length:\x20118\r\nConnection:\x20close\r\n\r\n<html>\r\n<head>
+SF:<title>403\x20Forbidden</title></head>\r\n<body>\r\n<center><h1>403\x20
+SF:Forbidden</h1></center>\r\n</body>\r\n</html>\r\n")%r(RPCCheck,110,"HTT
+SF:P/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20awselb/2\.0\r\nDate:\x20W
+SF:ed,\x2013\x20Nov\x202024\x2014:28:10\x20GMT\r\nContent-Type:\x20text/ht
+SF:ml\r\nContent-Length:\x20122\r\nConnection:\x20close\r\n\r\n<html>\r\n<
+SF:head><title>400\x20Bad\x20Request</title></head>\r\n<body>\r\n<center><
+SF:h1>400\x20Bad\x20Request</h1></center>\r\n</body>\r\n</html>\r\n")%r(DN
+SF:SVersionBindReqTCP,110,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x
+SF:20awselb/2\.0\r\nDate:\x20Wed,\x2013\x20Nov\x202024\x2014:28:10\x20GMT\
+SF:r\nContent-Type:\x20text/html\r\nContent-Length:\x20122\r\nConnection:\
+SF:x20close\r\n\r\n<html>\r\n<head><title>400\x20Bad\x20Request</title></h
+SF:ead>\r\n<body>\r\n<center><h1>400\x20Bad\x20Request</h1></center>\r\n</
+SF:body>\r\n</html>\r\n");
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: bridge|general purpose
+Running (JUST GUESSING): Oracle Virtualbox (98%), QEMU (94%)
+OS CPE: cpe:/o:oracle:virtualbox cpe:/a:qemu:qemu
+Aggressive OS guesses: Oracle Virtualbox (98%), QEMU user mode network gateway (94%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=17 (Good luck!)
+IP ID Sequence Generation: Incremental
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT      ADDRESS
+1   18.08 ms 15.197.225.128
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Nov 13 09:30:56 2024 -- 1 IP address (1 host up) scanned in 202.72 seconds

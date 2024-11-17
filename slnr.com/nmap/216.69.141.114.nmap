@@ -1,0 +1,19 @@
+# Nmap 7.94SVN scan initiated Wed Nov 13 09:26:37 2024 as: nmap -O --reason --webxml --traceroute -sS -sV -sC -Pn -n -v -F -oA slnr.com./nmap/216.69.141.114 216.69.141.114
+Nmap scan report for 216.69.141.114
+Host is up, received user-set (0.034s latency).
+All 100 scanned ports on 216.69.141.114 are in ignored states.
+Not shown: 100 filtered tcp ports (no-response)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: QEMU
+OS CPE: cpe:/a:qemu:qemu
+OS details: QEMU user mode network gateway
+Network Distance: 1 hop
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT      ADDRESS
+1   45.37 ms 216.69.141.114
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Nov 13 09:27:05 2024 -- 1 IP address (1 host up) scanned in 27.78 seconds

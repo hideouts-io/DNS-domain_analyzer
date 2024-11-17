@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="https://svn.nmap.org/nmap/docs/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Wed Nov 13 09:24:19 2024 as: nmap -O -&#45;reason -&#45;webxml -&#45;traceroute -sS -sV -sC -Pn -n -v -F -oA slnr.com./nmap/173.201.77.10 173.201.77.10 -->
+<nmaprun scanner="nmap" args="nmap -O -&#45;reason -&#45;webxml -&#45;traceroute -sS -sV -sC -Pn -n -v -F -oA slnr.com./nmap/173.201.77.10 173.201.77.10" start="1731507859" startstr="Wed Nov 13 09:24:19 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="100" services="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1731507859"/>
+<taskend task="NSE" time="1731507859"/>
+<taskbegin task="NSE" time="1731507859"/>
+<taskend task="NSE" time="1731507859"/>
+<taskbegin task="NSE" time="1731507859"/>
+<taskend task="NSE" time="1731507859"/>
+<taskbegin task="SYN Stealth Scan" time="1731507859"/>
+<taskend task="SYN Stealth Scan" time="1731507863" extrainfo="100 total ports"/>
+<taskbegin task="Service scan" time="1731507863"/>
+<taskend task="Service scan" time="1731507863" extrainfo="1 service on 1 host"/>
+<taskbegin task="Traceroute" time="1731507867"/>
+<taskend task="Traceroute" time="1731507867"/>
+<taskbegin task="NSE" time="1731507867"/>
+<taskend task="NSE" time="1731507872"/>
+<taskbegin task="NSE" time="1731507872"/>
+<taskend task="NSE" time="1731507872"/>
+<taskbegin task="NSE" time="1731507872"/>
+<taskend task="NSE" time="1731507872"/>
+<host starttime="1731507859" endtime="1731507872"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="173.201.77.10" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="99">
+<extrareasons reason="no-response" count="99" proto="tcp" ports="7,9,13,21-23,25-26,37,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="53"/>
+<osmatch name="QEMU user mode network gateway" accuracy="96" line="94192">
+<osclass type="general purpose" vendor="QEMU" osfamily="QEMU" accuracy="96"><cpe>cpe:/a:qemu:qemu</cpe></osclass>
+</osmatch>
+<osmatch name="Oracle Virtualbox" accuracy="96" line="92432">
+<osclass type="bridge" vendor="Oracle" osfamily="Virtualbox" accuracy="96"><cpe>cpe:/o:oracle:virtualbox</cpe></osclass>
+</osmatch>
+<osmatch name="Samsung CLP-315W printer" accuracy="89" line="96020">
+<osclass type="printer" vendor="Samsung" osfamily="embedded" accuracy="89"><cpe>cpe:/h:samsung:clp-315w</cpe></osclass>
+</osmatch>
+<osmatch name="Dell 1815dn printer" accuracy="88" line="21519">
+<osclass type="printer" vendor="Dell" osfamily="embedded" accuracy="88"><cpe>cpe:/h:dell:1815dn</cpe></osclass>
+</osmatch>
+<osmatch name="VxWorks" accuracy="88" line="105641">
+<osclass type="general purpose" vendor="Wind River" osfamily="VxWorks" accuracy="88"><cpe>cpe:/o:windriver:vxworks</cpe></osclass>
+</osmatch>
+<osmatch name="Bay Networks BayStack 450 switch (software version 3.1.0.22)" accuracy="88" line="9534">
+<osclass type="switch" vendor="Bay Networks" osfamily="embedded" accuracy="88"><cpe>cpe:/h:baynetworks:baystack_450</cpe></osclass>
+</osmatch>
+<osmatch name="Xerox WorkCentre 4150 printer" accuracy="88" line="106699">
+<osclass type="printer" vendor="Xerox" osfamily="embedded" accuracy="88"><cpe>cpe:/h:xerox:workcentre_4150</cpe></osclass>
+</osmatch>
+<osmatch name="Allied Telesyn AT-9006SX/SC switch" accuracy="87" line="2545">
+<osclass type="switch" vendor="Allied Telesyn" osfamily="embedded" accuracy="87"><cpe>cpe:/h:alliedtelesyn:at-9006</cpe></osclass>
+</osmatch>
+<osmatch name="Samsung CLP-310N or CLX-3175RW, or Xerox Phaser 6110 printer" accuracy="87" line="95999">
+<osclass type="printer" vendor="Samsung" osfamily="embedded" accuracy="87"><cpe>cpe:/h:samsung:clp-310n</cpe><cpe>cpe:/h:samsung:clx-3175rw</cpe></osclass>
+<osclass type="printer" vendor="Xerox" osfamily="embedded" accuracy="87"><cpe>cpe:/h:xerox:phaser_6110</cpe></osclass>
+</osmatch>
+<osmatch name="Samsung CLX-3160FN printer" accuracy="87" line="96123">
+<osclass type="printer" vendor="Samsung" osfamily="embedded" accuracy="87"><cpe>cpe:/h:samsung:clx-3160fn</cpe></osclass>
+</osmatch>
+</os>
+<distance value="1"/>
+<tcpsequence index="17" difficulty="Good luck!" values="2501A201,25029C01,25039601,25049001,25068401,25077E01"/>
+<ipidsequence class="Incremental" values="B9B,B9C,B9D,B9E,B9F,BA0"/>
+<tcptssequence class="none returned (unsupported)"/>
+<trace port="53" proto="tcp">
+<hop ttl="1" ipaddr="173.201.77.10" rtt="21.10"/>
+</trace>
+<times srtt="11910" rttvar="9100" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1731507872"/>
+<taskend task="NSE" time="1731507872"/>
+<taskbegin task="NSE" time="1731507872"/>
+<taskend task="NSE" time="1731507872"/>
+<taskbegin task="NSE" time="1731507872"/>
+<taskend task="NSE" time="1731507872"/>
+<runstats><finished time="1731507872" timestr="Wed Nov 13 09:24:32 2024" summary="Nmap done at Wed Nov 13 09:24:32 2024; 1 IP address (1 host up) scanned in 13.42 seconds" elapsed="13.42" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
