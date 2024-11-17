@@ -1,0 +1,16 @@
+# Nmap 7.94SVN scan initiated Wed Nov 13 08:53:48 2024 as: nmap -O --reason --webxml --traceroute -sS -sV -sC -Pn -n -v -F -oA hideouts.io./nmap/172.217.128.0 172.217.128.0
+Nmap scan report for 172.217.128.0
+Host is up, received user-set (0.0074s latency).
+All 100 scanned ports on 172.217.128.0 are in ignored states.
+Not shown: 100 filtered tcp ports (no-response)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: 3Com 4500G switch (92%), H3C Comware 5.20 (92%), Huawei VRP 8.100 (92%), Microsoft Windows Server 2003 SP1 (92%), Oracle Virtualbox (92%), QEMU user mode network gateway (92%), AXIS 2100 Network Camera (92%), D-Link DP-300U, DP-G310, or Hamlet HPS01UU print server (92%), HP Tru64 UNIX 5.1A (92%), Sanyo PLC-XU88 digital video projector (92%)
+No exact OS matches for host (test conditions non-ideal).
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT    ADDRESS
+1   ... 30
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Nov 13 08:54:40 2024 -- 1 IP address (1 host up) scanned in 57.29 seconds

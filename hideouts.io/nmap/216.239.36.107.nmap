@@ -1,0 +1,38 @@
+# Nmap 7.94SVN scan initiated Wed Nov 13 08:33:06 2024 as: nmap -O --reason --webxml --traceroute -sS -sV -sC -Pn -n -v -F -oA hideouts.io./nmap/216.239.36.107 216.239.36.107
+Nmap scan report for 216.239.36.107
+Host is up, received user-set (0.037s latency).
+Not shown: 99 filtered tcp ports (no-response)
+PORT   STATE SERVICE REASON         VERSION
+53/tcp open  domain  syn-ack ttl 64 (generic dns response: NOTIMP)
+| fingerprint-strings: 
+|   DNSVersionBindReqTCP: 
+|     version
+|     bind
+|     ns-cloud-b1
+|     googledomains
+|     cloud-dns-hostmaster
+|_    google
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port53-TCP:V=7.94SVN%I=7%D=11/13%Time=6734AAA2%P=x86_64-pc-linux-gnu%r(
+SF:DNSVersionBindReqTCP,7D,"\0{\0\x06\x85\0\0\x01\0\0\0\x01\0\0\x07version
+SF:\x04bind\0\0\x10\0\x03\xc0\x0c\0\x06\0\x01\0\0\x01,\0Q\x0bns-cloud-b1\r
+SF:googledomains\x03com\0\x14cloud-dns-hostmaster\x06google\xc0D\0\0\0\x01
+SF:\0\0T`\0\0\x0e\x10\0\x03\xf4\x80\0\0\x01,")%r(DNSStatusRequestTCP,E,"\0
+SF:\x0c\0\0\x90\x04\0\0\0\0\0\0\0\0");
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: bridge|general purpose
+Running (JUST GUESSING): Oracle Virtualbox (98%), QEMU (94%)
+OS CPE: cpe:/o:oracle:virtualbox cpe:/a:qemu:qemu
+Aggressive OS guesses: Oracle Virtualbox (98%), QEMU user mode network gateway (94%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=28 (Good luck!)
+IP ID Sequence Generation: Randomized
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+1   82.09 ms 216.239.36.107
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Nov 13 08:33:40 2024 -- 1 IP address (1 host up) scanned in 34.67 seconds

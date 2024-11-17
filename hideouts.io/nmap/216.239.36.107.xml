@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="https://svn.nmap.org/nmap/docs/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Wed Nov 13 08:33:06 2024 as: nmap -O -&#45;reason -&#45;webxml -&#45;traceroute -sS -sV -sC -Pn -n -v -F -oA hideouts.io./nmap/216.239.36.107 216.239.36.107 -->
+<nmaprun scanner="nmap" args="nmap -O -&#45;reason -&#45;webxml -&#45;traceroute -sS -sV -sC -Pn -n -v -F -oA hideouts.io./nmap/216.239.36.107 216.239.36.107" start="1731504786" startstr="Wed Nov 13 08:33:06 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="100" services="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1731504786"/>
+<taskend task="NSE" time="1731504786"/>
+<taskbegin task="NSE" time="1731504786"/>
+<taskend task="NSE" time="1731504786"/>
+<taskbegin task="NSE" time="1731504786"/>
+<taskend task="NSE" time="1731504786"/>
+<taskbegin task="SYN Stealth Scan" time="1731504786"/>
+<taskend task="SYN Stealth Scan" time="1731504791" extrainfo="100 total ports"/>
+<taskbegin task="Service scan" time="1731504791"/>
+<taskend task="Service scan" time="1731504807" extrainfo="1 service on 1 host"/>
+<taskbegin task="Traceroute" time="1731504811"/>
+<taskend task="Traceroute" time="1731504811"/>
+<taskbegin task="NSE" time="1731504811"/>
+<taskend task="NSE" time="1731504820"/>
+<taskbegin task="NSE" time="1731504820"/>
+<taskend task="NSE" time="1731504820"/>
+<taskbegin task="NSE" time="1731504820"/>
+<taskend task="NSE" time="1731504820"/>
+<host starttime="1731504786" endtime="1731504820"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="216.239.36.107" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="99">
+<extrareasons reason="no-response" count="99" proto="tcp" ports="7,9,13,21-23,25-26,37,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="domain" extrainfo="generic dns response: NOTIMP" servicefp="SF-Port53-TCP:V=7.94SVN%I=7%D=11/13%Time=6734AAA2%P=x86_64-pc-linux-gnu%r(DNSVersionBindReqTCP,7D,&quot;\0{\0\x06\x85\0\0\x01\0\0\0\x01\0\0\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x06\0\x01\0\0\x01,\0Q\x0bns-cloud-b1\rgoogledomains\x03com\0\x14cloud-dns-hostmaster\x06google\xc0D\0\0\0\x01\0\0T`\0\0\x0e\x10\0\x03\xf4\x80\0\0\x01,&quot;)%r(DNSStatusRequestTCP,E,&quot;\0\x0c\0\0\x90\x04\0\0\0\0\0\0\0\0&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  DNSVersionBindReqTCP: &#xa;    version&#xa;    bind&#xa;    ns-cloud-b1&#xa;    googledomains&#xa;    cloud-dns-hostmaster&#xa;    google"><elem key="DNSVersionBindReqTCP">&#xa;    version&#xa;    bind&#xa;    ns-cloud-b1&#xa;    googledomains&#xa;    cloud-dns-hostmaster&#xa;    google</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="53"/>
+<osmatch name="Oracle Virtualbox" accuracy="98" line="92432">
+<osclass type="bridge" vendor="Oracle" osfamily="Virtualbox" accuracy="98"><cpe>cpe:/o:oracle:virtualbox</cpe></osclass>
+</osmatch>
+<osmatch name="QEMU user mode network gateway" accuracy="94" line="94209">
+<osclass type="general purpose" vendor="QEMU" osfamily="QEMU" accuracy="94"><cpe>cpe:/a:qemu:qemu</cpe></osclass>
+</osmatch>
+</os>
+<distance value="1"/>
+<tcpsequence index="28" difficulty="Good luck!" values="3085E01,3057001,3066A01,3095801,30A5201,30B4C01"/>
+<ipidsequence class="Randomized" values="74F7,74EB,74F2,74F8,74F9,74FA"/>
+<tcptssequence class="none returned (unsupported)"/>
+<trace port="53" proto="tcp">
+<hop ttl="1" ipaddr="216.239.36.107" rtt="82.09"/>
+</trace>
+<times srtt="36982" rttvar="39043" to="193154"/>
+</host>
+<taskbegin task="NSE" time="1731504820"/>
+<taskend task="NSE" time="1731504820"/>
+<taskbegin task="NSE" time="1731504820"/>
+<taskend task="NSE" time="1731504820"/>
+<taskbegin task="NSE" time="1731504820"/>
+<taskend task="NSE" time="1731504820"/>
+<runstats><finished time="1731504820" timestr="Wed Nov 13 08:33:40 2024" summary="Nmap done at Wed Nov 13 08:33:40 2024; 1 IP address (1 host up) scanned in 34.67 seconds" elapsed="34.67" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
