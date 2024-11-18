@@ -1,4 +1,4 @@
-# OpenSourceHumanProject
+# OpenSourceHumanProject lulz
 Hidden Secrets in Plain Sight
 
 SLNR.com ends up as endpoint for every device when doing advanced DNS reconnaisance.
