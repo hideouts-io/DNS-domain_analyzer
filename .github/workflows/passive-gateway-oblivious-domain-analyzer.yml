@@ -1,0 +1,49 @@
+name: Passive Domain Analyzer - gateway-oblivious.apple.com
+
+on:
+  push:
+    branches:
+      - chatgpt/passive-gateway-oblivious-20260814
+
+permissions:
+  contents: read
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    env:
+      TARGET: gateway-oblivious.apple.com
+    steps:
+      - name: Install DNS utilities and Domain Analyzer
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq dnsutils git
+          git clone --depth 1 https://github.com/eldraco/domain_analyzer.git /tmp/domain_analyzer
+          python3 -m pip install -q -r /tmp/domain_analyzer/requirements.txt
+      - name: Run legacy Domain Analyzer in passive mode
+        shell: bash
+        run: |
+          set -o pipefail
+          echo "=== domain_analyzer.py passive run ==="
+          echo "Target: $TARGET"
+          echo "Flags disable common-host enumeration, zone transfer, /24 reverse enumeration, Nmap, Google mail search, recursive subdomain analysis, web crawling, GeoIP and SPF recursion."
+          python3 /tmp/domain_analyzer/domain_analyzer.py \
+            -d "$TARGET" -j -t -n -a -g -s -w -c -q -C || true
+      - name: Capture exact-host DNS records
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "=== exact hostname DNS ==="
+          for TYPE in A AAAA CNAME NS MX TXT HTTPS; do
+            echo
+            echo "--- $TYPE ---"
+            dig +time=5 +tries=1 +noall +answer +authority "$TARGET" "$TYPE" || true
+          done
+          echo
+          echo "=== resolution chain ==="
+          dig +time=5 +tries=1 +short "$TARGET" A || true
+          echo
+          echo "=== parent apple.com authoritative NS ==="
+          dig +time=5 +tries=1 +noall +answer apple.com NS || true
