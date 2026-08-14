@@ -1,0 +1,3 @@
+Target: usw2-asbs-aws-stage.apple.com
+Mode: passive / low-impact DNS analysis only
+Date: 2026-08-14
