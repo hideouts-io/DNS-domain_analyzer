@@ -1,0 +1,1 @@
+Trigger passive DNS analysis for gateway-oblivious.apple.com on 2026-08-14.
